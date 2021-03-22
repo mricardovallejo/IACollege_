@@ -1,0 +1,84 @@
+
+Formations gratuits
+===================
+
+https://www.qwiklabs.com/
+google authentication
+
+ricardo
+rolito1XX6* AWS Educate
+
+
+AWS Notes
+=============
+
+EBS
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-attaching-volume.html
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes-multi.html
+
+Commands SSH EBS
+lsblk -- >  All volumnes in instances
+sudo file -s /dev/xvdb  -> Consultar si ilya file system
+sudo mkfs -t ext4 /dev/xvdb --> Create file suystem .dev.xvbd es el device de volumen
+sudo mkdir /data  --> Creation de repertiore pour acceder a notre EBS
+sudo mount /dev/xvdb /data  --> To mount if doesn mount yet.
+
+TEST
+cd /data
+pwd
+sudo touch test.txt
+
+
+S3
+https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-access-s3-bucket/
+
+NOTAS
+=====
+
+DATAWARE HOUSE
+--------------
+*A data warehouse is a database optimized to analyze relational data coming from transactional systems and line of business applications.
+The data structure, and schema are defined in advance to optimize for fast SQL queries, where the results are typically used for operational reporting and analysis.
+Data is cleaned, enriched, and transformed so it can act as the “single source of truth” that users can trust.
+
+* Data flows into a data warehouse from transactional systems, relational databases, and other sources through business intelligence (BI) tools, SQL clients, and other analytics applications.
+https://aws.amazon.com/data-warehouse/
+
+Typically, businesses use a combination of a database, a data lake, and a data warehouse to store and analyze data. Amazon Redshift’s lake house architecture makes such an integration easy.
+
+A data warehouse is specially designed for data analytics, which involves reading large amounts of data to understand relationships and trends across the data.
+
+* Dimensional modeling (DM):
+
+ is part of the Business Dimensional Lifecycle methodology developed by Ralph Kimball which includes a set of methods, techniques and concepts for use in data warehouse design.
+
+* (ETL) : In computing, extract, transform, load (ETL) is the general procedure of copying data from one or more sources into a destination system which represents the data differently from the source(s) or in a different context than the source(s).
+
+* Data extraction involves extracting data from homogeneous or heterogeneous sources;
+  data transformation processes data by data cleaning and transforming them into a proper storage format/structure for the purposes of querying and analysis;
+  data loading describes the insertion of data into the final target database such as an operational data store, a data mart, data lake or a data warehouse.
+
+* SSIS SQL Server Integration Services (SSIS) Plateform pour operations ETL
+https://medium.com/swlh/data-engineering-how-to-build-an-etl-pipeline-using-ssis-in-visual-studio-2019-caa85e6b9c94
+
+
+DATA LAKES
+-----------
+A data lake is a centralized repository that allows you to store all your structured and unstructured data at any scale.
+A data lake is different, because it stores relational data from line of business applications, and non-relational data from mobile apps, IoT devices, and social media.
+The structure of the data or schema is not defined when data is captured. This means you can store all of your data without careful design
+Have Zones
+
+
+https://aws.amazon.com/big-data/datalakes-and-analytics/what-is-a-data-lake/
+
+https://aws.amazon.com/lake-formation/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc
+
+HADOOP: Apache Hadoop is a collection of open-source software utilities that facilitates using a network of many computers to solve problems involving massive amounts of data.
+IL a un systems de fichier HDFS que est capable de gerer differente sources d'information. Java based framework used for storing and processing big data.
+
+Apache Hive: is a data warehouse software project built on top of Apache Hadoop for providing data query and analysis.[3] Hive gives an SQL-like interface to query data stored
+in various databases and file systems that integrate with Hadoop.
+Traditional SQL queries must be implemented in the MapReduce Java API to execute SQL applications and queries over distributed data. Hive provides the necessary SQL abstraction
+to integrate SQL-like queries (HiveQL)
+

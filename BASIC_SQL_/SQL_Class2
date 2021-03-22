@@ -1,0 +1,133 @@
+Test de Connaissance : SQL
+Date :
+Nom & Prénom :
+
+Soit la base de données relationnelle, PUF, de schéma :
+
+U 	(NU, NomU, Ville)
+P 	(NP, NomP, Couleur, Poids)
+F 	(NF, NomF, Statut, Ville)
+PUF 	(NP, NU, NF, Quantité)
+
+décrivant les faits suivants :
+
+-	U: une usine est décrite par son numéro NU, son nom NomU, la ville Ville dans laquelle elle est située;
+
+-	P: un produit est décrit par son numéro NP, son nom NomP, sa Couleur, son Poids;
+
+-	F: un fournisseur est décrit par son numéro NF, son nom NomF, son Statut (fournisseur sous-traitant, fournisseur-exclusif, .....), la Ville où il est domicilié;
+
+-	PUF: le produit de numéro NP a été livré à l'usine de numéro NU par le fournisseur de numéro NF dans une Quantité donnée.
+
+Exprimer en SQL les requêtes suivantes :
+(Pour certaines requêtes, plusieurs solutions sont possibles)
+
+1)	Donner le numéro, le nom et la ville de toutes les usines.
+Réponse : SELECT NU, NomU, Ville FROM U ;
+
+2)	Donner le numéro, le nom et la ville de toutes les usines qui ne sont pas à Montréal.
+Réponse : SELECT NU, NomU, Ville FROM U WHERE NOT Ville='Germany';
+
+3)	Donner les numéros des fournisseurs qui approvisionnent l'usine n°1 en produit n°1.
+ Réponse : SELECT NF FROM PUF WHERE NU=1 AND NP=1;
+
+4)	Donner le nom et la couleur des produits livrés par le fournisseur n°1.
+Réponse :
+SELECT nomP, couleur FROM PUF JOIN P
+WHERE NP = P.NP
+AND NP=1;
+
+
+
+5)	Donner les numéros des fournisseurs qui approvisionnent l'usine n°1 en un produit rouge.
+Réponse :
+
+SELECT NF FROM PUF JOIN P
+WHERE NP = P.NP
+AND P.couleur=”rouge”
+AND NU=1;
+
+6)	Donner les noms des fournisseurs qui approvisionnent une usine de Montréal ou Québec en un produit rouge.
+Réponse :
+
+SELECT nomF FROM PUF
+JOIN F
+WHERE NF = F.NF
+JOIN U
+WHERE NU = U.NU
+AND P.couleur=”rouge”
+AND  (U.ville=’MONTREAL’ OR U.ville=’QUEBEC’)
+
+7)	Donner les numéros des produits livrés à une usine par un fournisseur de la même ville.
+Réponse :
+
+SELECT NP FROM PUF
+JOIN P
+WHERE NP = P.NP
+JOIN F
+WHERE NF = F.NF
+AND P.ville=F.ville
+
+
+8)	Donner les numéros des produits livrés à une usine de Montréal par un fournisseur de Montréal.
+SELECT NP FROM PUF
+JOIN P
+WHERE NP = P.NP
+JOIN F
+WHERE NF = F.NF
+AND U.ville=’montreal’
+AND F.ville=’montreal’
+
+9)	Donner les numéros des usines qui ont au moins un fournisseur qui n'est pas de la même ville.
+Réponse :
+
+SELECT DISTINCT NU FROM PUF
+WHERE NOT F.ville=U.ville;
+
+10)	Donner les numéros des fournisseurs qui approvisionnent à la fois les usines n°1 et n°2.
+Réponse :
+
+SELECT DISTINCT NF FROM PUF
+WHERE NU=1 OR NU=2
+
+11)	Donner les numéros des produits qui sont livrés à toutes les usines de Montréal.
+Réponse :
+
+SELECT DISTINCT NF FROM PUF
+WHERE NU=1 OR NU=2
+
+12)	Donner les numéros des fournisseurs qui approvisionnent toutes les usines avec un même produit.
+Réponse :
+
+SELECT DISTINCT NF FROM PUF
+WHERE NU=1 OR NU=2
+
+13)	Donner les numéros des usines qui achètent au fournisseur n°4 tous les produits qu'il fournit.
+Réponse :
+
+SELECT DISTINCT NU FROM PUF
+WHERE NF=4
+AND NP IN (SELECT NP FROM P)
+
+
+14)	Donner les numéros des usines qui s'approvisionnent uniquement chez le fournisseur n°3.
+Réponse :
+
+SELECT DISTINCT NU FROM PUF
+WHERE NF= IN (SELECT NF FROM P)
+AND NP
+
+15)	Ajouter un nouveau fournisseur : <45, Alfred, sous-traitant, Montréal>
+Réponse :
+INSERT INTO F (NF, Fname, statut, ville) VALUES (45, ‘Alfred’, ‘sous-traitant’, ‘Montréal’)
+
+16)	Supprimer tous les produits de couleur noire et de numéro compris entre 100 et 199.
+Réponse :
+DELETE FROM P WHERE P.couleur=’noire’ AND BETWEEN 100 and 199
+
+17)	Changer la ville du fournisseur n°1 : il a déménagé à Québec.
+Réponse :
+UPDATE F SET F.ville=’Quebec’
+
+https://code.tutsplus.com/articles/sql-for-beginners-part-3-database-relationships--net-8561
+

@@ -1,0 +1,149 @@
+
+
+
+-- PRACTIQUE RELATIONSHIPS POSTGRE - Ca marche!
+--=============================================
+
+-- https://launchschool.com/books/sql_first_edition/read/multi_tables
+-- book has many reviews, user do many reviews -- Not Union Table.
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE users (
+
+  user_id serial,
+  username VARCHAR(25) NOT NULL,
+  enabled boolean DEFAULT TRUE,
+  last_login timestamp NOT NULL DEFAULT NOW(),
+
+  PRIMARY KEY (user_id)
+);
+
+INSERT into users(username, enabled)  VALUES('John Smith', false);
+INSERT into users(username, enabled)  VALUES('John Smith2', false);
+INSERT into users(username, enabled)  VALUES('John Smith3', true);
+INSERT into users(username, enabled)  VALUES('John Smith4', false);
+INSERT into users(username, enabled)  VALUES('John Smith5', true);
+INSERT into users(username, enabled)  VALUES('John Smith6', false);
+
+DROP TABLE IF EXISTS books;
+
+CREATE TABLE books (
+
+  book_id serial,
+  title VARCHAR(100) NOT NULL,
+  author VARCHAR(100) NOT NULL,
+  published_date timestamp DEFAULT CURRENT_TIMESTAMP,
+  isbn VARCHAR(100),
+
+  PRIMARY KEY (book_id),
+  UNIQUE (isbn)
+);
+
+ALTER TABLE books
+ADD COLUMN user_category VARCHAR(10);
+
+INSERT into books(title, author, isbn, user_category)  VALUES('Simple Taoism', 'Tso', 'aaa-11', 'A');
+INSERT into books(title, author, isbn, user_category )  VALUES('Geo & Bio', 'Bio Tso', 'abioa-11','A');
+INSERT into books(title, author, isbn, user_category)  VALUES('Sci & IA', 'IA Tso', 'aIAa-11','C');
+INSERT into books(title, author, isbn, user_category)  VALUES('Hi Gabo', 'Gabriel Tests', 'abioa-11-X','B');
+INSERT into books(title, author, isbn, user_category)  VALUES('Bye Bye', 'Ernest Test', 'aIAa-12','C');
+
+DROP TABLE IF EXISTS reviews;
+
+CREATE TABLE reviews (
+  review_id serial,
+  book_id int NOT NULL,
+  user_id int NOT NULL,
+  review_content VARCHAR(255),
+  rating int,
+  published_date timestamp DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (review_id),
+  FOREIGN KEY (book_id) REFERENCES books(book_id) ON DELETE CASCADE,
+  FOREIGN KEY (user_id) REFERENCES users(user_id)
+);
+
+INSERT into reviews(book_id, user_id, review_content, rating)  VALUES(1, 2, 'That book its great', 5);
+INSERT into reviews(book_id, user_id, review_content, rating)  VALUES(1, 3, 'That book its sucks', 2);
+INSERT into reviews(book_id, user_id, review_content, rating)  VALUES(1, 1, 'That book its good', 4);
+
+INSERT into reviews(book_id, user_id, review_content, rating)  VALUES(2, 1, 'That book its sucks', 2);
+INSERT into reviews(book_id, user_id, review_content, rating)  VALUES(3, 3, 'That book its good', 4);
+INSERT into reviews(book_id, user_id, review_content, rating)  VALUES(1, 2, 'That book its great', 5); --Error??
+
+INSERT into reviews(book_id, user_id, review_content, rating)  VALUES(2, 4, 'That book its sucks', 2);
+INSERT into reviews(book_id, user_id, review_content, rating)  VALUES(2, 4, 'That book its good', 4);
+INSERT into reviews(book_id, user_id, review_content, rating)  VALUES(1, 5, 'That book its great', 5);
+
+-- ==FIND==
+
+-- All reviews
+SELECT * FROM public.reviews ORDER BY review_id ASC;
+
+-- All reviews user 3 - No information from user
+SELECT  published_date, book_id, user_id FROM public.reviews  WHERE user_id = 3 ORDER BY published_date, book_id ASC;
+
+-- All reviews user 3 - with information from user
+SELECT published_date, book_id, users.username
+FROM users
+INNER JOIN reviews
+ON reviews.user_id = users.user_id
+WHERE reviews.user_id = 3
+ORDER BY users.user_id;
+
+-- All reviews with info book related
+SELECT reviews.review_id, reviews.published_date, books.book_id, reviews.rating
+FROM reviews
+INNER JOIN books ON reviews.book_id = books.book_id
+
+-- All reviews for book 3 with info book related
+SELECT reviews.review_id, reviews.published_date, books.book_id, books.title, reviews.rating
+FROM reviews
+INNER JOIN books ON reviews.book_id = books.book_id
+WHERE reviews.book_id=3;
+
+-- All reviews for book 3 with info book and user related
+SELECT reviews.review_id, reviews.published_date, books.book_id, books.title, reviews.rating, users.username
+FROM reviews
+INNER JOIN books ON reviews.book_id = books.book_id
+INNER JOIN users ON reviews.user_id = users.user_id
+WHERE reviews.book_id=3;
+
+--Reviews user 3 to book 1
+SELECT reviews.review_id, reviews.published_date, books.book_id, books.title, reviews.rating, users.username
+FROM reviews
+INNER JOIN books ON reviews.book_id = books.book_id
+INNER JOIN users ON reviews.user_id = users.user_id
+WHERE reviews.user_id=3 AND reviews.book_id=1;
+
+--Reviews to author XX
+SELECT reviews.review_id, reviews.published_date, books.book_id, books.title, reviews.rating, users.username
+FROM reviews
+INNER JOIN books ON reviews.book_id = books.book_id
+INNER JOIN users ON reviews.user_id = users.user_id
+WHERE books.author='IA Tso'
+
+--Reviews from user XX
+SELECT reviews.review_id, reviews.published_date, books.book_id, books.title, reviews.rating, users.username
+FROM reviews
+INNER JOIN books ON reviews.book_id = books.book_id
+INNER JOIN users ON reviews.user_id = users.user_id
+WHERE users.username='John Smith3'
+
+--Users who comment book 3
+SELECT users.username
+FROM reviews
+INNER JOIN books ON reviews.book_id = books.book_id
+INNER JOIN users ON reviews.user_id = users.user_id
+WHERE reviews.book_id=3;
+
+--Books with ratin < 3
+SELECT books.book_id, books.title, reviews.rating, users.username
+FROM reviews
+INNER JOIN books ON reviews.book_id = books.book_id
+INNER JOIN users ON reviews.user_id = users.user_id
+WHERE reviews.rating < 3
+
+
+
+

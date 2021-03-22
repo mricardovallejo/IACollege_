@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cc9c5522-2d0c-4ffb-bfbf-3b660da5f0d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/venv5/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/IACollege$webscrap1.coverage" NAME="webscrap1 Coverage Results" MODIFIED="1606440090998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicPhyton/dataScrapping" />
+    <SUITE FILE_PATH="coverage/IACollege$TP1_Intermediare.coverage" NAME="TP1_Intermediare Coverage Results" MODIFIED="1602024530647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicPhyton" />
+    <SUITE FILE_PATH="coverage/IACollege$neuralReseuaux.coverage" NAME="neuralReseuaux Coverage Results" MODIFIED="1607733907259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Classification" />
+    <SUITE FILE_PATH="coverage/IACollege$TP1_Advanced.coverage" NAME="TP1_Advanced Coverage Results" MODIFIED="1602039553284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicPhyton" />
+    <SUITE FILE_PATH="coverage/IACollege$TP1_Base.coverage" NAME="TP1_Base Coverage Results" MODIFIED="1602023461144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BasicPhyton" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1515943815">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="txt" value="74" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="74" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1640909508">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="notesStatistique" value="915" />
+          <entry key="notesSupervisee Ensembles Methodes" value="125" />
+          <entry key="txt" value="546" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="1586" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="notesStatistique" value="1" />
+          <entry key="notesSupervisee Ensembles Methodes" value="1" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AWS/Notes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="666">
+              <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EXPLORATION/notesExploration.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1674">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EXPLORATION/notesStatistique">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SUPERVISE_/notesSupervisee Ensembles Methodes">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ricardo.vallejo76@gmail.com" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/EXPLORATION/notesStatistique" />
+        <option value="$PROJECT_DIR$/EXPLORATION/notesExploration.txt" />
+        <option value="$PROJECT_DIR$/SUPERVISE_/notesSupervisee Ensembles Methodes" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IACollege" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IACollege" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IACollege" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IACollege" type="462c0819:PsiDirectoryNode" />
+              <item name="MatPlotLib" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="IACollege" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="IACollege" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="IACollege" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="IACollege" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="SUPERVISE_" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1615522084153" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cc9c5522-2d0c-4ffb-bfbf-3b660da5f0d2" name="Default Changelist" comment="" />
+      <created>1602014384796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602014384796</updated>
+      <workItem from="1602014387521" duration="31684000" />
+      <workItem from="1602199692280" duration="13349000" />
+      <workItem from="1602259928533" duration="22344000" />
+      <workItem from="1603109701812" duration="1037000" />
+      <workItem from="1603406877551" duration="6399000" />
+      <workItem from="1603413303553" duration="4159000" />
+      <workItem from="1603418343202" duration="890000" />
+      <workItem from="1604010222191" duration="43985000" />
+      <workItem from="1605050038431" duration="4542000" />
+      <workItem from="1605055183911" duration="14198000" />
+      <workItem from="1605480723982" duration="10314000" />
+      <workItem from="1605503143447" duration="871000" />
+      <workItem from="1605504024997" duration="1742000" />
+      <workItem from="1605834133234" duration="1486000" />
+      <workItem from="1605921606773" duration="2483000" />
+      <workItem from="1606259039601" duration="598000" />
+      <workItem from="1606415912936" duration="1278000" />
+      <workItem from="1606419375425" duration="1183000" />
+      <workItem from="1606421280443" duration="1429000" />
+      <workItem from="1606433085186" duration="8793000" />
+      <workItem from="1606864134596" duration="1995000" />
+      <workItem from="1607036486807" duration="12652000" />
+      <workItem from="1607812133137" duration="1320000" />
+      <workItem from="1607957105348" duration="881000" />
+      <workItem from="1607958021632" duration="3444000" />
+      <workItem from="1609373096046" duration="622000" />
+      <workItem from="1609373775700" duration="359000" />
+      <workItem from="1609374171541" duration="31000" />
+      <workItem from="1609411879508" duration="888000" />
+      <workItem from="1609442531958" duration="2351000" />
+      <workItem from="1609772054281" duration="1107000" />
+      <workItem from="1609778705552" duration="626000" />
+      <workItem from="1609986763337" duration="2105000" />
+      <workItem from="1610372195356" duration="92000" />
+      <workItem from="1612213898028" duration="1194000" />
+      <workItem from="1612330721857" duration="1245000" />
+      <workItem from="1612799051042" duration="17000" />
+      <workItem from="1613355292800" duration="617000" />
+      <workItem from="1613434464837" duration="376000" />
+      <workItem from="1613435156455" duration="1298000" />
+      <workItem from="1614059294489" duration="1334000" />
+      <workItem from="1614194053830" duration="100000" />
+      <workItem from="1614219008193" duration="397000" />
+      <workItem from="1614288073039" duration="664000" />
+      <workItem from="1614615126942" duration="112000" />
+      <workItem from="1614645726464" duration="1430000" />
+      <workItem from="1614655851941" duration="3547000" />
+      <workItem from="1614727902264" duration="1420000" />
+      <workItem from="1615504637712" duration="3619000" />
+    </task>
+    <task id="LOCAL-00001" summary="Statisticits Descriptive et Inferential">
+      <created>1614288136877</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614288136877</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Statisticits Descriptive et Inferential">
+      <created>1614615197100</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614615197100</updated>
+    </task>
+    <task id="LOCAL-00003" summary="SUPERVISE - PCA">
+      <created>1615505608860</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615505608860</updated>
+    </task>
+    <task id="LOCAL-00004" summary="2021-03-11 Ensembles class">
+      <created>1615522069587</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615522069587</updated>
+    </task>
+    <task id="LOCAL-00005" summary="TP Pandas">
+      <created>1603418627931</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603418627931</updated>
+    </task>
+    <task id="LOCAL-00006" summary="TP Pandas Titanic Practice">
+      <created>1604020646845</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604020646845</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Refactor files">
+      <created>1604028778643</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604028778643</updated>
+    </task>
+    <task id="LOCAL-00008" summary="SQL Practice">
+      <created>1604081920999</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604081920999</updated>
+    </task>
+    <task id="LOCAL-00009" summary="SQL Practice SQL Many to many">
+      <created>1604170456675</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604170456675</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Exament">
+      <created>1605237693962</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605237693963</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Exament">
+      <created>1605237987181</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605237987181</updated>
+    </task>
+    <task id="LOCAL-00012" summary="homework1 - Data Analysis">
+      <created>1605503615069</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605503615070</updated>
+    </task>
+    <task id="LOCAL-00013" summary="homework1 - Data Analysis">
+      <created>1605504062033</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1605504062033</updated>
+    </task>
+    <task id="LOCAL-00014" summary="homework1 - Data Analysis">
+      <created>1605505204099</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605505204099</updated>
+    </task>
+    <task id="LOCAL-00015" summary="homework1 - Data Analysis">
+      <created>1605921694721</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1605921694721</updated>
+    </task>
+    <task id="LOCAL-00016" summary="homework1 - Data Analysis">
+      <created>1605922139522</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1605922139522</updated>
+    </task>
+    <task id="LOCAL-00017" summary="homework1 - Data Analysis">
+      <created>1605935992400</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1605935992400</updated>
+    </task>
+    <task id="LOCAL-00018" summary="homework1 - Data Analysis">
+      <created>1606101710907</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606101710907</updated>
+    </task>
+    <task id="LOCAL-00019" summary="homework1 - Data Analysis">
+      <created>1606415949081</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1606415949081</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Refactor DataProcess files">
+      <created>1606416415216</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1606416415216</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Refactor DataProcess files">
+      <created>1606418919856</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1606418919856</updated>
+    </task>
+    <task id="LOCAL-00022" summary="my practice Data analysis">
+      <created>1606421391796</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1606421391796</updated>
+    </task>
+    <task id="LOCAL-00023" summary="my practice Data analysis">
+      <created>1606421401104</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1606421401104</updated>
+    </task>
+    <task id="LOCAL-00024" summary="my practice Data analysis">
+      <created>1606421406924</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1606421406924</updated>
+    </task>
+    <task id="LOCAL-00025" summary="my practice Data analysis">
+      <created>1606421429708</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1606421429708</updated>
+    </task>
+    <task id="LOCAL-00026" summary="my practice Data analysis">
+      <created>1606421439534</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606421439534</updated>
+    </task>
+    <task id="LOCAL-00027" summary="scraping web python">
+      <created>1606441690327</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606441690328</updated>
+    </task>
+    <task id="LOCAL-00028" summary="error analysis">
+      <created>1607036579821</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1607036579822</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Classification class 1">
+      <created>1607149360101</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1607149360101</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Classification class 1">
+      <created>1607149738812</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1607149738812</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Preprocess notes improve">
+      <created>1607407160636</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1607407160637</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Classification class 1 y 2">
+      <created>1607958343093</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1607958343093</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Classification class 1 y 2">
+      <created>1607958350971</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1607958350971</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Classification class 1 y 2">
+      <created>1607958444901</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1607958444901</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Classification class 1 y 2">
+      <created>1607958450109</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1607958450109</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Classification class 1 y 2">
+      <created>1607958455436</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1607958455436</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Classification class 1 y 2">
+      <created>1607958460528</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1607958460528</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Classification class 1 y 2">
+      <created>1607958469468</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1607958469468</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Windowing">
+      <created>1609987292772</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1609987292773</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Windowing">
+      <created>1612214385933</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1612214385933</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Windowing">
+      <created>1612214734803</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1612214734803</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Supervise - commit 1">
+      <created>1612214826972</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1612214826972</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Supervise - commit 1">
+      <created>1612214975771</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1612214975771</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Supervise - commit 1">
+      <created>1612214985676</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1612214985676</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14383000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22334754" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917467" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48264644" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39804772" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.7245119" />
+      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="SonarLint" order="10" weight="0.329718" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.78741866" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.329718" />
+      <window_info anchor="bottom" id="SonarQube" order="14" weight="0.329718" />
+      <window_info anchor="bottom" id="Messages" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="3" sideWeight="0.3112245" side_tool="true" visible="true" weight="0.10127932" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="SciView" order="7" sideWeight="0.68877554" visible="true" weight="0.10127932" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Update All Jupyters folders" />
+    <MESSAGE value="TP Stockage AWS + SQL" />
+    <MESSAGE value="Refactor Files" />
+    <MESSAGE value="Statisticits Descriptive et Inferential" />
+    <MESSAGE value="SUPERVISE - PCA" />
+    <MESSAGE value="Reorder supervisee" />
+    <MESSAGE value="2021-03-11 Ensembles class" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021-03-11 Ensembles class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BasicPhyton/TP1_Base.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BasicPhyton/TP1_Advanced.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BasicPhyton/TP1_Advanced.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BasicPhyton/dataScrapping/webscrap1.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/BasicPhyton/dataScrapping/webscrap1.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/AWS/Notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EXPLORATION/notesExploration.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EXPLORATION/notesStatistique">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SUPERVISE_/notesSupervisee Ensembles Methodes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

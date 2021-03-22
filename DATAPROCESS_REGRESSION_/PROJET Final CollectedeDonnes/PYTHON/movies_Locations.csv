@@ -1,0 +1,3660 @@
+Title,Locations
+180,"0           Epic Roasthouse (399 Embarcadero)
+1       Mason & California Streets (Nob Hill)
+2                         Justin Herman Plaza
+3                     200 block Market Street
+4                                   City Hall
+5                       Polk & Larkin Streets
+6                              Randall Museum
+7                              555 Market St.
+612     Mason & California Streets (Nob Hill)
+660                   200 block Market Street
+2371                      Justin Herman Plaza
+2543        Epic Roasthouse (399 Embarcadero)
+2590                    Polk & Larkin Streets
+2619                                City Hall
+3270                           Randall Museum
+3288                           555 Market St.
+Name: Locations, dtype: object"
+24 Hours on Craigslist,"8       NaN
+2893    NaN
+Name: Locations, dtype: object"
+Summertime,"9                                           Alamo Square 
+21      Chinatown (Stockton @ Jackson & Jackson toward...
+22                    Broadway and Taylor St Intersection
+24      Buena Vista East & Duboce; Buena Vista East & ...
+26      Love Street Vintage (1506 Haight & adjacent Ha...
+27                 Montgomery between California and Pine
+51      Sansome (Washington to Bush) Pine (Davis to Ke...
+52                                     Stanyan & Belgrave
+65                                            Duboce Park
+180                     20th St and Church (3885 20th St)
+187                     Turk St between Lyon and Baker St
+189                                         53 Potomac St
+194                         Oasis Nightclub (298 11th St)
+200     Fisherman's Wharf pier near Chapel (Port Walk ...
+650     Chinatown (Stockton @ Jackson & Jackson toward...
+715                   Broadway and Taylor St Intersection
+829     Buena Vista East & Duboce; Buena Vista East & ...
+909     Love Street Vintage (1506 Haight & adjacent Ha...
+1011               Montgomery between California and Pine
+2437    Sansome (Washington to Bush) Pine (Davis to Ke...
+2450                                   Stanyan & Belgrave
+2511                                         Alamo Square
+2546                                          Duboce Park
+2841                    20th St and Church (3885 20th St)
+3072                    Turk St between Lyon and Baker St
+3097                                        53 Potomac St
+3217                        Oasis Nightclub (298 11th St)
+3388    Fisherman's Wharf pier near Chapel (Port Walk ...
+Name: Locations, dtype: object"
+Ballers Season 3,"10                            San Remo Hotel (2237 Mason)
+35              Driving around Taylor/Pacific/Leavenworth
+47      Huntington Park (California & Taylor Streets, ...
+55                         Embarcadero around Rincon Park
+78            Fairmont Hotel (950 Mason Street, Nob Hill)
+179                              California and Jones St.
+181             Another Café, 1191 Pine St at Leavenworth
+311                           San Remo Hotel (2237 Mason)
+2272            Driving around Taylor/Pacific/Leavenworth
+2340    Huntington Park (California & Taylor Streets, ...
+2503                       Embarcadero around Rincon Park
+2650          Fairmont Hotel (950 Mason Street, Nob Hill)
+2820                             California and Jones St.
+2868            Another Café, 1191 Pine St at Leavenworth
+Name: Locations, dtype: object"
+Chance Season 2,"11           Waller St between Masonic and Del Mar St
+12             Palace of Fine Arts (3301 Lyon Street)
+17              20th St between Church and Dolores St
+20              Haight between Central and Ashbury St
+23                         Union St at Leavenworth St
+29            Embarcadero between Bay and Chestnut St
+32                            Haight St at Ashbury St
+33                          Filbert St at Stockton St
+34          Heron @ Berwick (off 8th and Harrison St)
+36                       Leavenworth at McAllister St
+46                     Presidio Heights Neighborhood 
+48      Duboce between Buena Vista East and Alpine St
+50         Mason between Sacramento and California St
+53              Central St between Haight and Page St
+66                           Market St at Embarcadero
+76         Lombard St between Leavenworth and Hyde St
+94              Lombard St between Hyde and Larkin St
+108           Taylor St, north of Jefferson St to end
+132            California between Mason and Taylor St
+133                                        Coit Tower
+178              Scott St between Jackson and Clay St
+184            Steiner St between Jackson and Clay St
+185         Marina Blvd between Baker and Fillmore St
+186            Sacramento between Mason and Taylor St
+188                        Embarcadero at Vallejo St.
+192                         Jefferson St at Taylor St
+193         Embarcadero between Market to Fillmore St
+195           Columbus between Filbert and Lombard St
+196                       Embarcadero at Lombard St. 
+198        Embarcadero between Harrison and Folsom St
+355          Waller St between Masonic and Del Mar St
+462            Palace of Fine Arts (3301 Lyon Street)
+539             20th St between Church and Dolores St
+556                                        Coit Tower
+644             Haight between Central and Ashbury St
+741                        Union St at Leavenworth St
+1020                    Presidio Heights Neighborhood
+1091          Embarcadero between Bay and Chestnut St
+1100                       Embarcadero at Lombard St.
+1138                          Haight St at Ashbury St
+1209                        Filbert St at Stockton St
+1229        Heron @ Berwick (off 8th and Harrison St)
+2276                     Leavenworth at McAllister St
+2387    Duboce between Buena Vista East and Alpine St
+2429       Mason between Sacramento and California St
+2494            Central St between Haight and Page St
+2607                         Market St at Embarcadero
+2630       Lombard St between Leavenworth and Hyde St
+2651            Lombard St between Hyde and Larkin St
+2653          Taylor St, north of Jefferson St to end
+2689           California between Mason and Taylor St
+2755             Scott St between Jackson and Clay St
+2966           Steiner St between Jackson and Clay St
+2974        Marina Blvd between Baker and Fillmore St
+2996           Sacramento between Mason and Taylor St
+3085                       Embarcadero at Vallejo St.
+3202                        Jefferson St at Taylor St
+3206        Embarcadero between Market to Fillmore St
+3282          Columbus between Filbert and Lombard St
+3361       Embarcadero between Harrison and Folsom St
+Name: Locations, dtype: object"
+A Night Full of Rain,"13                                    Embarcadero Freeway
+14            Fairmont Hotel (950 Mason Street, Nob Hill)
+15      San Francisco Chronicle (901 Mission Street at...
+16                                 Broadway (North Beach)
+2569          Fairmont Hotel (950 Mason Street, Nob Hill)
+2736    San Francisco Chronicle (901 Mission Street at...
+2886                                  Embarcadero Freeway
+3204                               Broadway (North Beach)
+Name: Locations, dtype: object"
+Vegas in Space,"18      Under Highway 101 (near Potrero and Cesar Chav...
+19                                      544 Natoma (SOMA)
+28                                       3567 18th Street
+30                                    Corona Heights Park
+49                               422 Oak Street at Laguna
+165                       Project Artaud (Florida Street)
+629     Under Highway 101 (near Potrero and Cesar Chav...
+633                                     544 Natoma (SOMA)
+1079                                     3567 18th Street
+1097                                  Corona Heights Park
+2426                             422 Oak Street at Laguna
+2737                      Project Artaud (Florida Street)
+Name: Locations, dtype: object"
+Nine Months,"25        Star's Café (55 Golden Gate Avenue at Van Ness)
+407     Belli Building (722 Montgomery Street at Washi...
+642                  Wasteland Store (1600 Haight Street)
+658                                         Chrissy Field
+1008                                      60 Spear Street
+1096                     101 Henry Adams Place, 4th Floor
+1099                                         Alamo Square
+1240                                 Jones Street at Bush
+1648      Star's Café (55 Golden Gate Avenue at Van Ness)
+1708    Belli Building (722 Montgomery Street at Washi...
+1746                                        Chrissy Field
+1751                 Wasteland Store (1600 Haight Street)
+1799                                      60 Spear Street
+1829                     101 Henry Adams Place, 4th Floor
+1830                                         Alamo Square
+1872                                 Jones Street at Bush
+1895    Jack Kerouac Alley between Columbus & Grant St...
+1952                      Marathon Plaza (303 2nd Street)
+1968        Pierce Street between Pacific & Green Streets
+2086    The Malloch Apartment Building (1360 Montgomer...
+2096                         Montgomery & Vallejo Streets
+2218    St. Peter & Paul's Church (666 Filbert Street,...
+2246    San Francisco General Hospital Medical Center ...
+2282    Jack Kerouac Alley between Columbus & Grant St...
+2431    San Francisco General Hospital Medical Center ...
+2446                      Marathon Plaza (303 2nd Street)
+2498        Pierce Street between Pacific & Green Streets
+2874    The Malloch Apartment Building (1360 Montgomer...
+2906                         Montgomery & Vallejo Streets
+3273    St. Peter & Paul's Church (666 Filbert Street,...
+Name: Locations, dtype: object"
+Beautiful Boy,"31                        Tenderloin Neighborhood
+56                              Haight at Masonic
+77             Wisconsin between 19th and 20th St
+134              Olympic Flame Café, 555 Geary St
+183     Divisadero between Broadway and Greenwich
+190       Ohloff Recovery Center (601 Steiner St)
+199                     18th St at San Bruno Ave.
+1134                      Tenderloin Neighborhood
+2539                            Haight at Masonic
+2640           Wisconsin between 19th and 20th St
+2720             Olympic Flame Café, 555 Geary St
+2944    Divisadero between Broadway and Greenwich
+3183      Ohloff Recovery Center (601 Steiner St)
+3365                    18th St at San Bruno Ave.
+Name: Locations, dtype: object"
+About a Boy,"37      Broderick from Fulton to McAlister
+38                            Crissy Field
+39             Powell from Bush and Sutter
+717                           Crissy Field
+1057           Powell from Bush and Sutter
+3313    Broderick from Fulton to McAlister
+Name: Locations, dtype: object"
+Age of Adaline,"40            Pier 50- end of the pier
+41             California @ Montgomery
+42                    Montgomery/Green
+43          Driving various SF Streets
+44      Plate Shots SF streets various
+1088    Plate Shots SF streets various
+1268          Pier 50- end of the pier
+2501           California @ Montgomery
+2817                  Montgomery/Green
+3264        Driving various SF Streets
+Name: Locations, dtype: object"
+After the Thin Man,"45      Coit Tower
+2658    Coit Tower
+Name: Locations, dtype: object"
+Ant-Man,"54                   California between Kearney and Davis
+80      Conzelman Rd at McCollough Rd and down Conzelm...
+81                                        Lombard at Hyde
+82                   601 Buena Vista Ave West at Java St.
+83                             420 Jones St. at Ellis St.
+84                      Broadway between Powell and Davis
+85                    Columbus between Bay and Washington
+86                         Pine between Kearney and Davis
+87                     Market between Stuart and Van Ness
+88                        Grant between Bush and Broadway
+89                    Intersection of Broadway at Kearney
+90                     Intersection of California at Polk
+91         Treasure Island, Building #1, Ave of the Palms
+271     Conzelman Rd at McCollough Rd and down Conzelm...
+362                            420 Jones St. at Ellis St.
+431        Treasure Island, Building #1, Ave of the Palms
+686                   Columbus between Bay and Washington
+2404                  Intersection of Broadway at Kearney
+2577                 California between Kearney and Davis
+2648                       Pine between Kearney and Davis
+2692                                      Lombard at Hyde
+3087                   Intersection of California at Polk
+3101                 601 Buena Vista Ave West at Java St.
+3129                   Market between Stuart and Van Ness
+3181                      Grant between Bush and Broadway
+3307                    Broadway between Powell and Davis
+Name: Locations, dtype: object"
+Americana,"57      St. Francis Episcopal Church (399 San Fernando...
+58                              Romolo Place @ Fresno St.
+59                                    Palace of Fine Arts
+60                   John Shelley Drive John McLaren Park
+61                                        Treasure Island
+62               The San Francisco School (300 Gavin St.)
+63                                           33 Spruce St
+64                          Coi Restaurant (373 Broadway)
+67                          Foreign Cinema (2534 Mission)
+68                                    Bernal Heights Park
+69                                  Jackson St. at Spruce
+70                                          679 Madrid St
+71                          Roxie Theater (3117 16th St.)
+72                  Variety Preview Room (582 Market St.)
+73          Laguna Honda Hospital; 375 Laguna Honda Blvd.
+74                                      3232 Jackson Ave.
+75      20th St and Illinois/Faxon St. and Kenwood/Gle...
+372                             Romolo Place @ Fresno St.
+523                                     3232 Jackson Ave.
+554     20th St and Illinois/Faxon St. and Kenwood/Gle...
+670                                   Bernal Heights Park
+1017                        Coi Restaurant (373 Broadway)
+1032                        Foreign Cinema (2534 Mission)
+1106                                  Palace of Fine Arts
+2285                                Jackson St. at Spruce
+2367                 John Shelley Drive John McLaren Park
+2368        Laguna Honda Hospital; 375 Laguna Honda Blvd.
+2464                                      Treasure Island
+2660                                         33 Spruce St
+2826                Variety Preview Room (582 Market St.)
+2951             The San Francisco School (300 Gavin St.)
+3058                                        679 Madrid St
+3216    St. Francis Episcopal Church (399 San Fernando...
+3378                        Roxie Theater (3117 16th St.)
+Name: Locations, dtype: object"
+Another 48 Hours,"79      NaN
+3159    NaN
+Name: Locations, dtype: object"
+Around the Fire,"92     Ocean Beach
+345    Ocean Beach
+Name: Locations, dtype: object"
+Attack of the Killer Tomatoes,"93      Hyde Street Cable Car
+2734    Hyde Street Cable Car
+Name: Locations, dtype: object"
+Basic Instinct,"95                        Yerba Buena Center for the Arts
+96       Transbay Terminal (Mission Street at 1st Street)
+97                       Tosca Café (242 Columbus Avenue)
+98      Steinhart Aquarium (California Academy of Scie...
+99                       Raw Hide II (280 Seventh Street)
+100                              Pier 7 (The Embarcadero)
+101                       Kearney Street (Telegraph Hill)
+102                   Hall of Justice (850 Bryant Street)
+103                                   2930 Vallejo Street
+104                                             Chinatown
+105                               Gibb Street (Chinatown)
+106                             1158-70 Montgomery Street
+107                                         2104 Broadway
+666                             1158-70 Montgomery Street
+1023                  Hall of Justice (850 Bryant Street)
+1026                             Pier 7 (The Embarcadero)
+1278    Steinhart Aquarium (California Academy of Scie...
+2534                                        2104 Broadway
+2626                      Kearney Street (Telegraph Hill)
+2731                                            Chinatown
+3009                      Yerba Buena Center for the Arts
+3175     Transbay Terminal (Mission Street at 1st Street)
+3195                     Tosca Café (242 Columbus Avenue)
+3198                     Raw Hide II (280 Seventh Street)
+3278                                  2930 Vallejo Street
+3404                              Gibb Street (Chinatown)
+Name: Locations, dtype: object"
+Bedazzled,"109                           1155 Filbert Street at Hyde
+110     Washington Square Park (Filbert, between Stock...
+112           Vaillancourt Fountain (Justin Herman Plaza)
+113                           Montgomery & Market Streets
+114                                             City Hall
+342                           Montgomery & Market Streets
+529                                             City Hall
+735     Washington Square Park (Filbert, between Stock...
+1190                          1155 Filbert Street at Hyde
+3238          Vaillancourt Fountain (Justin Herman Plaza)
+Name: Locations, dtype: object"
+Blue Jasmine,"111                           5546 Geary Ave
+135                          Jones & Pacific
+136                     Pacific & Divisadero
+137                           Lombard & Hyde
+138                            2898 Broadway
+139                              Motel Capri
+140                             Marina Green
+141                   Ocean Beach at Lincoln
+142                            Heald College
+143         Marina Blvd from Laguna to Baker
+144                     330 Santa Clara Ave.
+145                            200 Post St. 
+146                            2179 48th Ave
+147                      The Ramp Restaurant
+148                      303-305 S. Van Ness
+149                            3563 20th St.
+150                       Taylor & Green St.
+151                   Grant & Washington St.
+152                            2934 24th St.
+153                          1138 Alabama St
+154                               South Park
+155                            2915 16th St.
+156         Trolley Car from Market and 11th
+157                             Real Guitars
+158                          Aub Zam Zam Bar
+159                               790 Ulloa 
+160     SFO International Airport Terminal 3
+161                          2178 Palou Ave.
+340                     Pacific & Divisadero
+389     SFO International Airport Terminal 3
+498                           5546 Geary Ave
+541                          Aub Zam Zam Bar
+552                           Lombard & Hyde
+915                             200 Post St.
+926                            2915 16th St.
+1075                     303-305 S. Van Ness
+1187                  Ocean Beach at Lincoln
+1188                         2178 Palou Ave.
+1339                      Taylor & Green St.
+2307                           3563 20th St.
+2320                           2934 24th St.
+2465                     The Ramp Restaurant
+2782                           2898 Broadway
+2842                             Motel Capri
+2867        Trolley Car from Market and 11th
+2935                         Jones & Pacific
+2993                    330 Santa Clara Ave.
+3123                              South Park
+3135                            Marina Green
+3161        Marina Blvd from Laguna to Baker
+3170                         1138 Alabama St
+3182                           2179 48th Ave
+3239                            Real Guitars
+3274                  Grant & Washington St.
+3277                               790 Ulloa
+3355                           Heald College
+Name: Locations, dtype: object"
+Bee Season,"115     NaN
+2677    NaN
+Name: Locations, dtype: object"
+Bicentennial Man,"116                                             City Hall
+117                                    Golden Gate Bridge
+118                                       Treasure Island
+119              Postcard Row, Alamo Square, Hayes Valley
+120     Grace Cathedral Episcopal Church (1100 Califor...
+2315                                      Treasure Island
+2489                                            City Hall
+2844    Grace Cathedral Episcopal Church (1100 Califor...
+2909             Postcard Row, Alamo Square, Hayes Valley
+3335                                   Golden Gate Bridge
+Name: Locations, dtype: object"
+Big Eyes,"121                     Nobles Alley
+122                    Caffe Trieste
+123              Palace of Fine Arts
+124                1101 Filbert St. 
+125       Saints Peter & Paul Church
+126           Green St. & Grant Ave.
+127        Filbert St. & Leavenworth
+128                 Pine St. & Grant
+129     Way Faire Inn on Leidesdorff
+130          Harry's Bar on Fillmore
+269           Green St. & Grant Ave.
+374        Filbert St. & Leavenworth
+511                    Caffe Trieste
+914                 Pine St. & Grant
+1089      Saints Peter & Paul Church
+2438                1101 Filbert St.
+2560             Palace of Fine Arts
+2835    Way Faire Inn on Leidesdorff
+2876         Harry's Bar on Fillmore
+3013                    Nobles Alley
+Name: Locations, dtype: object"
+Big Sur,"131     Tosca Café (242 Columbus Avenue, North Beach)
+2813    Tosca Café (242 Columbus Avenue, North Beach)
+Name: Locations, dtype: object"
+Boys and Girls,"162                                    1122 Folsom Street
+163     St. Peter & Paul's Church (666 Filbert Street,...
+164                                    Golden Gate Bridge
+166                                     Fisherman's Wharf
+168                                        Ferry Building
+169                                            Coit Tower
+170                                             City Hall
+171                                        Lombard Street
+172                                             Chinatown
+173                       Aquatic Park (Jefferson Street)
+174                                       Alcatraz Island
+175                                       628 Cole Street
+399                                    Golden Gate Bridge
+538                                       628 Cole Street
+558                                       Alcatraz Island
+1066                                           Coit Tower
+2433                                       Ferry Building
+2553                                            City Hall
+2582                                       Lombard Street
+2639                                   1122 Folsom Street
+2870    St. Peter & Paul's Church (666 Filbert Street,...
+2905                                    Fisherman's Wharf
+3034                                            Chinatown
+3178                      Aquatic Park (Jefferson Street)
+Name: Locations, dtype: object"
+"Smile Again, Jenny Lee","167                             510 Noe Street & 18th St.
+383     Huntington Park (California & Taylor Streets, ...
+390                                 Mason & Sacramento St
+512                             87 Cervantes Blvd (beach)
+655                      Montgomery Street at Post Street
+721             E Tutto Qua Restaurant (270 Columbus St.)
+838                         Manor West (750 Harrison St.)
+839                                       475 Diamond St.
+840                     Hyatt Hotel (555 North Point St.)
+841           Fairmont Hotel (950 Mason Street, Nob Hill)
+842                                       411 Shrader St.
+843                                         883 42nd Ave.
+844                                 Mason & Sacramento St
+845                  Unitarian Church (1187 Franklin St.)
+846     Huntington Park (California & Taylor Streets, ...
+847             E Tutto Qua Restaurant (270 Columbus St.)
+848                                          1328 Portola
+849                                   Clay St. at Sansome
+850                      Montgomery Street at Post Street
+851                          333 Pacheco St at Lopez Ave.
+852                         Mission Inn (5630 Mission St)
+853                             87 Cervantes Blvd (beach)
+854              Gaspare's Pizza House (5546 Geary Blvd.)
+855                             510 Noe Street & 18th St.
+856        Europa Café (4318 California St. and 5th Ave.)
+857                   New Taraval Café (1054 Taraval St.)
+858                                 Kansas St at 17th St.
+859                                            City Hall 
+860                    Ocean Beach Motel (2690 46th Ave.)
+861                            Greenwich St at Battery St
+862                         2100 Pacific Ave at Laguna St
+887                                 Kansas St at 17th St.
+911                                         883 42nd Ave.
+1059                           Greenwich St at Battery St
+1103                    Hyatt Hotel (555 North Point St.)
+1219                  New Taraval Café (1054 Taraval St.)
+2376                                         1328 Portola
+2383                                            City Hall
+2416                         333 Pacheco St at Lopez Ave.
+2526                   Ocean Beach Motel (2690 46th Ave.)
+2593                        Mission Inn (5630 Mission St)
+2655       Europa Café (4318 California St. and 5th Ave.)
+2930             Gaspare's Pizza House (5546 Geary Blvd.)
+2971                                      475 Diamond St.
+3118                        Manor West (750 Harrison St.)
+3164                                  Clay St. at Sansome
+3200                        2100 Pacific Ave at Laguna St
+3233                 Unitarian Church (1187 Franklin St.)
+3337                                      411 Shrader St.
+3360          Fairmont Hotel (950 Mason Street, Nob Hill)
+Name: Locations, dtype: object"
+Broken-A Modern Love Story ,"176    Ina Coolbrith Park (1700 Taylor Street)
+177                 0-100 block Halleck Street
+Name: Locations, dtype: object"
+Silicon Valley Season 4,"182         Howard St between 3rd and 4th St.
+197     Moscone Center Parking Garage/3rd St.
+2902        Howard St between 3rd and 4th St.
+3347    Moscone Center Parking Garage/3rd St.
+Name: Locations, dtype: object"
+Cardinal X,"191                        812 22nd St. and Tennessee
+213                                   3639 Taraval St
+214                                    1458 33rd Ave.
+215                              Lyon at Chestnut St.
+216      1559 Underwood Avenue between Lane and Keith
+217     1465 Revere Avenue between Keith and Jennings
+218                                     1601 Lane St.
+219                                     420 Mason St.
+220                                          119 Utah
+221                                 100 Alemany Blvd.
+224     1465 Revere Avenue between Keith and Jennings
+559                                     420 Mason St.
+1109                                         119 Utah
+2311                                  3639 Taraval St
+2497                                   1458 33rd Ave.
+2618                             Lyon at Chestnut St.
+2825                       812 22nd St. and Tennessee
+3090                                    1601 Lane St.
+3107                                100 Alemany Blvd.
+3207     1559 Underwood Avenue between Lane and Keith
+Name: Locations, dtype: object"
+Superman,"201     Golden Gate Bridge
+1649    Golden Gate Bridge
+Name: Locations, dtype: object"
+The Bachelor,"202         Danilo's Bakery (Green Street & Bannam Place)
+609                     Mama's Restaurant (1701 Stockton)
+720     Stockton Tunnel (Stockton Street at Sutter Str...
+930                   Columbus Avenue at Green & Stockton
+971     Merchant Exchange (465 California Street at Le...
+972                  Washington Square Park (North Beach)
+973     Sutter-Stockton Garage (330 Sutter Street at S...
+974     Stockton Tunnel (Stockton Street at Sutter Str...
+975     Steinhart Aquarium (California Academy of Scie...
+976     St. Peter & Paul's Church (666 Filbert Street,...
+977        Roof of Cable Car (California at Front Street)
+978     Pacific Stock Exchange (301 Pine Street at San...
+979             Nina M. Designs (52 2nd Street at Jessie)
+980                    Moose's Restaurant (1652 Stockton)
+981                     Mama's Restaurant (1701 Stockton)
+982         Danilo's Bakery (Green Street & Bannam Place)
+983                   Columbus Avenue at Green & Stockton
+1067    Pacific Stock Exchange (301 Pine Street at San...
+1585       Roof of Cable Car (California at Front Street)
+1596                   Moose's Restaurant (1652 Stockton)
+2443    Sutter-Stockton Garage (330 Sutter Street at S...
+2706    Merchant Exchange (465 California Street at Le...
+2865    Steinhart Aquarium (California Academy of Scie...
+3155                 Washington Square Park (North Beach)
+3160    St. Peter & Paul's Church (666 Filbert Street,...
+3205            Nina M. Designs (52 2nd Street at Jessie)
+Name: Locations, dtype: object"
+"Murder in the First, Season 1","203                                        800 Bay Street
+226                                       369 Embarcadero
+246                                      731 Grant Avenue
+279                                     9 Calhoun Terrace
+369                 Cameron House (920 Sacramento Street)
+435     Waverly Alley between Grant and Sacramento Str...
+521                           Joice Street at Clay Street
+682                                  1201 Columbus Avenue
+734                                               Pier 45
+888                                     1541 Grove Street
+1282                                       800 Bay Street
+1283                                      369 Embarcadero
+1287                                     731 Grant Avenue
+1292                                    9 Calhoun Terrace
+1308                Cameron House (920 Sacramento Street)
+1315    Waverly Alley between Grant and Sacramento Str...
+1329                          Joice Street at Clay Street
+1352                                 1201 Columbus Avenue
+1358                                              Pier 45
+1365                                    1541 Grove Street
+1419                                         504 Broadway
+1427             Berry Street between 3rd and 4th Streets
+1442                                            AT&T Park
+1458                                  1821 Alabama Street
+1470                                  373 Columbus Avenue
+1486                  Hall of Justice (850 Bryant Street)
+1554                                      13 Lucky Street
+1561                                    Alamo Square Park
+1580               Palace of Fine Arts (3301 Lyon Street)
+1592                                         Dolores Park
+1593      24th Street between Folsom and Harrison Streets
+1604                                     350 Union Street
+1636    Kearny Street between Broadway and Pacific Avenue
+1646                                 50 California Street
+2185         Ida B. Wells High School (1099 Hayes Street)
+2270                                         504 Broadway
+2305             Berry Street between 3rd and 4th Streets
+2363                                            AT&T Park
+2469                                  1821 Alabama Street
+2508                                  373 Columbus Avenue
+2610                  Hall of Justice (850 Bryant Street)
+2917                                      13 Lucky Street
+2959                                    Alamo Square Park
+3074               Palace of Fine Arts (3301 Lyon Street)
+3141                                         Dolores Park
+3144      24th Street between Folsom and Harrison Streets
+3172         Ida B. Wells High School (1099 Hayes Street)
+3226                                     350 Union Street
+3356    Kearny Street between Broadway and Pacific Avenue
+3410                                 50 California Street
+Name: Locations, dtype: object"
+Time After Time,"204           One Embarcadero Center (Financial District)
+400     California Academy of Sciences (Golden Gate Park)
+434     Intersection of California & Grant Streets (Ri...
+702                   United Nations Plaza (Civic Center)
+991                100 Block of Union Street (Cow Hollow)
+1176           Hyatt Regency Hotel (5 Embarcadero Center)
+1178        Lombard & Broderick Streets (Marina District)
+1218           Lombard & Laguna Streets (Marina District)
+1650          One Embarcadero Center (Financial District)
+1706    California Academy of Sciences (Golden Gate Park)
+1710    Intersection of California & Grant Streets (Ri...
+1765                  United Nations Plaza (Civic Center)
+1796               100 Block of Union Street (Cow Hollow)
+1853           Hyatt Regency Hotel (5 Embarcadero Center)
+1854        Lombard & Broderick Streets (Marina District)
+1868           Lombard & Laguna Streets (Marina District)
+1891               Palace of Fine Arts (3301 Lyon Street)
+1951                       Marina Green (Marina District)
+1983       Lombard & Divisadero Streets (Marina District)
+1988                                  Justin Herman Plaza
+2030    Ghirardelli Square (900 North Point Street, Fi...
+2039      Chestnut & Divisadero Streets (Marina District)
+2045         Lombard & Fillmore Streets (Marina District)
+2054                                2340 Francisco Street
+2070              Broadway at Osgood Street (North Beach)
+2142    Huntington Park (California & Taylor Streets, ...
+2157    Old St. Mary's Church (660 California Street a...
+2187                                   Golden Gate Bridge
+2194     Intersection of Fulton & 6th Streets (Chinatown)
+2220    Merchant Exchange (465 California Street at Le...
+2236    SF General Hospital Center (1001 Potrero Avenu...
+2257                                     Golden Gate Park
+2273               Palace of Fine Arts (3301 Lyon Street)
+2530       Lombard & Divisadero Streets (Marina District)
+2548                                  Justin Herman Plaza
+2613    SF General Hospital Center (1001 Potrero Avenu...
+2684    Ghirardelli Square (900 North Point Street, Fi...
+2711      Chestnut & Divisadero Streets (Marina District)
+2747         Lombard & Fillmore Streets (Marina District)
+2764                                2340 Francisco Street
+2814              Broadway at Osgood Street (North Beach)
+3027    Huntington Park (California & Taylor Streets, ...
+3078    Old St. Mary's Church (660 California Street a...
+3187                                   Golden Gate Bridge
+3199     Intersection of Fulton & 6th Streets (Chinatown)
+3280    Merchant Exchange (465 California Street at Le...
+3392                                     Golden Gate Park
+3403                       Marina Green (Marina District)
+Name: Locations, dtype: object"
+Bullitt,"205               Cesar Chavez & Mission Street (Mission)
+326                                 1153-57 Taylor Street
+527                         John Muir Drive (Lake Merced)
+545              Columbus & Lombard Streets (North Beach)
+665            Brocklebank Apartments (1000 Mason Street)
+736                        Marina Green (Marina District)
+1269             Larkin & Chestnut Streets (Russian Hill)
+1651              Cesar Chavez & Mission Street (Mission)
+1681    SF General Hospital Center (1001 Potrero Avenu...
+1682                                1153-57 Taylor Street
+1730                        John Muir Drive (Lake Merced)
+1737             Columbus & Lombard Streets (North Beach)
+1756                       Marina Green (Marina District)
+1759           Brocklebank Apartments (1000 Mason Street)
+1815                                           Bay Bridge
+1879             Larkin & Chestnut Streets (Russian Hill)
+1901                20th & Vermont Streets (Potrero Hill)
+1908      Intersection of York & Peralta (Bernal Heights)
+1933              Taylor & Vallejo Streets (Russian Hill)
+1965                   Candlestick Park Exit, Highway 101
+1974     Kennedy Hotel (226 Embarcadero at Howard Street)
+1994            Bayshore Blvd near Cesar Chavez (Bayview)
+2014    Mansell & University Streets (Visitacion  Valley)
+2056            Larkin & Francisco Streets (Russian Hill)
+2103              Filbert & Taylor Streets (Russian Hill)
+2143           Mark Hopkins Hotel (999 California Street)
+2175                         Enrico's Café (504 Broadway)
+2178                     Café Cantata (2040 Union Street)
+2221                    McLaren Park (Visitacion  Valley)
+2235                2700 Vallejo Street (Pacific Heights)
+2301                20th & Vermont Streets (Potrero Hill)
+2333      Intersection of York & Peralta (Bernal Heights)
+2401              Taylor & Vallejo Streets (Russian Hill)
+2480                   Candlestick Park Exit, Highway 101
+2512     Kennedy Hotel (226 Embarcadero at Howard Street)
+2562            Bayshore Blvd near Cesar Chavez (Bayview)
+2625    Mansell & University Streets (Visitacion  Valley)
+2770            Larkin & Francisco Streets (Russian Hill)
+2931              Filbert & Taylor Streets (Russian Hill)
+3029           Mark Hopkins Hotel (999 California Street)
+3130                         Enrico's Café (504 Broadway)
+3138    SF General Hospital Center (1001 Potrero Avenu...
+3145                     Café Cantata (2040 Union Street)
+3210                                           Bay Bridge
+3281                    McLaren Park (Visitacion  Valley)
+3328                2700 Vallejo Street (Pacific Heights)
+Name: Locations, dtype: object"
+The Game,"206                 Mason & California Streets (Nob Hill)
+212                                            Bay Bridge
+701                                         1 Bush Street
+927                     Harrison Street (The Embarcadero)
+998              Ritz-Carlton Hotel (600 Stockton Street)
+1024    Merchant Exchange Building (465 California Str...
+1113            Sheraton Palace Hotel (639 Market Street)
+1213                                    301 Howard Street
+1652                Mason & California Streets (Nob Hill)
+1653            Sheraton Palace Hotel (639 Market Street)
+1764                                        1 Bush Street
+1789                    Harrison Street (The Embarcadero)
+1797             Ritz-Carlton Hotel (600 Stockton Street)
+1803    Merchant Exchange Building (465 California Str...
+1867                                    301 Howard Street
+1894                       City Club (155 Sansome Street)
+2026                                           Bay Bridge
+2057        Washington Street & Waverly Place (Chinatown)
+2124      Presidio (Golden Gate National Recreation Area)
+2169     Bank of America Building (555 California Street)
+2188    Stockton Tunnel Southern Approach Overhang (Bu...
+2263                           Merchant Exchange Building
+2281                       City Club (155 Sansome Street)
+2693      Presidio (Golden Gate National Recreation Area)
+2772        Washington Street & Waverly Place (Chinatown)
+3116     Bank of America Building (555 California Street)
+3188    Stockton Tunnel Southern Approach Overhang (Bu...
+3407                           Merchant Exchange Building
+Name: Locations, dtype: object"
+Nine to Five,"207     Albert S. Samuels Clock (856 Market Street bet...
+1654    Albert S. Samuels Clock (856 Market Street bet...
+Name: Locations, dtype: object"
+Herbie Rides Again,"208     Castagnola's Restaurant (Fisherman's Wharf)
+799                              Golden Gate Bridge
+1655    Castagnola's Restaurant (Fisherman's Wharf)
+1777                             Golden Gate Bridge
+1970      Sheraton Palace Hotel (639 Market Street)
+2509      Sheraton Palace Hotel (639 Market Street)
+Name: Locations, dtype: object"
+Edtv,"209             20th & Connecticut Streets (Potrero Hill)
+892        Castro Theatre (429 Castro Street, The Castro)
+944     Center for the Arts, Yerba Buena Gardens (701 ...
+1656            20th & Connecticut Streets (Potrero Hill)
+1714       North Beach Video (1398 Grant Avenue at Green)
+1782       Castro Theatre (429 Castro Street, The Castro)
+1793    Center for the Arts, Yerba Buena Gardens (701 ...
+1893               Palace of Fine Arts (3301 Lyon Street)
+1964                                  1138 Filbert Street
+1986     Mario's Bohemian Cigar Store (Washington Square)
+2019                        19 Green Street (North Beach)
+2068                   Moose's Restaurant (1652 Stockton)
+2277               Palace of Fine Arts (3301 Lyon Street)
+2478                                  1138 Filbert Street
+2541     Mario's Bohemian Cigar Store (Washington Square)
+2659                        19 Green Street (North Beach)
+2803                   Moose's Restaurant (1652 Stockton)
+3398       North Beach Video (1398 Grant Avenue at Green)
+Name: Locations, dtype: object"
+Venom,"210     Washington Square Park - Filbert St at Stockto...
+336                 Grant Ave btwn Washington and Jackson
+681                                    Financial District
+1072                                Grant Ave at Green St
+1173                      Grant Ave btwn Clay and Jackson
+1194           Stockton Tunnel btwn Sutter and Sacramento
+1227                        Larkin St btwn Post and Geary
+2289                       California St at Montgomery St
+2400                               Hyde St at Chestnut St
+2518              Huntington Park, Pine/Kearny, Bush/Hyde
+2551              O'Farrell between Leavenworth and Jones
+2579                     Epic Steakhouse, 369 Embarcadero
+2665            Taylor St Hill btwn Pacific and Greenwich
+2717                           Embarcadero at Harrison St
+2742                           Geary St at Leavenworth St
+2749                              Romolo St and Fresno Pl
+2812        Potrero Hill: Rhode Island btwn 15th and 16th
+2830    North Beach: Kearny/Vallejo, Kearny/Broadway, ...
+2916                      Grant Ave btwn Pine and Jackson
+3011                 California St btwn Drumm and Sansome
+3060                   Embarcadero btwn Folsom and Bryant
+3073                   Hemlock Alley btwn Polk and Larkin
+3122                         Montgomery St and Vallejo St
+3218                  Edinburgh Castle (950 Geary Street)
+3284                   Grant Ave btwn California and Clay
+3327                  Kearny Steps/btwn Green and Pacific
+Name: Locations, dtype: object"
+Sister Act 2: Back in the Habit,"211                                   CCSF Alemany Campus
+833     St. Peter & Paul's Church (666 Filbert Street,...
+834            Maritime Museum, Building 201 (Fort Mason)
+835                                            Coit Tower
+836                                  CCSF Alemany Campus 
+837     Carnelian Room, Bank of America Building (555 ...
+1098           Maritime Museum, Building 201 (Fort Mason)
+2293    Carnelian Room, Bank of America Building (555 ...
+2556    St. Peter & Paul's Church (666 Filbert Street,...
+2807                                           Coit Tower
+Name: Locations, dtype: object"
+Casualties of War,"222     Mission Dolores Park (Mission District) via J-...
+2354    Mission Dolores Park (Mission District) via J-...
+Name: Locations, dtype: object"
+Memoirs of an Invisible Man,"223     St. Elizabeth Apartment House (901 Powell Stre...
+1657    St. Elizabeth Apartment House (901 Powell Stre...
+Name: Locations, dtype: object"
+The Organization,"225     NaN
+1658    NaN
+Name: Locations, dtype: object"
+Looking Season 2 ep 202,"227              314 11th Street
+468             1400 16th Street
+1284             314 11th Street
+1300          1246 Folsom Street
+1322            1400 16th Street
+1477          Eddy @ Polk Street
+1523           100 Church Street
+1524         901 Valencia Street
+1532          651 Brannan Street
+1535      Church @ Duboce Street
+1563           770 Haight Street
+1579    601 Buena Vista Ave West
+2535          Eddy @ Polk Street
+2784           100 Church Street
+2791         901 Valencia Street
+2839          651 Brannan Street
+2852      Church @ Duboce Street
+2889          1246 Folsom Street
+2961           770 Haight Street
+3062    601 Buena Vista Ave West
+Name: Locations, dtype: object"
+San Andreas,"228     Hyde St. at Greenwich and Hyde St. at Lombard
+659                     Grant between Bush and Market
+695                                      AT&T Stadium
+775                           2nd St. at Townsend St.
+776                       Jefferson St. at Powell St.
+777                             Grant St. at Bush St.
+778           Vallejo Garage Roof (Vallejo at Powell)
+779                                Clay St. at Taylor
+780                                   Bay St. at Polk
+781                  Intersection of Lombard and Hyde
+782                   Mission between 3rd and 4th St.
+783                                    555 California
+784                              Broadway and Kearney
+785                     Grant between Bush and Market
+786                                        Coit Tower
+787      TransAmerica Pyramid (600 Montgomery Street)
+788                                 Washington Square
+789                                   Battery Spencer
+790                                           Pier 43
+791               Vallejo St. Garage, 766 Vallejo St.
+792                                        Fort Baker
+793                                      AT&T Stadium
+794                                      AT&T Stadium
+795                              Water work in SF Bay
+796                         Stage Work, 47 Julian St.
+797     Hyde St. at Greenwich and Hyde St. at Lombard
+798                Asia Star Fantasy, 1126 Grant Ave.
+994                                   Bay St. at Polk
+1074                                          Pier 43
+1239                      Jefferson St. at Powell St.
+2268                 Intersection of Lombard and Hyde
+2388                          2nd St. at Townsend St.
+2476                            Grant St. at Bush St.
+2492                             Broadway and Kearney
+2629              Vallejo St. Garage, 766 Vallejo St.
+2703                                       Fort Baker
+2713                                  Battery Spencer
+2778               Asia Star Fantasy, 1126 Grant Ave.
+2797                                     AT&T Stadium
+2926                               Clay St. at Taylor
+2955     TransAmerica Pyramid (600 Montgomery Street)
+2985                        Stage Work, 47 Julian St.
+3041                             Water work in SF Bay
+3112                                       Coit Tower
+3173                                   555 California
+3244                                Washington Square
+3272          Vallejo Garage Roof (Vallejo at Powell)
+3397                  Mission between 3rd and 4th St.
+Name: Locations, dtype: object"
+The Caine Mutiny,"229     Golden Gate Bridge
+1659    Golden Gate Bridge
+2219       The Embarcadero
+3276       The Embarcadero
+Name: Locations, dtype: object"
+Looking Season 2 ep 203,"230     Balboa pool Lot, San Jose Avenue & Havelock St
+341                     Mad Dog Bar, 530 Haight Street
+919                   Doc's Clock, 2575 Misison Street
+1285    Balboa pool Lot, San Jose Avenue & Havelock St
+1303                    Mad Dog Bar, 530 Haight Street
+1368                  Doc's Clock, 2575 Misison Street
+1461          Mission Rec Center, 2450 Harrison Street
+1465                                 770 Haight Street
+1481             Willy's Barber shop, 3227 22nd Street
+1495                                   Kezar Pavillion
+1517                Boxer Stadium, 166 Havelock Street
+2479          Mission Rec Center, 2450 Harrison Street
+2490                                 770 Haight Street
+2572             Willy's Barber shop, 3227 22nd Street
+2644                                   Kezar Pavillion
+2740                Boxer Stadium, 166 Havelock Street
+Name: Locations, dtype: object"
+The Last Black Man in San Francisco,"231          Market/Portola btwn O'Shaughnessy and Castro
+265                              Forest Hill MUNI Station
+347               Buena Vista East btwn Duboce and Haight
+432                                  Haight and Belvedere
+510                         Hotel Metropolis, 25 Mason St
+537                  Folsom btwn Cortland and Eugenia Ave
+560                  Eddy St btwn Leavenworth and Hyde St
+687          California St and Gough btwn Geary and Jones
+722                         3rd St btwn Evans and Oakdale
+729                             Innes and Arelious Walker
+883                                         801 Innes Ave
+925                Nevada St btwn Cortland and Jarboe Ave
+993                          Sunset Super, 2425 Irving St
+1001    Portola Rose Garden, 598 Hamilton St at Woolse...
+2317                         Innes turning into Evans Ave
+2324                    Illinois St btwn Marin and Amador
+2397                      Chateau Tivoli, 1057 Steiner St
+2408                                          363 Lyon St
+2444    Evans Ave/Hunters Pt Bvld btwn Keith and Hawes St
+2519                                        900 Innes Ave
+2581                              415 Lyon St/355 Lyon St
+2598                   Mission btwn 16th and Cesar Chavez
+2620                               959 South Van Ness Ave
+2647                                       802 Steiner St
+2811                        Oakdale btwn 3rd and Bayshore
+2884                    Shotwell St btwn 20th and 21st St
+2894                                Donahue and Innes Ave
+2965                        Red Building, 2567 Mission St
+3002                                          4704 3rd St
+3095                                        911 Innes Ave
+3260               Ford's Grocery Store, 1496 Oakdale Ave
+3359         California Street Hill btwn Jones and Larkin
+3387                                    Castro and Market
+Name: Locations, dtype: object"
+Class Action,"232     Mission Dolores (3321 16th Street, Mission Dis...
+233                                             City Hall
+234                       Bix Restaurant (56 Gold Street)
+2421    Mission Dolores (3321 16th Street, Mission Dis...
+3092                                            City Hall
+3186                      Bix Restaurant (56 Gold Street)
+Name: Locations, dtype: object"
+Common Threads: Stories From the Quilt,"235     The Castro
+2933    The Castro
+Name: Locations, dtype: object"
+Confessions of a Burning Man,"236     NaN
+3292    NaN
+Name: Locations, dtype: object"
+Copycat,"237                              Treasure Island
+238                                   Twin Peaks
+239     Sound Factory (1st and Harrison Streets)
+240            Java House (Pier 40, Embarcadero)
+241                              Alta Plaza Park
+242           82 & 67 Rico Way (Marina District)
+827                              Alta Plaza Park
+921     Sound Factory (1st and Harrison Streets)
+996           82 & 67 Rico Way (Marina District)
+1277                             Treasure Island
+2932           Java House (Pier 40, Embarcadero)
+3212                                  Twin Peaks
+Name: Locations, dtype: object"
+Steve Jobs,"243                          21st and Collingswood St.
+526                              Mission St and 5th St
+893     War Memorial Opera House (401 Van Ness Avenue)
+894           Davies Symphony Hall (201 Van Ness Ave.)
+895             Sutter-Stockton Garage (444  Stockton)
+896         California St. from Jones St. to Mason St.
+897       Powell St. from California St. to Sutter St.
+898           Jackson St. from Mason St. to Powell St.
+899                Intersection of Columbus and Kearny
+900      Intersection of Clay St. and Walter U Lum Plc
+901                          21st and Collingswood St.
+902                 Castro St. between 21st an Hill St
+903                                21st and Sanchez St
+2447        California St. from Jones St. to Mason St.
+2510    War Memorial Opera House (401 Van Ness Avenue)
+2537          Davies Symphony Hall (201 Van Ness Ave.)
+2557                Castro St. between 21st an Hill St
+2635               Intersection of Columbus and Kearny
+2668                               21st and Sanchez St
+2694     Intersection of Clay St. and Walter U Lum Plc
+3016      Powell St. from California St. to Sutter St.
+3048                             Mission St and 5th St
+3208          Jackson St. from Mason St. to Powell St.
+3296            Sutter-Stockton Garage (444  Stockton)
+Name: Locations, dtype: object"
+Interview With The Vampire,"244                    Golden Gate Bridge
+1660                   Golden Gate Bridge
+1909    6th Street On-ramp to Highway 280
+1927                       Ferry Building
+2201      100 Market Street at 6th Street
+2336    6th Street On-ramp to Highway 280
+2384                       Ferry Building
+3223      100 Market Street at 6th Street
+Name: Locations, dtype: object"
+"Murder in the First, Season 2","245                                   901 Missouri Street
+361                                      1400 16th Street
+517               Embarcadero Street at Washington Street
+647                           372/374 Pennsylvania Avenue
+943                                       Stevenson Alley
+1031                   Pennsylvania Avenue at 19th Street
+1133    Boardman Place between Bryant and Brannan Streets
+1206                                      Treasure Island
+1286                                  901 Missouri Street
+1305                                     1400 16th Street
+1327              Embarcadero Street at Washington Street
+1372                                      Stevenson Alley
+1380                   Pennsylvania Avenue at 19th Street
+1393    Boardman Place between Bryant and Brannan Streets
+1403                                      Treasure Island
+1416    Columbus Avenue between Washington and Bay Str...
+1433                                    1059 Texas Street
+1440                                         435 Broadway
+1466    Harriet Street between Bryant and Brannan Streets
+1468                                     Sue Bierman Park
+1504                         372/374 Pennsylvania Avenue 
+1512                                     1243 19th Street
+1513    Columbus Avenue between Washington and Bay Str...
+1519     Grant Avenue between Clay and Washington Streets
+1589                                              Pier 50
+1624    Potrero Hill Recreation Center (801 Arkansas S...
+1633                                      83 Watchman Way
+2330                                    1059 Texas Street
+2353                                         435 Broadway
+2493    Harriet Street between Bryant and Brannan Streets
+2499                                     Sue Bierman Park
+2712                                     1243 19th Street
+2762     Grant Avenue between Clay and Washington Streets
+3131                                              Pier 50
+3325    Potrero Hill Recreation Center (801 Arkansas S...
+3351                                      83 Watchman Way
+Name: Locations, dtype: object"
+Playing Mona Lisa,"247    Conservatory of Flowers (Golden Gate Park)
+732    Conservatory of Flowers (Golden Gate Park)
+Name: Locations, dtype: object"
+Tales of the City,"248                Valencia btwn Liberty and 21st St
+330                     Hotel Jefferson, 440 Eddy St
+378                                   766 Vallejo St
+542     Macondray Ln and Taylor btwn Union and Green
+684                   Valencia btwn 16th and 17th St
+730                             Market and Church St
+882                               Castro and 18th St
+1006             City Lights Books, 261 Columbus Ave
+1071                                    Dolores Park
+1784                               Lyon and Broadway
+2300                                   Clarion Alley
+2452                          Montgomery and Vallejo
+2752    Hyde St and Lombard St to Larkin and Lombard
+2795                                     North Beach
+3100                               Market and Noe St
+3251                              Grant and Green St
+3271                    Green btwn Jasper and Bannam
+3391                                 Castro District
+3408                                Mission District
+Name: Locations, dtype: object"
+Quitters,"249        Clement St. from 6th to 7th Ave.
+501     Claire Lilienthal Elementary School
+711                            1536 Noe St.
+738                            1536 Noe St.
+742                             24 Hill St.
+743                       21st St & Sanchez
+744                            4015 21st St
+745                          Tank Hill Park
+746       Clement St. from 6th to 7th Ave. 
+747                         Wine Impression
+748      Clement St. from 5th and 7th Ave. 
+749     Claire Lilienthal Elementary School
+750                     Yerba Buena Gardens
+751                              Tonga Room
+752                    Cal-Mart Supermarket
+753                           McLaren Lodge
+754           Bechelli's Flower Market Café
+755                         923 Vermont St.
+756         Geary from 22nd Ave to Arguello
+2441      Clement St. from 5th and 7th Ave.
+2449                        Wine Impression
+2601                    Yerba Buena Gardens
+2667                   Cal-Mart Supermarket
+2831                           4015 21st St
+2953          Bechelli's Flower Market Café
+2978                      21st St & Sanchez
+3038                             Tonga Room
+3163                            24 Hill St.
+3194                          McLaren Lodge
+3275                        923 Vermont St.
+3330                         Tank Hill Park
+3343        Geary from 22nd Ave to Arguello
+Name: Locations, dtype: object"
+The Rock,"250                                            Coit Tower
+446                Palace of Fine Arts (3301 Lyon Street)
+1119                                      Alcatraz Island
+1153               Palace of Fine Arts (3301 Lyon Street)
+1154                                The San Francisco Bay
+1155    New Russian Hill Market (1198 Pacific Avenue a...
+1156          Fairmont Hotel (950 Mason Street, Nob Hill)
+1157                                           Coit Tower
+1159                                            City Hall
+1602    New Russian Hill Market (1198 Pacific Avenue a...
+1838                                      Alcatraz Island
+2475          Fairmont Hotel (950 Mason Street, Nob Hill)
+2517                                The San Francisco Bay
+2702                                            City Hall
+Name: Locations, dtype: object"
+Twisted,"251     McCovey Point, China Basin Park (24 Willy Mays...
+381                                                   NaN
+1068                   Vesuvio Café (255 Columbus Avenue)
+1220       Red's Java House (Pier 30-32, The Embarcadero)
+1221                                          Piers 30-32
+1222                                              Pier 39
+1223                                              Pier 24
+1224                      Mojito (1337-1339 Grant Avenue)
+1225    McCovey Point, China Basin Park (24 Willy Mays...
+1228             La Bodega (1332 Grant Avenue at Vallejo)
+1230                       The Saloon (1232 Grant Avenue)
+1237             La Bodega (1332 Grant Avenue at Vallejo)
+1702                                                  NaN
+1814                   Vesuvio Café (255 Columbus Avenue)
+2198    Veterans' War Memorial Building (401 Van Ness ...
+2279                       The Saloon (1232 Grant Avenue)
+2287                                          Piers 30-32
+2365                      Mojito (1337-1339 Grant Avenue)
+2375       Red's Java House (Pier 30-32, The Embarcadero)
+2890                                              Pier 24
+3215    Veterans' War Memorial Building (401 Van Ness ...
+3331                                              Pier 39
+Name: Locations, dtype: object"
+Looking Season 2 ep 209,"252                Muddy Waters, 521 Valencia Street
+393                               68 Division Street
+705     Tonga Room, Fairmont Hotel, 950 Mason Street
+1233                                1890 Clay Street
+1288               Muddy Waters, 521 Valencia Street
+1312                              68 Division Street
+1356    Tonga Room, Fairmont Hotel, 950 Mason Street
+1406                                1890 Clay Street
+1456                              1246 Folsom Street
+1497       Mission Arts Center, 2450 Harrison Street
+1518                                8 Octavia Street
+1612                         SF Zoo, 2945 Sloat Blvd
+2435                              1246 Folsom Street
+2649       Mission Arts Center, 2450 Harrison Street
+2743                                8 Octavia Street
+3249                         SF Zoo, 2945 Sloat Blvd
+Name: Locations, dtype: object"
+Pal Joey,"253                                            Coit Tower
+683                                         Barbary Coast
+1065    Spreckels Mansion (2080 Washington Street, Pac...
+1661                                           Coit Tower
+1763                                        Barbary Coast
+1813    Spreckels Mansion (2080 Washington Street, Pac...
+Name: Locations, dtype: object"
+Invasion of the Body Snatchers,"254     Ramada Plaza Hotel Downtown (1231 Market Stree...
+275                   United Nations Plaza (Civic Center)
+821     San Francisco Drydock (20th and Illinois Streets)
+1033              1227 Montgomery Street (Telegraph Hill)
+1058                       Hamlin Hotel (385 Eddy Street)
+1102                                Pier 33 (Embarcadero)
+1128                                            City Hall
+1662    Ramada Plaza Hotel Downtown (1231 Market Stree...
+1665                  United Nations Plaza (Civic Center)
+1778    San Francisco Drydock (20th and Illinois Streets)
+1806              1227 Montgomery Street (Telegraph Hill)
+1809                       Hamlin Hotel (385 Eddy Street)
+1832                                Pier 33 (Embarcadero)
+1841    Transamerica Building (600 Montgomery Street a...
+1844                                            City Hall
+1957                                            Chinatown
+1958    Bimbo's 365 Club (1025 Columbus Avenue, North ...
+2035    Department of Public Health (101 Grove Street ...
+2074            Postcard Row (Alamo Square, Hayes Valley)
+2082                    720 Steiner Street (Hayes Valley)
+2097                                       32 Napier Lane
+2140                     Lafayette Park (Pacific Heights)
+2172                       Broadway Tunnel (Russian Hill)
+2467                                            Chinatown
+2468    Bimbo's 365 Club (1025 Columbus Avenue, North ...
+2696    Department of Public Health (101 Grove Street ...
+2829            Postcard Row (Alamo Square, Hayes Valley)
+2864                    720 Steiner Street (Hayes Valley)
+2910                                       32 Napier Lane
+2979    Transamerica Building (600 Montgomery Street a...
+3024                     Lafayette Park (Pacific Heights)
+3125                       Broadway Tunnel (Russian Hill)
+Name: Locations, dtype: object"
+The Net,"255       Moscone Convention Center
+1189    Montgomery & Market Streets
+1663      Moscone Convention Center
+1856    Montgomery & Market Streets
+Name: Locations, dtype: object"
+I Am Michael,"256                                     Harvey Milk Plaza
+337                Sanchez/Cumberland steps and sidewalks
+430                Sanchez/Cumberland steps and sidewalks
+484                                 Flint & 16th (Castro)
+485     Grove & Polk, thru Fulton & 6th, Masonic, 28th...
+486                                  Ocean Beach @ Balboa
+487                                          4100 20th St
+488                                     Harvey Milk Plaza
+489                                               F Train
+725                                  Ocean Beach @ Balboa
+2484                                Flint & 16th (Castro)
+2594    Grove & Polk, thru Fulton & 6th, Masonic, 28th...
+2624                                         4100 20th St
+2982                                              F Train
+Name: Locations, dtype: object"
+Alcatraz,"257     Leavenworth from Filbert & Francisco St
+301             Filbert St. from Jones to Mason
+1674            Filbert St. from Jones to Mason
+1919    Leavenworth from Filbert & Francisco St
+2010              Broadway from Mason to Taylor
+2059           Francisco St from Larkin to Polk
+2244        Taylor St. from Broadway to Filbert
+2265       Chestnut St. from Larkin to Columbus
+2611              Broadway from Mason to Taylor
+2781           Francisco St from Larkin to Polk
+3352        Taylor St. from Broadway to Filbert
+3413       Chestnut St. from Larkin to Columbus
+Name: Locations, dtype: object"
+Dawn of the Planet of the Apes,"258                          University Club
+259     Filbert St. from Hyde to Leavenworth
+260       California St from Mason to Kearny
+261                                City Hall
+262                              Alioto Park
+263                     California & Powell 
+264                   Columbus & Pacific Ave
+267                              Alioto Park
+648                                City Hall
+2359      California St from Mason to Kearny
+2461                     California & Powell
+2563                  Columbus & Pacific Ave
+2718    Filbert St. from Hyde to Leavenworth
+3132                         University Club
+Name: Locations, dtype: object"
+Desperate Measures,"266    NaN
+891    NaN
+Name: Locations, dtype: object"
+Looking Season 2 ep 205,"268                               745 Treat Ave
+535             24th Between Portrero & Alabama
+1028    Always Open Car Wash, 2560 Marin Street
+1289                              745 Treat Ave
+1332            24th Between Portrero & Alabama
+1379    Always Open Car Wash, 2560 Marin Street
+1522                        1119 Alabama Street
+1551                            534 Hyde Street
+1608                          160 Church Street
+2779                        1119 Alabama Street
+2912                            534 Hyde Street
+3232                          160 Church Street
+Name: Locations, dtype: object"
+Swing,"270    Broadway Studios (435 Broadway at Montgomery S...
+505                Regency Building (1290 Sutter Street)
+940    Broadway Studios (435 Broadway at Montgomery S...
+941                Regency Building (1290 Sutter Street)
+Name: Locations, dtype: object"
+Star Trek IV: The Voyage Home,"272                         Marina Green, Marina District
+363                                      Golden Gate Park
+504                          West Harbor, Marina District
+716               500 Block of Pacific Avenue (Chinatown)
+1019                             Kearny & Pacific Streets
+1077                                          North Beach
+1692                                     Golden Gate Park
+1724                         West Harbor, Marina District
+1755                        Marina Green, Marina District
+1768              500 Block of Pacific Avenue (Chinatown)
+1801                             Kearny & Pacific Streets
+1820                                          North Beach
+1892    Bessie Charmichael Elementary School (375 Seve...
+1913             Intersection of Columbus & Mason Streets
+2049    Intersection of Grant & Fresno Streets (North ...
+2183           Intersection of Columbus & Kearney Streets
+2205                                   Golden Gate Bridge
+2274    Bessie Charmichael Elementary School (375 Seve...
+2343             Intersection of Columbus & Mason Streets
+2754    Intersection of Grant & Fresno Streets (North ...
+3166           Intersection of Columbus & Kearney Streets
+3236                                   Golden Gate Bridge
+Name: Locations, dtype: object"
+Looking Season 2 ep 204,"273                                     3650 21st Street
+649                                     970 Geary Street
+920                                     1890 Clay Street
+1114    Larken Street Youth Services, 1138 Sutter Street
+1290                                    3650 21st Street
+1347                                    970 Geary Street
+1369                                    1890 Clay Street
+1390    Larken Street Youth Services, 1138 Sutter Street
+1439                   Bi-Rite Creamery, 3692 18th Stret
+1496                         Dolores Park, San Francisco
+1552                        Esta Noche, 3079 16th Street
+1558                            601 Buena Vista Ave West
+1562                     Urban Flowers, 4029 18th Street
+1583                         Castro Street @ 18th street
+1594                                     534 Hyde Street
+1641                  Daniel's Pharmacy, 943 Geneva Ave.
+2349                   Bi-Rite Creamery, 3692 18th Stret
+2646                         Dolores Park, San Francisco
+2914                        Esta Noche, 3079 16th Street
+2938                            601 Buena Vista Ave West
+2960                     Urban Flowers, 4029 18th Street
+3093                         Castro Street @ 18th street
+3165                                     534 Hyde Street
+3382                  Daniel's Pharmacy, 943 Geneva Ave.
+Name: Locations, dtype: object"
+Cherish,"274     387 Fair Oaks at 25th Street
+1664    387 Fair Oaks at 25th Street
+Name: Locations, dtype: object"
+D.O.A,"276                                          Union Square
+1101    Southern Pacific Memorial Hospital (1400 Fell ...
+1666                                         Union Square
+1831    Southern Pacific Memorial Hospital (1400 Fell ...
+1898                          Powell & California Streets
+1918    Mark Hopkins Intercontinental Hotel (1 Nob Hil...
+1960         Westin St. Francis Hotel (335 Powell Street)
+1962                      The Embarcadero/ Ferry Building
+2090        Market & Steuart Streets (Financial District)
+2099                Market Street (from 6th- 4th Streets)
+2147    Chambord Apartments (1298 Sacramento Street at...
+2295                          Powell & California Streets
+2357    Mark Hopkins Intercontinental Hotel (1 Nob Hil...
+2473                      The Embarcadero/ Ferry Building
+2532         Westin St. Francis Hotel (335 Powell Street)
+2879        Market & Steuart Streets (Financial District)
+2918                Market Street (from 6th- 4th Streets)
+3044    Chambord Apartments (1298 Sacramento Street at...
+Name: Locations, dtype: object"
+"Looking ""Special""","277                                 Point Lobos Avenue
+723                            San Francisco City Hall
+884               Van Ness and Market Street MUNI exit
+1053                          The Stud, 399 9th Street
+1136                 Castro Street between 17th & 18th
+1291                                Point Lobos Avenue
+1357                           San Francisco City Hall
+1362              Van Ness and Market Street MUNI exit
+1366             10th Street between Market & Mission 
+1382                          The Stud, 399 9th Street
+1394                 Castro Street between 17th & 18th
+1435                   Orphan Andy's, 3991 17th Street
+1455                                1246 Folsom Street
+1474                    Li Po Lounge, 916 Grant Avenue
+1476               Capital Restaurant, 839 Clay Street
+1498                       The End Up, 401 6th Streeet
+1499                       Bernal Heights Neighborhood
+1567                                 Fisherman's Wharf
+1570                                1080 Natoma Street
+1606            Encore Karaoke, 1550 California Street
+1618               Philz Coffee, 1258 Minnesota Street
+1627                                  3079 16th Street
+1635                              17th & Market Street
+1639    Grant Avenue between Sacramento and Washington
+2338                   Orphan Andy's, 3991 17th Street
+2428                                1246 Folsom Street
+2521                    Li Po Lounge, 916 Grant Avenue
+2523               Capital Restaurant, 839 Clay Street
+2663                       The End Up, 401 6th Streeet
+2669                       Bernal Heights Neighborhood
+2981                                 Fisherman's Wharf
+3004                                1080 Natoma Street
+3177              10th Street between Market & Mission
+3228            Encore Karaoke, 1550 California Street
+3298               Philz Coffee, 1258 Minnesota Street
+3344                                  3079 16th Street
+3354                              17th & Market Street
+3379    Grant Avenue between Sacramento and Washington
+Name: Locations, dtype: object"
+Ant-Man and the Wasp,"278       Little Embarcadero btwn Powell and Mason
+306                     Telegraph Hill/North Beach
+376                         Missouri St at 18th St
+500     Powell St btwn North Point and Embarcadero
+718           Vallejo St btwn Montgomery and Davis
+737                Westar Marine Services, Pier 50
+917           Lombard St btwn Polk and Leavenworth
+1115                                  490 Geary St
+1200                            Financial District
+2284                                       Pier 27
+2322             Montgomery btwn Green and Pacific
+2350                                       Java St
+2389                                     544 Jones
+2453      California St btwn Mason and Leavenworth
+2661                           Bush St at Mason St
+2744                 Geary St - Hyde St - Ellis St
+2761                     Jefferson St at Taylor St
+2857           Laguna St btwn Jackson and Broadway
+2901                                  Russian Hill
+2928               Jones St btwn Green and Pacific
+2936                  Leavenworth St at Lombard St
+2997             Jones St btwn Sacramento and Pine
+3088                  Saint Louis Alley at Jackson
+3150          Montgomery btwn Broadway and Pacific
+Name: Locations, dtype: object"
+Mission (aka City of Bars),"280     The 500 Club (500 Guerrero Street, Mission Dis...
+1667    The 500 Club (500 Guerrero Street, Mission Dis...
+1972              Mission Dolores Park (Mission District)
+2505              Mission Dolores Park (Mission District)
+Name: Locations, dtype: object"
+Sense8 - Season 2,"281     Julia Morgan Ballroom at the Merchant's Exchan...
+318                        Filbert between Hyde and Jones
+624                Billy Goat Hill, Castro St. & 30th St.
+643                  Spofford between Washington and Clay
+1003               Washington between Stockton and Kearny
+1013                  The Women's Building, 3543 18th St.
+1027                  Green between Kearny and Montgomery
+1293    Julia Morgan Ballroom at the Merchant's Exchan...
+1301                       Filbert between Hyde and Jones
+1344               Billy Goat Hill, Castro St. & 30th St.
+1346                 Spofford between Washington and Clay
+1375               Washington between Stockton and Kearny
+1377                  The Women's Building, 3543 18th St.
+1378                  Green between Kearny and Montgomery
+1423                Marina Morrison Bridal, 30 Maiden Ln.
+1434                    Westerfeld House, 1198 Fulton St.
+1457             City Lights Bookstore, 261 Columbus Ave.
+1475                   The Castro Theater, 429 Castro St.
+1500                Montgomery between Green and Broadway
+1529                       Castle between Union and Green
+1556                 Grace Cathedral, 1100 California St.
+1565                                     67-69 Deming St.
+1566               Mission Creek Harbor along Channel St.
+1607                      Clay between Stockton and Grant
+1644      Grant between Sacramento and Jack Kerouac Alley
+1691    San Francisco City Hall, 1 Dr. Carlton B. Good...
+2286                Marina Morrison Bridal, 30 Maiden Ln.
+2332                    Westerfeld House, 1198 Fulton St.
+2460             City Lights Bookstore, 261 Columbus Ave.
+2522                   The Castro Theater, 429 Castro St.
+2612    San Francisco City Hall, 1 Dr. Carlton B. Good...
+2672                Montgomery between Green and Broadway
+2804                       Castle between Union and Green
+2929                 Grace Cathedral, 1100 California St.
+2973                                     67-69 Deming St.
+2976               Mission Creek Harbor along Channel St.
+3229                      Clay between Stockton and Grant
+3402      Grant between Sacramento and Jack Kerouac Alley
+Name: Locations, dtype: object"
+The Graduate,"282     San Francisco Zoo (2701 Sloat Blvd.)
+1668    San Francisco Zoo (2701 Sloat Blvd.)
+1748                              Bay Bridge
+2327                              Bay Bridge
+Name: Locations, dtype: object"
+Freebie and the Bean,"283     Stockton Tunnel (Stockton Street at Sutter Str...
+546            Broadway and Columbus Avenue (North Beach)
+674           Fairmont Hotel (950 Mason Street, Nob Hill)
+1012                Candlestick Park (602 Jamestown Ave.)
+1054                                           Twin Peaks
+1669    Stockton Tunnel (Stockton Street at Sutter Str...
+1687                                             Nob Hill
+1738           Broadway and Columbus Avenue (North Beach)
+1762          Fairmont Hotel (950 Mason Street, Nob Hill)
+1800                Candlestick Park (602 Jamestown Ave.)
+1807                                           Twin Peaks
+1944    Steinhart Aquarium (California Academy of Scie...
+1997                                           Alco Plaza
+2017           Hyatt Regency Hotel (5 Embarcadero Center)
+2052         TransAmerica Pyramid (600 Montgomery Street)
+2110                                         Potrero Hill
+2134                                  Embarcadero Freeway
+2223                                 Folsom Street (SOMA)
+2234                                           Alco Plaza
+2642           Hyatt Regency Hotel (5 Embarcadero Center)
+2643                                             Nob Hill
+2688    Steinhart Aquarium (California Academy of Scie...
+2962                                         Potrero Hill
+3014                                  Embarcadero Freeway
+3291                                 Folsom Street (SOMA)
+3371         TransAmerica Pyramid (600 Montgomery Street)
+Name: Locations, dtype: object"
+The Right Stuff,"284                                             City Hall
+1192                                           Cow Palace
+1670                                            City Hall
+1956    American Can Company (Between Illinois & Kentu...
+2016                                   Financial District
+2242                                           Cow Palace
+2463    American Can Company (Between Illinois & Kentu...
+2641                                   Financial District
+Name: Locations, dtype: object"
+Doctor Dolittle,"285                             Webster Street
+286       Telegraph Hill Blvd (Telegraph Hill)
+288                      Larkin & Hyde Streets
+289     Gabbiano's Restaurant (Ferry Building)
+290                                 Coit Tower
+291                          2107 Union Street
+292                          2100 Green Street
+392                                 Coit Tower
+522       Telegraph Hill Blvd (Telegraph Hill)
+905                          2107 Union Street
+2425    Gabbiano's Restaurant (Ferry Building)
+2657                            Webster Street
+2908                     Larkin & Hyde Streets
+3126                         2100 Green Street
+Name: Locations, dtype: object"
+Getting Even with Dad,"287                            California & Grant Streets
+320           War Memorial Building (401 Van Ness Avenue)
+344           War Memorial Building (401 Van Ness Avenue)
+401      Transbay Terminal (Mission Street at 1st Street)
+403     St. Peter & Paul's Church (666 Filbert Street,...
+404     Neiman Marcus (150 Stockton Street, Union Square)
+405                               Mason Street at Jackson
+668     Neiman Marcus (150 Stockton Street, Union Square)
+671                               Mason Street at Jackson
+764                      Embarcadero Street Station- BART
+1078                                      140 Maiden Lane
+1275     Transbay Terminal (Mission Street at 1st Street)
+1822                                      140 Maiden Lane
+2117                    Embarcadero Street Station- BART 
+2122                Candlestick Park (602 Jamestown Ave.)
+2226     M.H. de Young Memorial Museum (Golden Gate Park)
+2566    St. Peter & Paul's Church (666 Filbert Street,...
+2991                Candlestick Park (602 Jamestown Ave.)
+3028                           California & Grant Streets
+3303     M.H. de Young Memorial Museum (Golden Gate Park)
+Name: Locations, dtype: object"
+Dopamine,"293     South Park (Between 2nd and 3rd Streets, Brann...
+294     Fort Point (Presidio, Golden Gate National Rec...
+1216    South Park (Between 2nd and 3rd Streets, Brann...
+2735    Fort Point (Presidio, Golden Gate National Rec...
+Name: Locations, dtype: object"
+Godzilla,"295             Post & Jones St.
+328          Broadway & Columbus
+410           Kearney & Pine St.
+411        California & Davis St
+412          Pine St. & Davis St
+413       Sacramento & Front St.
+414           Broadway & Sansome
+415          Broadway & Columbus
+416             Post & Jones St.
+417           Stockton & Clay St
+418                Bush & Kearny
+419         Mission & Fremont St
+420            Eddy & Taylor St.
+421     Pier 7 (The Embarcadero)
+422                       Pier 1
+423     Embarcadero & Washington
+424               Mission & Beal
+425           Potrero &San Bruno
+426           Kearney & Pine St.
+618            Eddy & Taylor St.
+1016         Pine St. & Davis St
+2373                      Pier 1
+2454          Potrero &San Bruno
+2570    Embarcadero & Washington
+2608               Bush & Kearny
+2824       California & Davis St
+2919          Stockton & Clay St
+2920              Mission & Beal
+2942      Sacramento & Front St.
+3008          Broadway & Sansome
+3162        Mission & Fremont St
+3364    Pier 7 (The Embarcadero)
+Name: Locations, dtype: object"
+The Enforcer,"296                       Balmy Street (Mission District)
+610                              Sutter & Webster Streets
+1112    Lefty O' Doul Drawbridge/ 3rd Street Bridge (3...
+1196               23rd & Capp Streets (Mission District)
+1671                      Balmy Street (Mission District)
+1743                             Sutter & Webster Streets
+1835    Lefty O' Doul Drawbridge/ 3rd Street Bridge (3...
+1859               23rd & Capp Streets (Mission District)
+2013             24th Street Mini Park (Mission District)
+2025                                      Hall of Justice
+2093                                      Alcatraz Island
+2202                                            City Hall
+2259                                           Coit Tower
+2623             24th Street Mini Park (Mission District)
+2674                                      Hall of Justice
+2891                                      Alcatraz Island
+3224                                            City Hall
+3394                                           Coit Tower
+Name: Locations, dtype: object"
+Tin Cup,"297     NaN
+1672    NaN
+Name: Locations, dtype: object"
+Sense8,"298                                       Harrison & 20th
+519                             Atlas Café, 3049 20th St.
+802     18th Street between Guerrero and Valencia Streets
+803                             Atlas Café, 3049 20th St.
+804          Clarion Alley between Valencia & Mission St.
+805                                       Harrison & 20th
+806                                                Folsom
+807                                              16th St.
+808                                           S. Van Ness
+809                                              22nd St.
+810                                              Harrison
+811                                                  20th
+812                      Z Space Studios; 450 Florida St.
+813     375 Castro St. and 17th between Castro and Dia...
+814                                           Corbett St.
+815                                            Romain St.
+816                                   Market St. overpass
+817                                       Grand View Ave.
+818                Vallejo Street Garage; 766 Vallejo St.
+819         Laguna Honda Hospital; 375 Laguna Honda Blvd.
+820                                Irving St. at 9th Ave.
+822     Dolores Park, 20th St. between Church & Dolore...
+823                    Palace of Fine Arts: 3306 Lyon St.
+824                                 Van Ness and 12th St.
+825               ""Metzger's Apt"" 151 Alice B. Toklas Pl.
+908     375 Castro St. and 17th between Castro and Dia...
+984               ""Metzger's Apt"" 151 Alice B. Toklas Pl.
+1005                                             16th St.
+1030        Laguna Honda Hospital; 375 Laguna Honda Blvd.
+1160                                             Harrison
+1243               Vallejo Street Garage; 766 Vallejo St.
+1321                   Palace of Fine Arts: 3306 Lyon St.
+2302                                               Folsom
+2337         Clarion Alley between Valencia & Mission St.
+2457                                                 20th
+2466                                  Market St. overpass
+2746                                          S. Van Ness
+2819                               Irving St. at 9th Ave.
+2873    18th Street between Guerrero and Valencia Streets
+2957                     Z Space Studios; 450 Florida St.
+2977                                           Romain St.
+2983                                Van Ness and 12th St.
+3079                                          Corbett St.
+3096    Dolores Park, 20th St. between Church & Dolore...
+3111                                             22nd St.
+3154                                      Grand View Ave.
+Name: Locations, dtype: object"
+Never Die Twice,"299     Postcard Row (Alamo Square, Hayes Valley)
+1673    Postcard Row (Alamo Square, Hayes Valley)
+Name: Locations, dtype: object"
+Dr. Dolittle 2,"300     Building 924, Presidio (Golden Gate National R...
+1203                         Hyde Street & Lombard Street
+1861                         Hyde Street & Lombard Street
+2051    West Chrissy Field (Presidio, Golden Gate Nati...
+2127          Broadway, Between Franklin & Laguna Streets
+2199    Sacramento St., Between Pierce & Broderick Str...
+2406    Sacramento St., Between Pierce & Broderick Str...
+2683    Building 924, Presidio (Golden Gate National R...
+2758    West Chrissy Field (Presidio, Golden Gate Nati...
+3001          Broadway, Between Franklin & Laguna Streets
+Name: Locations, dtype: object"
+High Crimes,"302                   Vesuvio Café (255 Columbus Avenue)
+470     Bank of America Building (555 California Street)
+471               391 Pennsylvania Avenue at 19th Street
+472                   Vesuvio Café (255 Columbus Avenue)
+473                                         Union Square
+474                                          Maiden Lane
+475                  Condor Club (Columbus and Broadway)
+476              Chase H & Q  (1 Bush Street at Sansome)
+800                  Condor Club (Columbus and Broadway)
+1004             Chase H & Q  (1 Bush Street at Sansome)
+2105                                         Maiden Lane
+2774              391 Pennsylvania Avenue at 19th Street
+2987    Bank of America Building (555 California Street)
+3046                                        Union Square
+Name: Locations, dtype: object"
+Terminator - Genisys,"303                                         16th and Utah
+444                     Front St. between Market and Clay
+945                                         16th and Utah
+946                     Van Ness between Fell and Lombard
+947             California between Leavenworth and Powell
+948                                Mission at 1st and 2nd
+949                                       Market at Mason
+950                                  California at Larkin
+951                                   California at Jones
+952                                  Pine and Leavenworth
+953                 Howard St. from Embarcadero to 11 St.
+954     Construction Site in front of 260 Stockton St....
+955       California St. between Drumm St. and Kearny St.
+956                        Market St. at Embarcadero area
+957                    Pine St. between Market and Kearny
+958                     Front St. between Market and Clay
+959                                          Union Square
+960                    San Francisco - Oakland Bay Bridge
+961     Mission St., Embarcadero, and Front between Cl...
+962                                Sutter Stockton Garage
+963                              Bush St. at Stockton St.
+964                                 Powell St at Geary St
+965                        1 Market St. Landmark Building
+966               Embarcadero between Pier 2 and Harrison
+967                                               Pier 14
+968                Pine St. between Market and Montgomery
+1094                               Sutter Stockton Garage
+1199                               Mission at 1st and 2nd
+1244    Construction Site in front of 260 Stockton St....
+2309                                 Pine and Leavenworth
+2412      California St. between Drumm St. and Kearny St.
+2533                                Powell St at Geary St
+2575    Mission St., Embarcadero, and Front between Cl...
+2602                                 California at Larkin
+2609                   San Francisco - Oakland Bay Bridge
+2652                    Van Ness between Fell and Lombard
+2699                                  California at Jones
+2741                       1 Market St. Landmark Building
+2952               Pine St. between Market and Montgomery
+3015                                      Market at Mason
+3040                                              Pier 14
+3055                                         Union Square
+3169                             Bush St. at Stockton St.
+3267                       Market St. at Embarcadero area
+3269                Howard St. from Embarcadero to 11 St.
+3362              Embarcadero between Pier 2 and Harrison
+3366            California between Leavenworth and Powell
+3373                   Pine St. between Market and Kearny
+Name: Locations, dtype: object"
+Chance- Season 1 ep109,"304     Cliffhouse, 1090 Point Lobos Ave.
+1295    Cliffhouse, 1090 Point Lobos Ave.
+1430    850 Bryant- 6th floor County Jail
+1446                            2 Rowland
+1484                   60 Leavenworth St.
+1542             Terry A. Francois Blvd. 
+1595                     Ocean Park Motel
+2321    850 Bryant- 6th floor County Jail
+2378                            2 Rowland
+2591                   60 Leavenworth St.
+2994              Terry A. Francois Blvd.
+3167                     Ocean Park Motel
+Name: Locations, dtype: object"
+Woman on Top,"305     312 Fillmore Street
+1280    312 Fillmore Street
+Name: Locations, dtype: object"
+Pushing Dead,"307       Cordova Market, 301 Rolph Street, San Francisco
+551                                      42 Walter Street
+1087    Mission Neibhrohood Health Cetner, 240 Shotwee...
+1163                                        Koshland Park
+1297      Cordova Market, 301 Rolph Street, San Francisco
+1334                                     42 Walter Street
+1384    Mission Neibhrohood Health Cetner, 240 Shotwee...
+1388           Blind Cat, 3050 24th Street, San Francisco
+1396                                        Koshland Park
+1421                                1069 Tennessee Street
+1425           Infield Batting Cages, 1888 Clement Street
+1428                    Daniel's Pharmacy, 943 Geneva Ave
+1467                                   433 Baker Street, 
+1478             Ele Nino Traiing Cetner, 2920 3rd Street
+1488                                      2930 3rd Street
+1492                              Octavia at Grove Street
+1555            Double Happiness Health, 3380 20th Street
+1569                            915 Naples, San Francisco
+1588                       Uva Enoteca, 568 Haight Street
+1598        Turk Street between Steiner and Scott Streets
+1611                           Church Street MUNI Station
+1620          5th Ave @ Fulton Street in Golden Gate Park
+1634             Hayes Street between Ashbury and Shrader
+1640           Matching Half Café, 1799 McAllister Street
+2278                                1069 Tennessee Street
+2296           Infield Batting Cages, 1888 Clement Street
+2312                    Daniel's Pharmacy, 943 Geneva Ave
+2540             Ele Nino Traiing Cetner, 2920 3rd Street
+2616                                      2930 3rd Street
+2633                              Octavia at Grove Street
+2927            Double Happiness Health, 3380 20th Street
+2947                                    433 Baker Street,
+2954           Blind Cat, 3050 24th Street, San Francisco
+3000                            915 Naples, San Francisco
+3127                       Uva Enoteca, 568 Haight Street
+3174        Turk Street between Steiner and Scott Streets
+3245                           Church Street MUNI Station
+3305          5th Ave @ Fulton Street in Golden Gate Park
+3353             Hayes Street between Ashbury and Shrader
+3381           Matching Half Café, 1799 McAllister Street
+Name: Locations, dtype: object"
+The Dead Pool,"308                  San Francisco Drydock (The Dogpatch)
+338                   Hall of Justice (850 Bryant Street)
+343             McAllister & Scott Streets (Hayes Valley)
+371     One Thousand Powell Apartments (1000 Powell St...
+509                         Portsmouth Square (Chinatown)
+706                  Washington Square Park (North Beach)
+726     Silver Restaurant (737 Washington Street, Chin...
+928         Pierce & California Streets (Pacific Heights)
+1070       Pierce St. & Golden Gate Avenue (Hayes Valley)
+1169    Mirant Energy, LLC (1301 Illinois Street, The ...
+1205                               Folsom & Essex Streets
+1675                 San Francisco Drydock (The Dogpatch)
+1685                  Hall of Justice (850 Bryant Street)
+1688            McAllister & Scott Streets (Hayes Valley)
+1697    One Thousand Powell Apartments (1000 Powell St...
+1726                        Portsmouth Square (Chinatown)
+1767                 Washington Square Park (North Beach)
+1771    Silver Restaurant (737 Washington Street, Chin...
+1791        Pierce & California Streets (Pacific Heights)
+1816       Pierce St. & Golden Gate Avenue (Hayes Valley)
+1849    Mirant Energy, LLC (1301 Illinois Street, The ...
+1863                               Folsom & Essex Streets
+1924    New Asia Restaurant (772 Pacific Avenue at Grant)
+1928                20th & De Haro Streets (Potrero Hill)
+1931              22nd & Wisconsin Streets (Potrero Hill)
+1937                      1954 Mason Street (North Beach)
+1963                     550 El Camino Del Mar (Seacliff)
+1985                       23rd & Iowa Streets (Dogpatch)
+1992    The Cannery (281 Leavenworth Street, Fisherman...
+2009    KGO-TV ABC7 TV Studios (900 Front Street, Wate...
+2064    22nd Bet. Carolina & Rhode Island Streets (Pot...
+2083    San Francisco National Military Cemetery (Linc...
+2084                    Fremont Street Exit of Bay Bridge
+2112                          Clementina & Sumner Streets
+2116                    710 Steiner Street (Hayes Valley)
+2167    Nam Yuen Restaurant (740 Washington Street, Ch...
+2179        Eber Electronics (2355 Market Street, Castro)
+2191    San Francisco General Hospital Medical Center ...
+2227                             Pier 3 (The Embarcadero)
+2245                    Carl & Cole Streets (Cole Valley)
+2380    New Asia Restaurant (772 Pacific Avenue at Grant)
+2390                20th & De Haro Streets (Potrero Hill)
+2396              22nd & Wisconsin Streets (Potrero Hill)
+2410                      1954 Mason Street (North Beach)
+2477                     550 El Camino Del Mar (Seacliff)
+2536                       23rd & Iowa Streets (Dogpatch)
+2555    The Cannery (281 Leavenworth Street, Fisherman...
+2605    KGO-TV ABC7 TV Studios (900 Front Street, Wate...
+2780    San Francisco General Hospital Medical Center ...
+2796    22nd Bet. Carolina & Rhode Island Streets (Pot...
+2869    San Francisco National Military Cemetery (Linc...
+2871                    Fremont Street Exit of Bay Bridge
+2967                          Clementina & Sumner Streets
+2972                    710 Steiner Street (Hayes Valley)
+3113    Nam Yuen Restaurant (740 Washington Street, Ch...
+3146        Eber Electronics (2355 Market Street, Castro)
+3306                             Pier 3 (The Embarcadero)
+3357                    Carl & Cole Streets (Cole Valley)
+Name: Locations, dtype: object"
+Sweet November,"309          Citicorp Center (1 Sansome Street at Sutter)
+931     Marquee Lofts (1000 Van Ness Avenue at Alice B...
+932                   Hotel Majestic (1500 Sutter Street)
+933     Foote, Cone & Belding (733 Front Street at Pac...
+934        Farley's Café (1315 18th Street Near Missouri)
+935         Citicorp Center (1 Sansome Street at Sutter) 
+936                Christopher's Books (1400 18th Street)
+937                                         Chrissy Field
+938     Blooms Saloon (18th Street between Missouri an...
+939               Mission Dolores Park (Mission District)
+2306               Christopher's Books (1400 18th Street)
+2382       Farley's Café (1315 18th Street Near Missouri)
+2859                  Hotel Majestic (1500 Sutter Street)
+3051    Marquee Lofts (1000 Van Ness Avenue at Alice B...
+3151    Blooms Saloon (18th Street between Missouri an...
+3153              Mission Dolores Park (Mission District)
+3289    Foote, Cone & Belding (733 Front Street at Pac...
+3316                                        Chrissy Field
+Name: Locations, dtype: object"
+Woman on the Run,"310                   835-865 Market Street at 5th Street
+437                              819 Mason Street at Pine
+1207                                  1801 Laguna at Bush
+1712                             819 Mason Street at Pine
+1864                                  1801 Laguna at Bush
+1987    Former Hall of Justice (750 Kearny Street at W...
+2012                     772 Commercial Street at Kearney
+2151    Cable Car Signal Box (California Street at Pow...
+2215                  835-865 Market Street at 5th Street
+2545    Former Hall of Justice (750 Kearny Street at W...
+2621                     772 Commercial Street at Kearney
+3056    Cable Car Signal Box (California Street at Pow...
+Name: Locations, dtype: object"
+When We Rise,"312                         Buena Vista Park
+429     Castro St. between 17th and 18th St.
+433                               Bay Bridge
+1069                          440 Castro St.
+1241                    United Nations Plaza
+1299                        Buena Vista Park
+1313    Castro St. between 17th and 18th St.
+1314                              Bay Bridge
+1383                          440 Castro St.
+1409                    United Nations Plaza
+1415    24th St. between Florida and Alabama
+1480                          520 Castro St.
+1493    24th St. between Florida and Alabama
+1530                          426 Castro St.
+1536         Women's Building, 3543 18th St.
+1538       Eureka Arts Center, 4400 20th St.
+1544                Powell St. at Market St.
+1559                               City Hall
+1587                   Haight St. at Central
+1614      Harvey Milk Plaza, 17th and Castro
+1629              Twin Peaks Bar, 401 Castro
+1637          Castro Theatre, 429 Castro St.
+2351         Women's Building, 3543 18th St.
+2567                          520 Castro St.
+2805                          426 Castro St.
+2861       Eureka Arts Center, 4400 20th St.
+2881                Powell St. at Market St.
+2943                               City Hall
+3124                   Haight St. at Central
+3261      Harvey Milk Plaza, 17th and Castro
+3346              Twin Peaks Bar, 401 Castro
+3368          Castro Theatre, 429 Castro St.
+Name: Locations, dtype: object"
+Always Be My Maybe,"313          Heart of the City Farmers Market at UN Plaza
+316                                         717 Grant Ave
+366                      Fairmont Hotel - Penthouse Suite
+604                   Kearny btwn Columbus and Washington
+1164    Fort Point (Presidio, Golden Gate National Rec...
+2294                            California Cable Car Line
+2462               Palace of Fine Arts (3301 Lyon Street)
+2574                                        22nd Ave Home
+2631                                  Trax Bar, Haight St
+2719                       26th Ave and El Camino Del mar
+2721                           Contemporary Jewish Museum
+2766                          Golden Gate Music Concourse
+2790                                        19th Ave Home
+2828                     de Young Museum/Golden Gate Park
+2850                           Pier 45 - Musee Mechanique
+2913                                 Haight St at Masonic
+3384                                               Pier 7
+Name: Locations, dtype: object"
+Pacific Heights,"314     Texas & 19th Streets (Potrero Hill)
+700     Texas & 19th Streets (Potrero Hill)
+924                               Chinatown
+1788                              Chinatown
+2131                     Financial District
+3010                     Financial District
+Name: Locations, dtype: object"
+Jagged Edge,"315     Golden Gate Bridge
+999              City Hall
+1676    Golden Gate Bridge
+1798             City Hall
+Name: Locations, dtype: object"
+Chance- Season 1 ep102,"317      Betelnut restaurant, 2030 Union St.
+543           Warren's Antiques, 375 9th St.
+910                  Duboce St., Duboce Café
+912                       Potomac and Waller
+1080                       Mason and Pacific
+1135                        YWCA, 940 Powell
+1294          Warren's Antiques, 375 9th St.
+1298           State Garage, 818 Leavenworth
+1302                 Duboce St., Duboce Café
+1350     Betelnut restaurant, 2030 Union St.
+1359                      Westin St. Francis
+1422       John St. between Powell and Mason
+1460                        YWCA, 940 Powell
+1507                      Potomac and Waller
+1543    Sutter Stockton Garage, 444 Stockton
+1628                Heron and Berwick Alleys
+1631                       Mason and Pacific
+2636       John St. between Powell and Mason
+2716    Sutter Stockton Garage, 444 Stockton
+2815           State Garage, 818 Leavenworth
+3082                Heron and Berwick Alleys
+3390                      Westin St. Francis
+Name: Locations, dtype: object"
+Innerspace,"319                                        Telegraph Hill
+516     Mark Hopkins Intercontinental Hotel (1 Nob Hil...
+1677                                       Telegraph Hill
+1728    Mark Hopkins Intercontinental Hotel (1 Nob Hil...
+2041                                   Golden Gate Bridge
+2725                                   Golden Gate Bridge
+Name: Locations, dtype: object"
+Looking,"321                          Orphan Andy's
+324                           Fort Funston
+382                   St. Francis Fountain
+406     BART from Civic Center to 24th St.
+445                          2866 24th St.
+                       ...                
+3222                           Sutro Baths
+3259                          The Fairmont
+3279                         Mr. S Leather
+3295                   Willy's Barber Shop
+3324        Jawbone at 99 Rhode Island St.
+Name: Locations, Length: 82, dtype: object"
+Dirty Harry,"322                             Forest Hill Station- MUNI
+377     St. Peter & Paul's Church (666 Filbert Street,...
+549     Holiday Inn Select Downtown Hotel (750 Kearney...
+880      Bank of America Building (555 California Street)
+1081    San Francisco Drydock (20th and Illinois Streets)
+1234       Dante Building (1606 Stockton Street at Union)
+1678                            Forest Hill Station- MUNI
+1700    St. Peter & Paul's Church (666 Filbert Street,...
+1739    Holiday Inn Select Downtown Hotel (750 Kearney...
+1780     Bank of America Building (555 California Street)
+1823    San Francisco Drydock (20th and Illinois Streets)
+1870       Dante Building (1606 Stockton Street at Union)
+1947                  Hall of Justice (850 Bryant Street)
+1976    California Hall (625 Polk Street, Van Ness/Civ...
+1990                       Washington Square, North Beach
+2018              Mission Dolores Park (Mission District)
+2050                                      The Embarcadero
+2053                     Mt. Davidson Cross, Mt. Davidson
+2114                        Marina Green, Marina District
+2119                      Kezar Stadium, Golden Gate Park
+2136                        Portsmouth Square (Chinatown)
+2439                  Hall of Justice (850 Bryant Street)
+2516    California Hall (625 Polk Street, Van Ness/Civ...
+2550                       Washington Square, North Beach
+2656              Mission Dolores Park (Mission District)
+2756                                      The Embarcadero
+2763                     Mt. Davidson Cross, Mt. Davidson
+2922                        Marina Green, Marina District
+2984                      Kezar Stadium, Golden Gate Park
+3019                        Portsmouth Square (Chinatown)
+Name: Locations, dtype: object"
+Sudden Impact,"323                        The Embarcadero/Ferry Building
+380                                    Civic Center Plaza
+731     Mark Hopkins Intercontinental Hotel (1 Nob Hil...
+1021                  Near Point Lobos, El Camino Del Mar
+1679                       The Embarcadero/Ferry Building
+1701                                   Civic Center Plaza
+1774    Mark Hopkins Intercontinental Hotel (1 Nob Hil...
+1817                 Near Point Lobos, El Camino Del Mar 
+1966    Bowles Franklin Galleries (765 Beach Street, F...
+2080                          Pier 38-40, The Embarcadero
+2100                                         Mt. Davidson
+2173         McDonald's Restaurant (701 3rd Street, SOMA)
+2214                                          Ferry Plaza
+2233          Fairmont Hotel (950 Mason Street, Nob Hill)
+2240                  Hall of Justice (850 Bryant Street)
+2483    Bowles Franklin Galleries (765 Beach Street, F...
+2855                          Pier 38-40, The Embarcadero
+2923                                         Mt. Davidson
+3128         McDonald's Restaurant (701 3rd Street, SOMA)
+3258                                          Ferry Plaza
+3323          Fairmont Hotel (950 Mason Street, Nob Hill)
+3341                  Hall of Justice (850 Bryant Street)
+Name: Locations, dtype: object"
+Sudden Fear,"325            Brocklebank Apartments (1000 Mason Street)
+1193    The Tamalpais Building (1201 Greenwich Street ...
+1680           Brocklebank Apartments (1000 Mason Street)
+1857    The Tamalpais Building (1201 Greenwich Street ...
+1911                                    2800 Scott Street
+1935                                       Lombard Street
+2405                                       Lombard Street
+3185                                    2800 Scott Street
+Name: Locations, dtype: object"
+Faces of Death,"327    NaN
+916    NaN
+Name: Locations, dtype: object"
+Foul Play,"329     Potrero Hill Bathhouse & Feed Co. (199 Mississ...
+461             Postcard Row (Alamo Square, Hayes Valley)
+515         Laguna & Sacramento Streets (Pacific Heights)
+530     Andrew S. Hallidie Plaza (Market & Powell Stre...
+889                  24th and Castro Streets (Noe Valley)
+1025    Fort Mason (Golden Gate National Recreation Area)
+1107                           Sutter & Buchannan Streets
+1152       Montgomery & Pine Streets (Financial District)
+1172    Hayes Valley Care (601 Laguna Street, Hayes Va...
+1242               Octavia & Hayes Streets (Hayes Valley)
+1683    Potrero Hill Bathhouse & Feed Co. (199 Mississ...
+1717            Postcard Row (Alamo Square, Hayes Valley)
+1727        Laguna & Sacramento Streets (Pacific Heights)
+1731    Andrew S. Hallidie Plaza (Market & Powell Stre...
+1781                 24th and Castro Streets (Noe Valley)
+1804    Fort Mason (Golden Gate National Recreation Area)
+1834                           Sutter & Buchannan Streets
+1845       Montgomery & Pine Streets (Financial District)
+1850    Hayes Valley Care (601 Laguna Street, Hayes Va...
+1873               Octavia & Hayes Streets (Hayes Valley)
+1936                               Sutter & Baker Streets
+1979                  430 Vallejo Street (Telegraph Hill)
+1999                 Sacramento & Hyde Streets (Nob Hill)
+2006         Golden Gate & Steiner Streets (Hayes Valley)
+2008                                            City Hall
+2023       War Memorial Opera House (401 Van Ness Avenue)
+2043               California & Larkin Streets (Nob Hill)
+2067    Asian Art Museum (200 Larkin Street, Civic Cen...
+2081                   Flood Building (870 Market Street)
+2109                                 Fort Point, Presidio
+2141    Fiesta Laundromat (898 S. Van Ness Ave., Mission)
+2161    Sokoji-Soto Zen Buddhist Temple (1691 Laguna S...
+2407                               Sutter & Baker Streets
+2525                  430 Vallejo Street (Telegraph Hill)
+2573                 Sacramento & Hyde Streets (Nob Hill)
+2599         Golden Gate & Steiner Streets (Hayes Valley)
+2604                                            City Hall
+2671       War Memorial Opera House (401 Van Ness Avenue)
+2733               California & Larkin Streets (Nob Hill)
+2800    Asian Art Museum (200 Larkin Street, Civic Cen...
+2858                   Flood Building (870 Market Street)
+2950                                 Fort Point, Presidio
+3025    Fiesta Laundromat (898 S. Van Ness Ave., Mission)
+3070    Sokoji-Soto Zen Buddhist Temple (1691 Laguna S...
+Name: Locations, dtype: object"
+House of Sand and Fog,"331    NaN
+478    NaN
+Name: Locations, dtype: object"
+Fandom,"332     NaN
+3221    NaN
+Name: Locations, dtype: object"
+Fat Man and Little Boy,"333    Postcard Row (Alamo Square, Hayes Valley)
+528    Postcard Row (Alamo Square, Hayes Valley)
+Name: Locations, dtype: object"
+Magnum Force,"334                   18th Street Overpass (Potrero Hill)
+367                                    Golden Gate Bridge
+388                   Hall of Justice (850 Bryant Street)
+453              2190 Washington Street (Pacific Heights)
+727          Vermont Street between 20th and 22nd Streets
+1060                                  Embarcadero Freeway
+1684                  18th Street Overpass (Potrero Hill)
+1694                                   Golden Gate Bridge
+1705                  Hall of Justice (850 Bryant Street)
+1715             2190 Washington Street (Pacific Heights)
+1772         Vermont Street between 20th and 22nd Streets
+1810                                  Embarcadero Freeway
+1896     280 Freeway at Pennsylvania and Mariposa Streets
+2022                                            City Hall
+2104                  San Francisco International Airport
+2120    San Francisco Drydock (20th and Illinois Streets)
+2121    Pacific Heights Towers (2200 Sacramento Street...
+2123    Lefty O' Doul Drawbridge/ 3rd Street Bridge (3...
+2156          Fairmont Hotel (950 Mason Street, Nob Hill)
+2190          Cost Plus World Market (2552 Taylor Street)
+2250                       Broadway Tunnel (Russian Hill)
+2283     280 Freeway at Pennsylvania and Mariposa Streets
+2666                                            City Hall
+2921                  San Francisco International Airport
+2989    San Francisco Drydock (20th and Illinois Streets)
+2990    Pacific Heights Towers (2200 Sacramento Street...
+2992    Lefty O' Doul Drawbridge/ 3rd Street Bridge (3...
+3077          Fairmont Hotel (950 Mason Street, Nob Hill)
+3193          Cost Plus World Market (2552 Taylor Street)
+3372                       Broadway Tunnel (Russian Hill)
+Name: Locations, dtype: object"
+When a Man Loves a Woman,"335                   Buena Vista Café (2765 Hyde Street)
+1108                   Cybelle's Pizza (1000 Bush Street)
+1264                  Buena Vista Café (2765 Hyde Street)
+1265    Victor's Restaurant, The Westin St. Francis Ho...
+1266           Spring Valley School (1451 Jackson Street)
+1270    International Studies Academy (993 Vermont Str...
+1271                       Grant Street at Pacific Avenue
+1272                   Cybelle's Pizza (1000 Bush Street)
+1273    766 Vallejo Street at Stockton Street (North B...
+1274               1521 Masonic Avenue at Piedmont Street
+2486           Spring Valley School (1451 Jackson Street)
+3068               1521 Masonic Avenue at Piedmont Street
+3142                       Grant Street at Pacific Avenue
+3220    766 Vallejo Street at Stockton Street (North B...
+3286    Victor's Restaurant, The Westin St. Francis Ho...
+3333    International Studies Academy (993 Vermont Str...
+Name: Locations, dtype: object"
+Junior,"339                                  722 Steiner Street
+662                 United Nations Plaza (Civic Center)
+1686                                 722 Steiner Street
+1757                United Nations Plaza (Civic Center)
+1943    Hyatt Fisherman's Wharf (555 Northpoint Street)
+1973                                     Chinatown Gate
+2036                                   2552 Hyde Street
+2094        Fairmont Hotel (950 Mason Street, Nob Hill)
+2164          Postcard Row (Alamo Square, Hayes Valley)
+2386                                     Chinatown Gate
+2430    Hyatt Fisherman's Wharf (555 Northpoint Street)
+2697                                   2552 Hyde Street
+2900        Fairmont Hotel (950 Mason Street, Nob Hill)
+3104          Postcard Row (Alamo Square, Hayes Valley)
+Name: Locations, dtype: object"
+Maxie,"346     Grace Cathedral Episcopal Church (1100 Califor...
+1689    Grace Cathedral Episcopal Church (1100 Califor...
+2000    Asian Art Museum (200 Larkin Street, Civic Cen...
+2032    722 Steiner Street (Postcard Row, Alamo Square...
+2578    Asian Art Museum (200 Larkin Street, Civic Cen...
+2687    722 Steiner Street (Postcard Row, Alamo Square...
+Name: Locations, dtype: object"
+Final Analysis,"348     Westin St. Francis Hotel (335 Powell Street, U...
+350     Public Health Service Hospital (Presidio, Gold...
+351        Presidio, Golden Gate National Recreation Area
+352                                             City Hall
+353                       Bix Restaurant (56 Gold Street)
+2355                      Bix Restaurant (56 Gold Street)
+2628                                            City Hall
+2708       Presidio, Golden Gate National Recreation Area
+3114    Westin St. Francis Hotel (335 Powell Street, U...
+3304    Public Health Service Hospital (Presidio, Gold...
+Name: Locations, dtype: object"
+Patty Hearst,"349     Bank of America (38th Street at Balboa Street)
+1690    Bank of America (38th Street at Balboa Street)
+2098         Postcard Row (Alamo Square, Hayes Valley)
+2911         Postcard Row (Alamo Square, Hayes Valley)
+Name: Locations, dtype: object"
+Chance- Season 1 ep104,"354             Bayview Police Station, 201 Williams Ave.
+632     Agua Vista Park at Mission Rock, 817 Terry A F...
+664                Miraloma Mall at Portola Frontage Road
+1304            Bayview Police Station, 201 Williams Ave.
+1345    Agua Vista Park at Mission Rock, 817 Terry A F...
+1349               Miraloma Mall at Portola Frontage Road
+1452                  15th St. between Vermont and Kansas
+1454                                  11 San Jacinto Ave.
+1568                                 Bush and Sansome St.
+1573                                 901/909Tennessee St.
+1575                                       200 Kansas St.
+1619                                   1018 Tennessee St.
+1626                                  Palace of Fine Arts
+2409                  15th St. between Vermont and Kansas
+2418                                  11 San Jacinto Ave.
+2988                                 Bush and Sansome St.
+3026                                 901/909Tennessee St.
+3032                                       200 Kansas St.
+3301                                   1018 Tennessee St.
+3332                                  Palace of Fine Arts
+Name: Locations, dtype: object"
+Flubber,"356     Treasure Island
+2845    Treasure Island
+Name: Locations, dtype: object"
+Forrest Gump,"357     Palace of Fine Arts (3301 Lyon Street)
+2552    Palace of Fine Arts (3301 Lyon Street)
+Name: Locations, dtype: object"
+40 Days and 40 Nights,"358     The Walden House, Buena Vista Park
+359             Café Trieste (609 Vallejo)
+520     The Walden House, Buena Vista Park
+2860            Café Trieste (609 Vallejo)
+Name: Locations, dtype: object"
+A Taiwanese Tale of Two Cities,"360                           700 Block of Grant Ave.
+373                                Civic Center Plaza
+1010                                  2751 Mission St
+1130                                    Waverly Place
+2303                              Texas St at 19th St
+2448                           Fulton St at Larkin St
+2542                          Steiner St at Fulton St
+2568                                     Dolores Park
+2757           Palace of Fine Arts (3301 Lyon Street)
+2769                   Castro Theatre, 429 Castro St.
+2833                           Sutter St at Taylor St
+2843                                738 Washington St
+2851                          San Francisco City Hall
+2975                                           Pier 7
+3099                              Bernal Heights Park
+3322    1653 Haight and 1400-1500 blocks of Haight St
+3338                                           Pier 5
+Name: Locations, dtype: object"
+Red Widow,"364                 York & 24th St.
+759                 York & 24th St.
+760                 2nd St & Howard
+761     Montgomery & Market Streets
+762               Broadway & Taylor
+763           Mason & Sacramento St
+765                Geary & 27th Ave
+766                Geary & 20th Ave
+767      Pioneer Park at Coit Tower
+768           Vallejo Street Garage
+769           California & Davis St
+770         Golden Gate Ave & Jones
+1126              Broadway & Taylor
+1168               Geary & 20th Ave
+2319          Vallejo Street Garage
+2664     Pioneer Park at Coit Tower
+2788               Geary & 27th Ave
+2897                2nd St & Howard
+3294        Golden Gate Ave & Jones
+3297    Montgomery & Market Streets
+3320          Mason & Sacramento St
+3350          California & Davis St
+Name: Locations, dtype: object"
+Down Periscope,"365     NaN
+1693    NaN
+Name: Locations, dtype: object"
+Etruscan Smile,"368                       St Regis Hotel, 125 3rd Street
+379                                     Jones @ Broadway
+385                             Broadway @ Jones Streets
+457                     Outpost Studios, 69 Green Street
+548                         Mudpie, 2185 Fillmore Street
+620                 Benu Restaurant, 22 Hawthorne Street
+623            California Street between Front and Davis
+1009           California Street between Sansome & Davis
+1131                                    343 Union Street
+1246       Laguna Honda Hospital, 375 Laguna Honda Blvd.
+1307                      St Regis Hotel, 125 3rd Street
+1309                                    Jones @ Broadway
+1310                            Broadway @ Jones Streets
+1318                    Outpost Studios, 69 Green Street
+1333                        Mudpie, 2185 Fillmore Street
+1341                Benu Restaurant, 22 Hawthorne Street
+1343           California Street between Front and Davis
+1376           California Street between Sansome & Davis
+1392                                    343 Union Street
+1410       Laguna Honda Hospital, 375 Laguna Honda Blvd.
+1424                               Pier 14 San Francisco
+1429                        UCSF Mt Zion 1600 Divisadero
+1445    Hooker Alley Garden on Mason between Bush & Pine
+1448                       Legion of Honor, 100 34th Ave
+1453                3rd Street between Market & Harrison
+1464                              1227 Montgomery Street
+1472                               San Francisco Airport
+1489             Turk Street between Mason & Leavenworth
+1505                                     Treasure Island
+1525                             San Francisco City Hall
+1539                               225 California Street
+1560                 Bentley Reserve, 301 Battery Street
+1571                Marriott Marquis, 780 Mission Street
+1572                             Mason Street @ Vallejo 
+1586                               Pier 39 San Francisco
+1616                     Andronico's, 1200 Irving Street
+1617                        Castle Street @ Green Street
+1643                     Chaya / Perry's 132 Embarcadero
+2290                               Pier 14 San Francisco
+2316                        UCSF Mt Zion 1600 Divisadero
+2374    Hooker Alley Garden on Mason between Bush & Pine
+2393                       Legion of Honor, 100 34th Ave
+2415                3rd Street between Market & Harrison
+2487                              1227 Montgomery Street
+2513                               San Francisco Airport
+2622             Turk Street between Mason & Leavenworth
+2690                                     Treasure Island
+2792                             San Francisco City Hall
+2862                               225 California Street
+2956                 Bentley Reserve, 301 Battery Street
+3018                Marriott Marquis, 780 Mission Street
+3117                               Pier 39 San Francisco
+3253                              Mason Street @ Vallejo
+3285                     Andronico's, 1200 Irving Street
+3293                        Castle Street @ Green Street
+3401                     Chaya / Perry's 132 Embarcadero
+Name: Locations, dtype: object"
+Sphere,"370     S.S. Jeremiah O'Brien
+1696    S.S. Jeremiah O'Brien
+Name: Locations, dtype: object"
+Fearless,"375                                 5th and Beale Streets
+387      Bank of America Building (555 California Street)
+1252             Varennes Alley between Filbert and Union
+1698                                5th and Beale Streets
+1704     Bank of America Building (555 California Street)
+1877             Varennes Alley between Filbert and Union
+1900                          Folsom Street & Embarcadero
+2004                Kohl Building (400 Montgomery Street)
+2046    St. Peter & Paul's Church (666 Filbert Street,...
+2073                                400 Montgomery Street
+2102    San Francisco General Hospital Medical Center ...
+2252                                       90 Gold Street
+2298                          Folsom Street & Embarcadero
+2592                Kohl Building (400 Montgomery Street)
+2748    St. Peter & Paul's Church (666 Filbert Street,...
+2827                                400 Montgomery Street
+3230    San Francisco General Hospital Medical Center ...
+3376                                       90 Gold Street
+Name: Locations, dtype: object"
+The Birds,"384     Powell and Geary Streets (Union Square)
+1703    Powell and Geary Streets (Union Square)
+Name: Locations, dtype: object"
+Greed,"386                   Bush and Sutter Streets
+439                    Hayes Street at Laguna
+555     Cliff House (1090 Point Lobos Avenue)
+2228    Cliff House (1090 Point Lobos Avenue)
+2247                   Hayes Street at Laguna
+2256                  Bush and Sutter Streets
+Name: Locations, dtype: object"
+"Budding Prospects, Pilot","391               1641 York Street
+491     Gough Street & Clay Street
+626               3050 24th Street
+995             40 Prentiss Street
+1296    Gough Street & Clay Street
+1328          2007 Franklin Street
+1364              3033 24th Street
+1386              1641 York Street
+1387          1125 Guerrero Street
+1420           1167 Alabama Street
+1426            40 Prentiss Street
+1436              2937 24th Street
+1485      Bernal Heights Boulevard
+1494              3050 24th Street
+1528           500 Cortland Avenue
+1564                  Lucky Street
+1632             951 Hudson Avenue
+2318          2007 Franklin Street
+2459              2937 24th Street
+2506           500 Cortland Avenue
+2617      Bernal Heights Boulevard
+2700          1125 Guerrero Street
+2896             951 Hudson Avenue
+3119           1167 Alabama Street
+3256              3033 24th Street
+3257                  Lucky Street
+Name: Locations, dtype: object"
+George of the Jungle,"394                                    755 Vallejo Street
+395     The Tamalpais Building (1201 Greenwich Street ...
+396     Neiman Marcus (150 Stockton Street, Union Square)
+397      First Bank (550 Montgomery Street at Commercial)
+398                                            Bay Bridge
+607      First Bank (550 Montgomery Street at Commercial)
+2595    Neiman Marcus (150 Stockton Street, Union Square)
+2872    The Tamalpais Building (1201 Greenwich Street ...
+3059                                           Bay Bridge
+3412                                   755 Vallejo Street
+Name: Locations, dtype: object"
+It Came From Beneath the Sea,"402          Chrissy Field
+1226         Hunters Point
+1707         Chrissy Field
+1869         Hunters Point
+2108    Golden Gate Bridge
+2948    Golden Gate Bridge
+Name: Locations, dtype: object"
+The Pursuit of Happyness,"408        Glide Memorial Church (434 Ellis St)
+615       Candlestick Park (602 Jamestown Ave.)
+907                    Glen Park Subway Station
+1146                   Glen Park Subway Station
+1147       Glide Memorial Church (434 Ellis St)
+1148      Candlestick Park (602 Jamestown Ave.)
+1149    Golden Gate Park Children's Playground 
+2458     Golden Gate Park Children's Playground
+Name: Locations, dtype: object"
+God is a Communist?* (show me heart universe),"409     Sacramento & Washington Streets
+1208    Sacramento & Washington Streets
+Name: Locations, dtype: object"
+Hulk,"427                Telegraph Hill
+480                Telegraph Hill
+481     Vallejo Street at Sansome
+482            Golden Gate Bridge
+483               Treasure Island
+3052              Treasure Island
+3156           Golden Gate Bridge
+3318    Vallejo Street at Sansome
+Name: Locations, dtype: object"
+The Presidio,"428                                    Golden Gate Bridge
+502       Presidio (Golden Gate National Recreation Area)
+1022    Fort Point (Presidio, Golden Gate National Rec...
+1174        Montgomery & Vallejo Streets (Telegraph Hill)
+1709                                   Golden Gate Bridge
+1802    Fort Point (Presidio, Golden Gate National Rec...
+1851        Montgomery & Vallejo Streets (Telegraph Hill)
+1923              700 Block of Jackson Street (Chinatown)
+1930                     Battery Street (The Embarcadero)
+2065        Washington Street & Waverly Place (Chinatown)
+2085      Presidio (Golden Gate National Recreation Area)
+2101                     Sansome Street (The Embarcadero)
+2130                900 Block of Grant Avenue (Chinatown)
+2137                                 Market & 2nd Streets
+2171                  Hayes & Polk Streets (Civic Center)
+2189     200 Block of Sansome Street (Financial District)
+2200                                           Coit Tower
+2251                                   Civic Center Plaza
+2260                                       Ferry Building
+2377              700 Block of Jackson Street (Chinatown)
+2392                     Battery Street (The Embarcadero)
+2798        Washington Street & Waverly Place (Chinatown)
+2924                     Sansome Street (The Embarcadero)
+3006                900 Block of Grant Avenue (Chinatown)
+3020                                 Market & 2nd Streets
+3121                  Hayes & Polk Streets (Civic Center)
+3190     200 Block of Sansome Street (Financial District)
+3219                                           Coit Tower
+3374                                   Civic Center Plaza
+3395                                       Ferry Building
+Name: Locations, dtype: object"
+Petulia,"436               Cala Foods (California Street and Hyde)
+613                                    307 Filbert Street
+906                                  2417 Franklin Street
+1711              Cala Foods (California Street and Hyde)
+1744                                   307 Filbert Street
+1785                                 2417 Franklin Street
+1969    Japanese Tea Garden, Hagiwara Tea Garden Drive...
+2031          Fairmont Hotel (950 Mason Street, Nob Hill)
+2125                                          Pier 43 1/2
+2209    Fort Point (Presidio, Golden Gate National Rec...
+2500    Japanese Tea Garden, Hagiwara Tea Garden Drive...
+2685          Fairmont Hotel (950 Mason Street, Nob Hill)
+2998                                          Pier 43 1/2
+3247    Fort Point (Presidio, Golden Gate National Rec...
+Name: Locations, dtype: object"
+Shattered,"438    NaN
+830    NaN
+Name: Locations, dtype: object"
+Vertigo,"440                                    900 Lombard Street
+1082    Mission San Juan Bautista (2nd & Mariposa Stre...
+1095           Ernie's Restaurant (847 Montgomery Street)
+1125          Fairmont Hotel (950 Mason Street, Nob Hill)
+1166                       York Hotel (940 Sutter Street)
+1186           Conservatory of Flowers (Golden Gate Park)
+1210    Park Hill Sanatorium (351 Buena Vista Avenue E...
+1276    California Palace of the Legion of Honor (34th...
+1713                                   900 Lombard Street
+1783    California Palace of the Legion of Honor (34th...
+1824    Mission San Juan Bautista (2nd & Mariposa Stre...
+1828           Ernie's Restaurant (847 Montgomery Street)
+1842          Fairmont Hotel (950 Mason Street, Nob Hill)
+1848                       York Hotel (940 Sutter Street)
+1855           Conservatory of Flowers (Golden Gate Park)
+1865    Park Hill Sanatorium (351 Buena Vista Avenue E...
+1914              Gough & Eddy Streets (Western Addition)
+2002           Brocklebank Apartments (1000 Mason Street)
+2005                           Claude Lane at Bush Street
+2072    Mission Dolores (3321 16th Street, Mission Dis...
+2077                                    1007 Gough Street
+2158    Fort Point (Presidio, Golden Gate National Rec...
+2208               Palace of Fine Arts (3301 Lyon Street)
+2222    San Francisco Drydock (20th and Illinois Streets)
+2344              Gough & Eddy Streets (Western Addition)
+2585           Brocklebank Apartments (1000 Mason Street)
+2596                           Claude Lane at Bush Street
+2823    Mission Dolores (3321 16th Street, Mission Dis...
+2840                                    1007 Gough Street
+3081    Fort Point (Presidio, Golden Gate National Rec...
+3240               Palace of Fine Arts (3301 Lyon Street)
+3287    San Francisco Drydock (20th and Illinois Streets)
+Name: Locations, dtype: object"
+Chance - Season 1 Pilot,"441                  Harvey Milk Rec Center, 50 Scott St.
+513                     UN Plaza/ Civic Center Bart steps
+614                               Jonell's Bar, 401 Ellis
+619                                    60 Leavenworth St.
+621                                   Ellis and Jones St.
+890     William Stout Architectural Books, 804 Montgom...
+1105                       Warren's Antiques, 375 9th St.
+1316                 Harvey Milk Rec Center, 50 Scott St.
+1325                    UN Plaza/ Civic Center Bart steps
+1337                              Jonell's Bar, 401 Ellis
+1340                                   60 Leavenworth St.
+1342                                  Ellis and Jones St.
+1367    William Stout Architectural Books, 804 Montgom...
+1389                       Warren's Antiques, 375 9th St.
+1432                                         253 4th Ave.
+1444                        State Garage, 818 Leavenworth
+1459                         Ellis Food Center, 398 Ellis
+1490                                  1055 Montgomery St.
+1502                                Jefferson Square Park
+1509                                       940 Powell St.
+1527                                        Antonio Alley
+1531                                           66 Potomac
+1545                               Washington Square Park
+1603                           Mario's Café, 566 Columbus
+2328                                         253 4th Ave.
+2369                        State Garage, 818 Leavenworth
+2471                         Ellis Food Center, 398 Ellis
+2627                                  1055 Montgomery St.
+2680                                Jefferson Square Park
+2707                                       940 Powell St.
+2802                                        Antonio Alley
+2834                                           66 Potomac
+2885                               Washington Square Park
+3214                           Mario's Café, 566 Columbus
+Name: Locations, dtype: object"
+Haiku Tunnel,"442     NaN
+2854    NaN
+Name: Locations, dtype: object"
+Happy Gilmore,"443     NaN
+1404    NaN
+Name: Locations, dtype: object"
+The Diary of a Teenage Girl,"447                  Yerba Buena Island
+557       Geary St. from Polk to Larkin
+652                     Hamburger Haven
+685                      770 Haight St.
+733             Polk and Northpoint St.
+1034                   Victoria Theatre
+1035    SPECS' Twelve Adler Museum Café
+1036         Ocean Beach at Point Lobos
+1037                     700 Kansas St.
+1038            Presidio Branch Library
+1039                      The Royal Oak
+1040                              Tonic
+1041            Polk and Northpoint St.
+1042                     770 Haight St.
+1043                     Tank Hill Park
+1044                    Hamburger Haven
+1045        Higher Grounds Coffee House
+1046                       304 Lily St.
+1047         The Magazine at 920 Larkin
+1048      Geary St. from Polk to Larkin
+1049                 Yerba Buena Island
+1235                     700 Kansas St.
+1254        Higher Grounds Coffee House
+2679                       304 Lily St.
+2789                     Tank Hill Park
+2821            Presidio Branch Library
+2883                   Victoria Theatre
+3063                              Tonic
+3069    SPECS' Twelve Adler Museum Café
+3080         The Magazine at 920 Larkin
+3091                      The Royal Oak
+3148         Ocean Beach at Point Lobos
+Name: Locations, dtype: object"
+The Wedding Planner,"448     Grace Cathedral Episcopal Church (1100 Califor...
+1171    Grace Cathedral Episcopal Church (1100 Califor...
+1179    Japanese Tea Garden (Hagiwara Tea Garden Drive...
+1180                                            City Hall
+1247    The Music Concourse (Martin Luther King, Jr. D...
+1875    The Music Concourse (Martin Luther King, Jr. D...
+2037                             Pier 7 (The Embarcadero)
+2042                    Montgomery Street at Union Street
+2089                            Pleasant Street at Taylor
+2207                                         Lincoln Park
+2698                             Pier 7 (The Embarcadero)
+2724                                         Lincoln Park
+2728                    Montgomery Street at Union Street
+2773    Japanese Tea Garden (Hagiwara Tea Garden Drive...
+2878                            Pleasant Street at Taylor
+3149                                            City Hall
+Name: Locations, dtype: object"
+Heart and Souls,"449     Stockton Tunnel (Stockton Street at Sutter Str...
+450                                   2810 Pacific Avenue
+452            Conservatory of Flowers (Golden Gate Park)
+1311           Conservatory of Flowers (Golden Gate Park)
+2166       War Memorial Opera House (401 Van Ness Avenue)
+3108       War Memorial Opera House (401 Van Ness Avenue)
+3246                                  2810 Pacific Avenue
+3262    Stockton Tunnel (Stockton Street at Sutter Str...
+Name: Locations, dtype: object"
+Thief of Hearts,"451     NaN
+1821    NaN
+Name: Locations, dtype: object"
+The Conversation,"454     Saks Fifth Avenue (384 Post Street, Union Square)
+455                     Alcoa Building (1 Maritime Plaza)
+606           One Embarcadero Center (Financial District)
+1236                                   Financial District
+1716    Saks Fifth Avenue (384 Post Street, Union Square)
+1742          One Embarcadero Center (Financial District)
+1871                                   Financial District
+1916    Cathedral Hill Hotel (1101 Van Ness Avenue, Ci...
+2021    Westin St. Francis Hotel (335 Powell Street, U...
+2071    Neiman Marcus (150 Stockton Street, Union Square)
+2076    American Roofing Co. Building (297 Kansas Stre...
+2148                          Alamo Square (Hayes Valley)
+2186                     Alta Plaza Park (Steiner Street)
+2212                                         Union Square
+2232                    Alcoa Building (1 Maritime Plaza)
+2339    Westin St. Francis Hotel (335 Powell Street, U...
+2352    Cathedral Hill Hotel (1101 Van Ness Avenue, Ci...
+2816    Neiman Marcus (150 Stockton Street, Union Square)
+2836    American Roofing Co. Building (297 Kansas Stre...
+3045                          Alamo Square (Hayes Valley)
+3176                     Alta Plaza Park (Steiner Street)
+3400                                         Union Square
+Name: Locations, dtype: object"
+Looking Season 2 ep 206,"456     770 Haight Street
+1202     1890 Clay Street
+1317    770 Haight Street
+1402     1890 Clay Street
+1508       745 Treat Ave.
+2704       745 Treat Ave.
+Name: Locations, dtype: object"
+GirlBoss,"458                      Filbert between Grant and Kearny
+608                                  Green and Divisadero
+881     Macchiarini Steps, Kearny between Vallejo and ...
+885                     Mission between 19th and 25th St.
+1197                                      1375 Haight St.
+1251                     Various Haight St. Vintage Shops
+1320                     Filbert between Grant and Kearny
+1336                                 Green and Divisadero
+1360    Macchiarini Steps, Kearny between Vallejo and ...
+1363                    Mission between 19th and 25th St.
+1397                   Musee Mecanique, Fisherman's Wharf
+1400                                      1375 Haight St.
+1412                     Various Haight St. Vintage Shops
+1450                       Underground SF, 424 Haight St.
+1463                     Mission Thrift, 2330 Mission St.
+1473                                  Fillmore and Waller
+1501                  Boulevard Restaurant, 1 Mission St.
+1541                                     Taylor and Union
+1547         Mission Dolores Park, 19th St. & Dolores St.
+1550              Grant between California and Washington
+1590                   The Castro Theater, 429 Castro St.
+1601                             Filbert and Kearny Steps
+1615           Clarion Alley between Valencia and Mission
+1623                 Clayton Post Office, 554 Clayton St.
+1630                        La Taqueria, 2889 Mission St.
+1642                 Filbert between Leavenworth and Hyde
+1645                   Fillmore between Haight and Waller
+2402                       Underground SF, 424 Haight St.
+2482                     Mission Thrift, 2330 Mission St.
+2514                                  Fillmore and Waller
+2675                  Boulevard Restaurant, 1 Mission St.
+2753                        La Taqueria, 2889 Mission St.
+2866                                     Taylor and Union
+2892         Mission Dolores Park, 19th St. & Dolores St.
+2903              Grant between California and Washington
+3133                   The Castro Theater, 429 Castro St.
+3139                   Musee Mecanique, Fisherman's Wharf
+3184                             Filbert and Kearny Steps
+3263           Clarion Alley between Valencia and Mission
+3319                 Clayton Post Office, 554 Clayton St.
+3396                 Filbert between Leavenworth and Hyde
+3405                   Fillmore between Haight and Waller
+Name: Locations, dtype: object"
+Just Like Heaven,"459     NaN
+1217    NaN
+Name: Locations, dtype: object"
+Red Diaper Baby,"460    Magic Theater (Fort Mason, Golden Gate Nationa...
+758    Magic Theater (Fort Mason, Golden Gate Nationa...
+Name: Locations, dtype: object"
+Hereafter,"463     Hobart Building (582 Market Street)
+464     The Final Final (2990 Baker Street)
+465                      1160 Taylor Street
+628     Hobart Building (582 Market Street)
+2670    The Final Final (2990 Baker Street)
+3201                     1160 Taylor Street
+Name: Locations, dtype: object"
+Sneakers,"466     Hills Brothers Plaza (The Embarcadero at Harri...
+863                                       The Embarcadero
+864     Hills Brothers Plaza (The Embarcadero at Harri...
+3300                                      The Embarcadero
+Name: Locations, dtype: object"
+Milk,"467                                           Duboce Park
+634                                     El Camino Del Mar
+635                                       Treasure Island
+636                                Market & Castro Street
+637                   Marine Fireman's Union Headquarters
+638                                   Lower Haight Street
+639     Grace Cathedral Episcopal Church (1100 Califor...
+640                                    Golden Gate Bridge
+1718                                          Duboce Park
+1910                              29th and Dolores Street
+2058                                            City Hall
+2160                                            Chinatown
+2196                                   424 Sansome Street
+2280                                  Lower Haight Street
+2310                  Marine Fireman's Union Headquarters
+2341                              29th and Dolores Street
+2491    Grace Cathedral Episcopal Church (1100 Califor...
+2634                               Market & Castro Street
+2777                                            City Hall
+2838                                      Treasure Island
+2939                                   Golden Gate Bridge
+3089                                            Chinatown
+3134                                    El Camino Del Mar
+3211                                   424 Sansome Street
+Name: Locations, dtype: object"
+Experiment in Terror,"469     Wells Fargo Bank (1 California Street, Financi...
+524      George Washington High School (600 32nd Avenue )
+625                           1 Montgomery Street at Post
+918                                100 St. Germain Avenue
+1719    Wells Fargo Bank (1 California Street, Financi...
+1729     George Washington High School (600 32nd Avenue )
+1749                          1 Montgomery Street at Post
+1787                               100 St. Germain Avenue
+1837    Sheraton Palace Hotel (2 Montgomery Street, Fi...
+1897          The Sea Captain's Chest (Fisherman's Wharf)
+1975                        2632 Larkin Street at Lombard
+1977                                     Candlestick Park
+2249    Roaring Twenties Nightclub (555 Broadway at Co...
+2288          The Sea Captain's Chest (Fisherman's Wharf)
+2515                        2632 Larkin Street at Lombard
+2520                                     Candlestick Park
+3192    Sheraton Palace Hotel (2 Montgomery Street, Fi...
+3370    Roaring Twenties Nightclub (555 Broadway at Co...
+Name: Locations, dtype: object"
+Homeward Bound II: Lost in San Francisco,"477     Pier 39 (Fisherman's Wharf)
+2732    Pier 39 (Fisherman's Wharf)
+Name: Locations, dtype: object"
+How Stella Got Her Groove Back,"479    Marriot Hotel (55 4th Street at Market)
+694    Marriot Hotel (55 4th Street at Market)
+Name: Locations, dtype: object"
+Pretty Woman,"490     NaN
+2934    NaN
+Name: Locations, dtype: object"
+Golden Gate,"492                                    Golden Gate Bridge
+525                                Ross Alley (Chinatown)
+719       Buena Vista Park (Haight Street at Buena Vista)
+1720                                   Golden Gate Bridge
+1769      Buena Vista Park (Haight Street at Buena Vista)
+1948         Bush Street (between Grant & Kearny Streets)
+2129                               Ross Alley (Chinatown)
+2230    University of California Hastings College of t...
+2440         Bush Street (between Grant & Kearny Streets)
+3317    University of California Hastings College of t...
+Name: Locations, dtype: object"
+Mrs. Doubtfire,"493                                     Chrissy Field
+508                                  516 Green Street
+533             520-522A Green Street at Grant Street
+728           1200 Washington Street at Taylor Street
+1725                                 516 Green Street
+1733            520-522A Green Street at Grant Street
+1773          1200 Washington Street at Taylor Street
+1939                                    Chrissy Field
+2091    Danilo's Bakery (Green Street & Bannam Place)
+2144                           100 Embarcadero Street
+2217              Hancock School (940 Filbert Street)
+2880    Danilo's Bakery (Green Street & Bannam Place)
+3031                           100 Embarcadero Street
+3268              Hancock School (940 Filbert Street)
+Name: Locations, dtype: object"
+The OA Part II,"494               Harrison St to Beale St to Bryant St
+506             Waverly Pl btwn Washington and Clay St
+641                  Cameron House - 920 Sacramento St
+646                                            Pier 43
+693     Red's Java House (Pier 30-32, The Embarcadero)
+712                                    Broadway Tunnel
+1014                      Duncan St at Diamond Heights
+1015              Washington at Taylor St - Jackson St
+1018                         Ada Court at O'Farrell St
+1052                            Mission Rock at 3rd St
+1061                       SF War Memorial Opera House
+1158                                            Pier 7
+2589              Washington btwn Gough and Octavia St
+2686                                    Lafayette Park
+2738       Fairmont Hotel (950 Mason Street, Nob Hill)
+2940                        SFPD Headquarters - 3rd St
+2941                                     724 Larkin St
+3033                                 16th Avenue Steps
+3067                 Taylor St btwn Green and Broadway
+3098                                     1101 Green St
+3110                               Washington at Maple
+3209                                   1001 Vallejo St
+3310               Hyde St at Pacific to Washington St
+Name: Locations, dtype: object"
+Groove,"495     435 23rd Street at Illinois
+496     435 23rd Street at Illinois
+497     435 23rd Street at Illinois
+1721    435 23rd Street at Illinois
+1722    435 23rd Street at Illinois
+1723    435 23rd Street at Illinois
+Name: Locations, dtype: object"
+Chance- Season 1 ep110,"499     Cliffhouse, 1090 Point Lobos Ave.
+1215                             1 Urbano
+1250       San Francisco General Hospital
+1323    Cliffhouse, 1090 Point Lobos Ave.
+1405                             1 Urbano
+1411       San Francisco General Hospital
+1510       1901 Ocean Ave. at Ashton Ave.
+1591                            18 Urbano
+1621                     Ocean Park Motel
+2709       1901 Ocean Ave. at Ashton Ave.
+3136                            18 Urbano
+3309                     Ocean Park Motel
+Name: Locations, dtype: object"
+Looking Season 2 ep 210,"503                  Vega Coffee, 1245 Folsom Street
+1137        Mission Rec Center, 2450 Harrison Street
+1170                                67 Deming Street
+1324                 Vega Coffee, 1245 Folsom Street
+1395        Mission Rec Center, 2450 Harrison Street
+1398                                67 Deming Street
+1462                                 Twin Peaks Park
+1503                                8 Octavia Street
+1533                  SF City Hall Polk Street Steps
+1548                    Mission Street @ 22nd Street
+1613           Willy's Barber shop, 3227 22nd Street
+1638    BART Station @ 16th Street & Mission Streets
+2481                                 Twin Peaks Park
+2681                                8 Octavia Street
+2846                  SF City Hall Polk Street Steps
+2895                    Mission Street @ 22nd Street
+3250           Willy's Barber shop, 3227 22nd Street
+3369    BART Station @ 16th Street & Mission Streets
+Name: Locations, dtype: object"
+A Jitney Elopement,"507            Golden Gate Park
+1792           Golden Gate Park
+2029    20th and Folsom Streets
+2682    20th and Folsom Streets
+Name: Locations, dtype: object"
+Looking Season 2 ep 207,"514     Valenti, Marini, Perata, 4840 Mission Street
+532                Sparky's Diner, 242 Church Street
+1191                                    Delores Park
+1326    Valenti, Marini, Perata, 4840 Mission Street
+1331               Sparky's Diner, 242 Church Street
+1399                                    Delores Park
+1418                               770 Haight Street
+2267                               770 Haight Street
+Name: Locations, dtype: object"
+I's,"518     1 Post Street
+2771    1 Post Street
+Name: Locations, dtype: object"
+Joy Luck Club,"531                  Hang Ah Alley (Chinatown)
+544                           901 Union Street
+1732                 Hang Ah Alley (Chinatown)
+1736                          901 Union Street
+1991                     180 Manchester Street
+2060     Horace Mann School (3351 23rd Street)
+2079                    375 Laguna Honda Blvd.
+2150    610 Rhode Island Street (Potrero Hill)
+2554                     180 Manchester Street
+2783     Horace Mann School (3351 23rd Street)
+2849                    375 Laguna Honda Blvd.
+3054    610 Rhode Island Street (Potrero Hill)
+Name: Locations, dtype: object"
+The Towering Inferno,"534                                   2898 Vallejo Street
+1165    Bank of America Building (555 California Stree...
+1306          Fairmont Hotel (950 Mason Street, Nob Hill)
+1735                                  2898 Vallejo Street
+1847    Bank of America Building (555 California Stree...
+1881          Fairmont Hotel (950 Mason Street, Nob Hill)
+1920    San Francisco Fire Station 38 (2150 California...
+1954    Grace Cathedral Episcopal Church (1100 Califor...
+2075    Hyatt Regency Hotel (5 Embarcadero Center, Fin...
+2152                Firestation #38 (California & Laguna)
+2360    San Francisco Fire Station 38 (2150 California...
+2451    Grace Cathedral Episcopal Church (1100 Califor...
+2832    Hyatt Regency Hotel (5 Embarcadero Center, Fin...
+3057                Firestation #38 (California & Laguna)
+Name: Locations, dtype: object"
+James and the Giant Peach,"540     NaN
+2809    NaN
+Name: Locations, dtype: object"
+Julie and Jack,"547     NaN
+2385    NaN
+Name: Locations, dtype: object"
+On the Beach,"550     NaN
+1740    NaN
+Name: Locations, dtype: object"
+A View to a Kill,"553     Lefty O' Doul Drawbridge/ 3rd Street Bridge (3...
+673                                             Chinatown
+739      Taylor and Jefferson Streets (Fisherman's Wharf)
+1211                                Port of San Francisco
+1491                                  Embarcadero Freeway
+1699                               Port of San Francisco 
+1741    Lefty O' Doul Drawbridge/ 3rd Street Bridge (3...
+1761                                            Chinatown
+1775     Taylor and Jefferson Streets (Fisherman's Wharf)
+1790                                            City Hall
+1884                                  Embarcadero Freeway
+1885                                            City Hall
+1886                                            City Hall
+1903                                      Van Ness Avenue
+2078                                         Potrero Hill
+2163                                   Golden Gate Bridge
+2197          Burger Island (901 3rd Street, China Basin)
+2266                                            City Hall
+2308                                      Van Ness Avenue
+2848                                         Potrero Hill
+3103                                   Golden Gate Bridge
+3213          Burger Island (901 3rd Street, China Basin)
+Name: Locations, dtype: object"
+Chance- Season 1 ep106,"562                          60 Leavenworth St.
+1335                         60 Leavenworth St.
+1447                                  2 Rowland
+1487    McAllister between Leavenworth and Hyde
+1549              Grant between Union and Green
+1557                            Treasure Island
+1578                     Washington Square Park
+1622    Montgomery between Pacific and Broadway
+2379                                  2 Rowland
+2614    McAllister between Leavenworth and Hyde
+2898              Grant between Union and Green
+2937                            Treasure Island
+3050                     Washington Square Park
+3312    Montgomery between Pacific and Broadway
+Name: Locations, dtype: object"
+Bitter Melon,"605                               386 4th Ave
+653                            33 Dearborn St
+1129                              298 11th St
+1201    Pay and Save Grocery, 599 Guerrero St
+1238                             3189 16th St
+1248                             3139 16th St
+2538                             66 Danton St
+2576                             68 Dublin St
+2925                               145 9th St
+3143                             788 Minna St
+3283                          600 Niagara Ave
+Name: Locations, dtype: object"
+Heart Beat,"616                  City Lights Bookstore (261 Columbus)
+1745                 City Lights Bookstore (261 Columbus)
+2128          Washington Square Bar & Grill (1707 Powell)
+2192    San Francisco Art Institute (800 Chestnut Street)
+3003          Washington Square Bar & Grill (1707 Powell)
+3196    San Francisco Art Institute (800 Chestnut Street)
+Name: Locations, dtype: object"
+Chance- Season 1 ep108,"617            Huntington Park
+1093            1000 Mason St.
+1338           Huntington Park
+1385            1000 Mason St.
+1437    St. Mary's Square Park
+1514            Fairmont Hotel
+2346    St. Mary's Square Park
+2715            Fairmont Hotel
+Name: Locations, dtype: object"
+City of Angels,"622     San Francisco Public Library Main Branch (100 ...
+1747    San Francisco Public Library Main Branch (100 ...
+Name: Locations, dtype: object"
+Metro,"627     Bush Street at Jones
+2946    Bush Street at Jones
+Name: Locations, dtype: object"
+The House on Telegraph Hill,"630                 Coit Tower
+1750                Coit Tower
+1907    1227 Montgomery Street
+2113             Market Street
+2253            Telegraph Hill
+2326    1227 Montgomery Street
+2968             Market Street
+3380            Telegraph Hill
+Name: Locations, dtype: object"
+Birth of the Dragon,"631                                   California at Grant
+679                                      Twin Peaks Blvd.
+688                  Spofford between Clay and Washington
+1132         Waverly Pl between Washington and Sacramento
+1167              Pier 45 - Jeremiah O'Brien Liberty Ship
+1319              Pier 45 - Jeremiah O'Brien Liberty Ship
+1330                 Spofford between Clay and Washington
+1354                                     Twin Peaks Blvd.
+1381                                        Hyde at Union
+1401         Waverly Pl between Washington and Sacramento
+1408                                  California at Mason
+1451    Lands End Trail at Eagles Point/ Lincoln Park ...
+1471                                 Leavenworth at Green
+1520                      Grant between Bush and Broadway
+1546                                 Leavenworth at Union
+1582    Lands End Trail at Eagles Point/ Lincoln Park ...
+1597                                  California at Grant
+2372                                 Leavenworth at Union
+2600                                  California at Mason
+2730                                        Hyde at Union
+3157                                 Leavenworth at Green
+3189                      Grant between Bush and Broadway
+Name: Locations, dtype: object"
+San Francisco,"645     The Barbary Coast
+1753    The Barbary Coast
+2028            City Hall
+2678            City Hall
+Name: Locations, dtype: object"
+Midnight Lace,"651     Fairmont Hotel (950 Mason Street, Nob Hill)
+1754    Fairmont Hotel (950 Mason Street, Nob Hill)
+Name: Locations, dtype: object"
+Rent,"654    Treasure Island
+771    Treasure Island
+Name: Locations, dtype: object"
+Shoot the Moon,"656    Fairmont Hotel (950 Mason Street, Nob Hill)
+831    Fairmont Hotel (950 Mason Street, Nob Hill)
+Name: Locations, dtype: object"
+Looking Season 2 ep 208,"657                    1246 Folsom Street
+1348                   1246 Folsom Street
+1506    Citizens Band, 1198 Folsom Street
+1540                 2450 Harrison Street
+1577                     950 Mason Street
+1584               1111 California Street
+2691    Citizens Band, 1198 Folsom Street
+2863                 2450 Harrison Street
+3049                     950 Mason Street
+3109               1111 California Street
+Name: Locations, dtype: object"
+Zodiac,"661     SF Chronicle Building (901 Mission St)
+1281    SF Chronicle Building (901 Mission St)
+Name: Locations, dtype: object"
+Flower Drum Song,"663              Chinatown
+1758             Chinatown
+2159    Golden Gate Bridge
+3083    Golden Gate Bridge
+Name: Locations, dtype: object"
+The Woman In Red,"667     Brocklebank Apartments (1000 Mason Street)
+1181     Postcard Row (Alamo Square, Hayes Valley)
+1182    Brocklebank Apartments (1000 Mason Street)
+1183        Palace of Fine Arts (3301 Lyon Street)
+1184             Montgomery Street at Union Street
+2583        Palace of Fine Arts (3301 Lyon Street)
+2739             Montgomery Street at Union Street
+2775     Postcard Row (Alamo Square, Hayes Valley)
+Name: Locations, dtype: object"
+Chance- Season 1 ep107,"669                                    157 Commonwealth
+1121                                         60 Potomac
+1351                                   157 Commonwealth
+1391                                         60 Potomac
+1469                                    145 Barlett St.
+1521    Buena Vista betweeen Upper Terrace and Java St.
+1576                                      1461 Page St.
+1581                          Punjab Café, 838 24th St.
+1610                                  1958 Valencia St.
+2507                                    145 Barlett St.
+2768    Buena Vista betweeen Upper Terrace and Java St.
+3042                                      1461 Page St.
+3075                          Punjab Café, 838 24th St.
+3243                                  1958 Valencia St.
+Name: Locations, dtype: object"
+The Internship,"672              Montgomery and Union St.
+1083    Grant Ave from Sacramento to Clay
+1084             Montgomery and Union St.
+1085                      Epic Roasthouse
+1086            Players Arcade at Pier 39
+2637            Players Arcade at Pier 39
+2963    Grant Ave from Sacramento to Clay
+3066                      Epic Roasthouse
+Name: Locations, dtype: object"
+Need For Speed,"675     Embarcadero from Broadway to Folsom
+676     California St from Taylor to Powell
+677        Mason St from Pine to Sacramento
+678     Powell St. from Geary to Sacramento
+1063    Powell St. from Geary to Sacramento
+3043       Mason St from Pine to Sacramento
+3314    California St from Taylor to Powell
+3389    Embarcadero from Broadway to Folsom
+Name: Locations, dtype: object"
+Night of Henna,"680     NaN
+3158    NaN
+Name: Locations, dtype: object"
+"Murder in the First, Season 3","689                                 887 De Haro Street
+1002                                     Harriet Alley
+1353                                887 De Haro Street
+1374                                     Harriet Alley
+1407               Hall of Justice (850 Bryant Street)
+1414               Hall of Justice (850 Bryant Street)
+1417                                           Pier 96
+1438                                  Golden Gate Park
+1441                                535 Octavia Street
+1443                        Red's Java House (Pier 30)
+1479                                Civic Center Plaza
+1483                   Howard Street at Steuart Street
+1526                                600 Octavia Street
+1534       Ivy Street between Laguna and Gough Streets
+1574                                  Patricia's Green
+1599                               2633 Vallejo Street
+1609                                  500 Grove Street
+1647    Linden Alley between Octavia and Gough Streets
+1752                                           Pier 96
+2331                                535 Octavia Street
+2347                                  Golden Gate Park
+2366                        Red's Java House (Pier 30)
+2558                                Civic Center Plaza
+2588                   Howard Street at Steuart Street
+2793                                600 Octavia Street
+2847       Ivy Street between Laguna and Gough Streets
+3030                                  Patricia's Green
+3179                               2633 Vallejo Street
+3241                                  500 Grove Street
+3411    Linden Alley between Octavia and Gough Streets
+Name: Locations, dtype: object"
+What's Up Doc?,"690                                      Hyde Street Pier
+1257    St. Peter & Paul's Church (666 Filbert Street,...
+1258          San Francisco Hilton (333 O'Farrell Street)
+1259          Lombard Street between Hyde and Leavenworth
+1260                                     Hyde Street Pier
+1261                                            Chinatown
+1262                     Alta Plaza Park (Steiner Street)
+1263      22nd Avenue & Balboa Street (Richmond District)
+2292          Lombard Street between Hyde and Leavenworth
+2759                                            Chinatown
+2765    St. Peter & Paul's Church (666 Filbert Street,...
+2882      22nd Avenue & Balboa Street (Richmond District)
+2980          San Francisco Hilton (333 O'Farrell Street)
+3071                     Alta Plaza Park (Steiner Street)
+Name: Locations, dtype: object"
+Chance- Season 1 ep103,"692                 Blue Danube Café, 306 Clement
+922                          878-898 Chestnut St.
+1267    San Francisco Art Institute, 800 Chestnut
+1355                Blue Danube Café, 306 Clement
+1370                         878-898 Chestnut St.
+1413    San Francisco Art Institute, 800 Chestnut
+1431                           350 Santa Ana Ave.
+1449                            17th and Arkansas
+1482             The Drew School, 2901 California
+1515                                   60 Potomac
+1516                        San Bruno and Alameda
+1553                    Forrest Hill Muni Station
+1600                           60 Leavenworth St.
+1605                        Laguna Honda Hospital
+2299                                   60 Potomac
+2323                           350 Santa Ana Ave.
+2398                            17th and Arkansas
+2580             The Drew School, 2901 California
+2727                        San Bruno and Alameda
+2915                    Forrest Hill Muni Station
+3180                           60 Leavenworth St.
+3227                        Laguna Honda Hospital
+Name: Locations, dtype: object"
+On the Road,"696                          Bay Bridge
+697     Sacramento & Montgomery Streets
+698                    2017 23rd Street
+699       Filbert & Leavenworth Streets
+1177                         Bay Bridge
+2422    Sacramento & Montgomery Streets
+3242                   2017 23rd Street
+3349      Filbert & Leavenworth Streets
+Name: Locations, dtype: object"
+Broken-A Modern Love Story,"703                  0-100 block Halleck Street
+2502    Ina Coolbrith Park (1700 Taylor Street)
+Name: Locations, dtype: object"
+Guess Who's Coming to Dinner,"704                                  634 Raycliff Terrace
+1760    Mel's Drive-In (Corner South Van Ness & Missio...
+1766                                 634 Raycliff Terrace
+2033                  San Francisco International Airport
+2145               Sutter Street between Powell and Mason
+2417    Mel's Drive-In (Corner South Van Ness & Missio...
+2907                  San Francisco International Airport
+3036               Sutter Street between Powell and Mason
+Name: Locations, dtype: object"
+Parks and Recreation,"707     Filbert from Hyde to Leavenworth
+708                   Columbus and Green
+709                      Larkin & Fulton
+710                 Embarcadero & Market
+2544    Filbert from Hyde to Leavenworth
+2899                Embarcadero & Market
+3336                  Columbus and Green
+3375                     Larkin & Fulton
+Name: Locations, dtype: object"
+Patch Adams,"713                                     Treasure Island
+714           Sheraton Palace Hotel (639 Market Street)
+2182    Presidio (Golden Gate National Recreation Area)
+2291          Sheraton Palace Hotel (639 Market Street)
+2419    Presidio (Golden Gate National Recreation Area)
+2561                                    Treasure Island
+Name: Locations, dtype: object"
+CSI: NY- episode 903,"724     Palace of Fine Arts
+1770    Palace of Fine Arts
+Name: Locations, dtype: object"
+By Hook or By Crook,"740     The Lexington Club (3464 19th Street at Lexing...
+1204    Department of Public Health (101 Grove Street ...
+1776    The Lexington Club (3464 19th Street at Lexing...
+1862    Department of Public Health (101 Grove Street ...
+1955    Royan Hotel (405 Valencia Street, Mission Dist...
+2456    Royan Hotel (405 Valencia Street, Mission Dist...
+Name: Locations, dtype: object"
+Raising Cain,"757     NaN
+2271    NaN
+Name: Locations, dtype: object"
+Rollerball,"772     NaN
+3023    NaN
+Name: Locations, dtype: object"
+Romeo Must Die,"773              Chinatown
+774     Embarcadero Street
+2729             Chinatown
+3235    Embarcadero Street
+Name: Locations, dtype: object"
+Sausalito,"801     The Castro
+3191    The Castro
+Name: Locations, dtype: object"
+Serendipity,"826     NaN
+3105    NaN
+Name: Locations, dtype: object"
+Seven Girlfriends,"828     Golden Gate Bridge
+3266    Golden Gate Bridge
+Name: Locations, dtype: object"
+Sister Act,"832     St. Paul's Church (Church Street, Noe Valley)
+2474    St. Paul's Church (Church Street, Noe Valley)
+Name: Locations, dtype: object"
+So I Married an Axe Murderer,"865                    Vesuvio Café (255 Columbus Avenue)
+866               Swedenborgian Church (2107 Lyon Street)
+867       St. John's Presbyterian Church (25 Lake Street)
+868     San Francisco Chronicle (901 Mission Street at...
+869                      Rocco's Corner (Columbus Street)
+870     Prudente's Italian Deli (1462 Grant Ave at Union)
+871                  Fog City Diner (1300 Battery Street)
+872                   Edinburgh Castle (950 Geary Street)
+873            City Light Bookstore (261 Columbus Avenue)
+874                          Café Picaro 3120 16th Street
+875                                       Alcatraz Island
+876     Aladdin Terrace (off of Taylor Street, Between...
+877                                       305 Hugo Street
+878                    1462 Grant Avenue, at Union Street
+997                  Fog City Diner (1300 Battery Street)
+1111    Aladdin Terrace (off of Taylor Street, Between...
+1151                         Café Picaro 3120 16th Street
+2334                   Vesuvio Café (255 Columbus Avenue)
+2335      St. John's Presbyterian Church (25 Lake Street)
+2358    Prudente's Italian Deli (1462 Grant Ave at Union)
+2395    San Francisco Chronicle (901 Mission Street at...
+2420                  Edinburgh Castle (950 Geary Street)
+2495                   1462 Grant Avenue, at Union Street
+2496                                      305 Hugo Street
+2810              Swedenborgian Church (2107 Lyon Street)
+2856                     Rocco's Corner (Columbus Street)
+3329                                      Alcatraz Island
+3358           City Light Bookstore (261 Columbus Avenue)
+Name: Locations, dtype: object"
+Nora Prentiss,"879     Belgravia Apartments (795 Sutter Street at Jones)
+1779    Belgravia Apartments (795 Sutter Street at Jones)
+Name: Locations, dtype: object"
+Stigmata,"904     19th and Kansas St.
+2776    19th and Kansas St.
+Name: Locations, dtype: object"
+The Maltese Falcon,"913                                        Ferry Building
+1786                                       Ferry Building
+1996                                   Golden Gate Bridge
+2047    Burritt Alley (Off Bush Street, between Powell...
+2565                                   Golden Gate Bridge
+2750    Burritt Alley (Off Bush Street, between Powell...
+Name: Locations, dtype: object"
+Chance - Season 1 ep105,"929            State Garage, 818 Leavenworth
+1371           State Garage, 818 Leavenworth
+1511    Maiden Lane between Kearny and Grant
+1537                      60 Leavenworth St.
+1625        The Drew School, 2901 California
+2710    Maiden Lane between Kearny and Grant
+2853                      60 Leavenworth St.
+3326        The Drew School, 2901 California
+Name: Locations, dtype: object"
+American Graffiti,"942     Mel's Drive-In (Corner of Van Ness & Mission S...
+1887    Mel's Drive-In (Corner of Van Ness & Mission S...
+1922                                     3355 Geary Blvd.
+2364                                     3355 Geary Blvd.
+Name: Locations, dtype: object"
+The Assassination of Richard Nixon,"969     Tosca Café (242 Columbus Avenue, North Beach)
+970                                 766 Sutter Street
+1076    Tosca Café (242 Columbus Avenue, North Beach)
+2348                                766 Sutter Street
+Name: Locations, dtype: object"
+The Bridge,"985     Golden Gate Bridge
+2958    Golden Gate Bridge
+Name: Locations, dtype: object"
+Live Nude Girls Unite,"986     Lusty Lady Bar (North Beach)
+1794    Lusty Lady Bar (North Beach)
+Name: Locations, dtype: object"
+Chance - Season 1ep105,"987     Private alley along 20th St. between Tennessee...
+1373    Private alley along 20th St. between Tennessee...
+Name: Locations, dtype: object"
+The Californians,"988     NaN
+2413    NaN
+Name: Locations, dtype: object"
+The Candidate,"989     Westin St. Francis Hotel (335 Powell Street, U...
+1110    Westin St. Francis Hotel (335 Powell Street, U...
+Name: Locations, dtype: object"
+"Play it Again, Sam","990                                 Balboa at 22nd Avenue
+1795                                Balboa at 22nd Avenue
+1917                                Hyde Street Cable Car
+1941    The Music Concourse (Martin Luther King, Jr. D...
+2132                                  15-17 Fresno Street
+2138                    Surf Theater (4520 Irving Street)
+2195                      Aquatic Park (Jefferson Street)
+2356                                Hyde Street Cable Car
+2423    The Music Concourse (Martin Luther King, Jr. D...
+3021                    Surf Theater (4520 Irving Street)
+3203                      Aquatic Park (Jefferson Street)
+3254                                  15-17 Fresno Street
+Name: Locations, dtype: object"
+True Believer,"1000    NaN
+1361    NaN
+Name: Locations, dtype: object"
+The Core,"1007    Golden Gate Bridge
+1150    Golden Gate Bridge
+Name: Locations, dtype: object"
+Pleasure of His Company,"1029    Grace Cathedral Episcopal Church (1100 Califor...
+1805    Grace Cathedral Episcopal Church (1100 Califor...
+2126                2700 Vallejo Street (Pacific Heights)
+2999                2700 Vallejo Street (Pacific Heights)
+Name: Locations, dtype: object"
+The Doctor,"1050    NaN
+3386    NaN
+Name: Locations, dtype: object"
+The Doors,"1051    NaN
+2722    NaN
+Name: Locations, dtype: object"
+Chu Chu and the Philly Flash,"1055         Fairmont Hotel (950 Mason Street, Nob Hill)
+1808         Fairmont Hotel (950 Mason Street, Nob Hill)
+1912    Transbay Terminal (Mission Street at 1st Street)
+1961            22nd and Carolina Streets (Potrero Hill)
+2342    Transbay Terminal (Mission Street at 1st Street)
+2472            22nd and Carolina Streets (Potrero Hill)
+Name: Locations, dtype: object"
+Harold and Maude,"1062              Sutro Baths (Point Lobos Avenue)
+1811              Sutro Baths (Point Lobos Avenue)
+1967                              Golden Gate Park
+2040    Conservatory of Flowers (Golden Gate Park)
+2488                              Golden Gate Park
+2714    Conservatory of Flowers (Golden Gate Park)
+Name: Locations, dtype: object"
+Hemingway & Gelhorn,"1064    Muni Metro East (501 Cesar Chavez)
+1812    Muni Metro East (501 Cesar Chavez)
+Name: Locations, dtype: object"
+The Love Bug,"1073    100 Block of Lombard Street
+1818    100 Block of Lombard Street
+2087             Golden Gate Bridge
+2875             Golden Gate Bridge
+Name: Locations, dtype: object"
+Fathers' Day,"1090    NaN
+1825    NaN
+Name: Locations, dtype: object"
+Jade,"1092        Fior d' Italia (601 Union Street at Stockton)
+1826        Fior d' Italia (601 Union Street at Stockton)
+1929          Fairmont Hotel (950 Mason Street, Nob Hill)
+1942                               Lombard & Hyde Streets
+1980                  Hall of Justice (850 Bryant Street)
+2106       War Memorial Opera House (401 Van Ness Avenue)
+2133                                  Palace of Fine Arts
+2174            Sheraton Palace Hotel (639 Market Street)
+2211    Japanese Tea Garden (Hagiwara Tea Garden Drive...
+2224                      Washington Square (North Beach)
+2391          Fairmont Hotel (950 Mason Street, Nob Hill)
+2427                               Lombard & Hyde Streets
+2527                  Hall of Justice (850 Bryant Street)
+2945       War Memorial Opera House (401 Van Ness Avenue)
+3012                                  Palace of Fine Arts
+3084            Sheraton Palace Hotel (639 Market Street)
+3252    Japanese Tea Garden (Hagiwara Tea Garden Drive...
+3299                      Washington Square (North Beach)
+Name: Locations, dtype: object"
+Crackers,"1104    24th Street between Mission Street and Potrero...
+1833    24th Street between Mission Street and Potrero...
+1921              La Rondalla (Valencia and 20th Streets)
+2361              La Rondalla (Valencia and 20th Streets)
+Name: Locations, dtype: object"
+Dim Sum: A Little Bit of Heart,"1116                                            Chinatown
+1198    Li Po (916 Grant Avenue at Washington, Chinatown)
+1836                                            Chinatown
+1860    Li Po (916 Grant Avenue at Washington, Chinatown)
+1882                  San Francisco International Airport
+2645                  San Francisco International Airport
+Name: Locations, dtype: object"
+The Other Sister,"1117    St. Peter & Paul's Church (666 Filbert Street,...
+1118               Palace of Fine Arts (3301 Lyon Street)
+2168     Transbay Terminal (Mission Street at 1st Street)
+2485    St. Peter & Paul's Church (666 Filbert Street,...
+3005               Palace of Fine Arts (3301 Lyon Street)
+3115     Transbay Terminal (Mission Street at 1st Street)
+Name: Locations, dtype: object"
+The Last of the Gladiators,"1120    NaN
+1839    NaN
+Name: Locations, dtype: object"
+The Parent Trap,"1122    Administration Building (Treasure Island)
+3377    Administration Building (Treasure Island)
+Name: Locations, dtype: object"
+Dream with the Fishes,"1123    Bay Bridge
+1889    Bay Bridge
+2088       Pier 39
+2877       Pier 39
+Name: Locations, dtype: object"
+Babies,"1124    NaN
+1840    NaN
+Name: Locations, dtype: object"
+Mother,"1127    Fairmont Hotel (950 Mason Street, Nob Hill)
+1843    Fairmont Hotel (950 Mason Street, Nob Hill)
+2111                             Golden Gate Bridge
+2964                             Golden Gate Bridge
+Name: Locations, dtype: object"
+The Princess Diaries,"1139                                    724 Brazil Avenue
+1140                                    Fisherman's Wharf
+1141     Firestation #3 (Brazil Avenue and Athens Street)
+1142                Cliff House (1090 Point Lobos Avenue)
+1143    Broadway Tunnel (Broadway between Powell and L...
+1144                                          Baker Beach
+1145                                     2601 Lyon Street
+2587                                    Fisherman's Wharf
+2808                Cliff House (1090 Point Lobos Avenue)
+2949                                          Baker Beach
+2969                                    724 Brazil Avenue
+3035                                     2601 Lyon Street
+3315    Broadway Tunnel (Broadway between Powell and L...
+3342     Firestation #3 (Brazil Avenue and Athens Street)
+Name: Locations, dtype: object"
+The Sweetest Thing,"1161    Golden Gate National Recreation Area
+3086    Golden Gate National Recreation Area
+Name: Locations, dtype: object"
+Star Trek VI: The Undiscovered Country,"1162    Golden Gate Bridge
+1846    Golden Gate Bridge
+Name: Locations, dtype: object"
+Beaches,"1175    NaN
+1852    NaN
+Name: Locations, dtype: object"
+The Zodiac,"1185    NaN
+3363    NaN
+Name: Locations, dtype: object"
+48 Hours,"1195    NaN
+1858    NaN
+Name: Locations, dtype: object"
+Gentleman Jim,"1212    The Barbary Coast
+1866    The Barbary Coast
+Name: Locations, dtype: object"
+Under the Tuscan Sun,"1231    Mecca Restaurant (2029 Market Street)
+3065    Mecca Restaurant (2029 Market Street)
+Name: Locations, dtype: object"
+Until the End of the World,"1232    Tosca Café (242 Columbus Avenue, North Beach)
+3308    Tosca Café (242 Columbus Avenue, North Beach)
+Name: Locations, dtype: object"
+Just One Night,"1245    Ferry Building
+1874    Ferry Building
+Name: Locations, dtype: object"
+Marnie,"1249    On Board the SS President Cleveland, docked at...
+1876    On Board the SS President Cleveland, docked at...
+Name: Locations, dtype: object"
+Mona Lisa Smile,"1253    NaN
+1878    NaN
+Name: Locations, dtype: object"
+What Dreams May Come,"1255    Treasure Island
+3237    Treasure Island
+Name: Locations, dtype: object"
+What the Bleep Do We Know,"1256    Golden Gate National Recreation Area
+3290    Golden Gate National Recreation Area
+Name: Locations, dtype: object"
+Knife Fight,"1279    California & Hyde Streets
+1880    California & Hyde Streets
+2001                    City Hall
+2062       Green & Laguna Streets
+2584                    City Hall
+2786       Green & Laguna Streets
+Name: Locations, dtype: object"
+Hard to Hold,"1695    Fairmont Hotel (950 Mason Street, Nob Hill)
+3311    Fairmont Hotel (950 Mason Street, Nob Hill)
+Name: Locations, dtype: object"
+A Smile Like Yours ,"1734    Hills Brothers Plaza (Embarcadero at Harrison ...
+1890    Grace Cathedral Episcopal Church (1100 Califor...
+2118                  San Francisco International Airport
+Name: Locations, dtype: object"
+Shadow of the Thin Man,"1819    Bay Bridge
+3168    Bay Bridge
+Name: Locations, dtype: object"
+I Remember Mama,"1827                     Grant Avenue (North Beach)
+1945                             The Ferry Building
+1953                     Grant Avenue (North Beach)
+2069    Fairmont Hotel (950 Mason Street, Nob Hill)
+2434                             The Ferry Building
+2806    Fairmont Hotel (950 Mason Street, Nob Hill)
+Name: Locations, dtype: object"
+Nina Takes a Lover,"1883    NaN
+2760    NaN
+Name: Locations, dtype: object"
+High Anxiety,"1888    Fort Point (Presidio, Golden Gate National Rec...
+1981           Hyatt Regency Hotel (5 Embarcadero Center)
+2203            Conservatory of Flowers, Golden Gate Park
+2269    Fort Point (Presidio, Golden Gate National Rec...
+2528           Hyatt Regency Hotel (5 Embarcadero Center)
+3225            Conservatory of Flowers, Golden Gate Park
+Name: Locations, dtype: object"
+The Nightmare Before Christmas,"1899    NaN
+2297    NaN
+Name: Locations, dtype: object"
+Take the Money and Run,"1902    Bank of America (1455 Stockton Street)
+2044                          Golden Gate Park
+2066                            Mission Street
+2304    Bank of America (1455 Stockton Street)
+2745                          Golden Gate Park
+2799                            Mission Street
+Name: Locations, dtype: object"
+The Jazz Singer,"1904    Coffee Dan's (O'Farrell Street at Powell)
+2313    Coffee Dan's (O'Farrell Street at Powell)
+Name: Locations, dtype: object"
+The Lineup,"1905                                      The Embarcadero
+1934    Mark Hopkins Intercontinental Hotel (1 Nob Hil...
+2107    Steinhart Aquarium (California Academy of Scie...
+2180                                  2090 Jackson Street
+2241                                              Pier 41
+2243                     Sutro Baths (Point Lobos Avenue)
+2258       War Memorial Opera House (401 Van Ness Avenue)
+2314                                      The Embarcadero
+2403    Mark Hopkins Intercontinental Hotel (1 Nob Hil...
+2705    Steinhart Aquarium (California Academy of Scie...
+3147                                  2090 Jackson Street
+3345                                              Pier 41
+3348                     Sutro Baths (Point Lobos Avenue)
+3393       War Memorial Opera House (401 Van Ness Avenue)
+Name: Locations, dtype: object"
+Psych-Out,"1906    NaN
+2325    NaN
+Name: Locations, dtype: object"
+Burglar,"1915    California Academy of Sciences (Golden Gate Park)
+2153                                   1627 Haight Street
+2181    Green Valley Restaurant (510 Green Street Near...
+2262                                     1400 18th Street
+2345    California Academy of Sciences (Golden Gate Park)
+3061                                   1627 Haight Street
+3152    Green Valley Restaurant (510 Green Street Near...
+3406                                     1400 18th Street
+Name: Locations, dtype: object"
+Dying Young,"1925    NaN
+2381    NaN
+Name: Locations, dtype: object"
+The Ten Commandments,"1926    St. Peter & Paul's Church (666 Filbert Street,...
+2837    St. Peter & Paul's Church (666 Filbert Street,...
+Name: Locations, dtype: object"
+The Lady from Shanghai,"1932                 Mandarin Theatre (1021 Grant Avenue)
+1946    Former Hall of Justice (750 Kearny Street at W...
+2061                                     Golden Gate Park
+2229    Steinhart Aquarium (California Academy of Scie...
+2399                 Mandarin Theatre (1021 Grant Avenue)
+2436    Former Hall of Justice (750 Kearny Street at W...
+2785                                     Golden Gate Park
+2818    Steinhart Aquarium (California Academy of Scie...
+Name: Locations, dtype: object"
+Alexander's Ragtime Band,"1938                              San Francisco Bay
+2003          Cliff House (1090 Point Lobos Avenue)
+2261    Fairmont Hotel (950 Mason Street, Nob Hill)
+2411                              San Francisco Bay
+2586          Cliff House (1090 Point Lobos Avenue)
+3399    Fairmont Hotel (950 Mason Street, Nob Hill)
+Name: Locations, dtype: object"
+The Fan,"1940    Candlestick Park (602 Jamestown Ave.)
+2414    Candlestick Park (602 Jamestown Ave.)
+Name: Locations, dtype: object"
+Indiana Jones and the Last Crusade,"1949    Administration Building (Treasure Island)
+2442    Administration Building (Treasure Island)
+Name: Locations, dtype: object"
+The Fog of War,"1950    NaN
+2445    NaN
+Name: Locations, dtype: object"
+Love & Taxes,"1959    The Marsh Theatre (1062 Valencia Street)
+2027                              20 Hill Street
+2177                            198 Gough Street
+2470    The Marsh Theatre (1062 Valencia Street)
+2676                              20 Hill Street
+3140                            198 Gough Street
+Name: Locations, dtype: object"
+Tucker: The Man and His Dream,"1971    City Hall
+2504    City Hall
+Name: Locations, dtype: object"
+The Times of Harvey Milk,"1978    The Castro
+2524    The Castro
+Name: Locations, dtype: object"
+The Competition,"1982    California Academy of Sciences (Golden Gate Park)
+2184                                              Pier 39
+2529    California Academy of Sciences (Golden Gate Park)
+3171                                              Pier 39
+Name: Locations, dtype: object"
+Star Trek II : The Wrath of Khan,"1984    Golden Gate Park
+2531    Golden Gate Park
+Name: Locations, dtype: object"
+Swingin' Along,"1989    Powell Street
+2549    Powell Street
+Name: Locations, dtype: object"
+Point Blank,"1993                                      Alcatraz Island
+2115    Fort Point (Presidio, Golden Gate National Rec...
+2559                                      Alcatraz Island
+2970    Fort Point (Presidio, Golden Gate National Rec...
+Name: Locations, dtype: object"
+Barbary Coast,"1995    NaN
+2564    NaN
+Name: Locations, dtype: object"
+Birdman of Alcatraz,"1998        Pier 43 1/2
+2024    Alcatraz Island
+2571        Pier 43 1/2
+2673    Alcatraz Island
+Name: Locations, dtype: object"
+Panther,"2007    NaN
+2603    NaN
+Name: Locations, dtype: object"
+Chan is Missing,"2011    Golden Dragon Restaurant (816 Washington Stree...
+2254    Li Po (916 Grant Avenue at Washington, Chinatown)
+2615    Golden Dragon Restaurant (816 Washington Stree...
+3383    Li Po (916 Grant Avenue at Washington, Chinatown)
+Name: Locations, dtype: object"
+Family Plot,"2015                                             Nob Hill
+2095          Fairmont Hotel (950 Mason Street, Nob Hill)
+2162    Grace Cathedral Episcopal Church (1100 Califor...
+2165                               2230 Sacramento Street
+2424                                             Nob Hill
+2904          Fairmont Hotel (950 Mason Street, Nob Hill)
+3102    Grace Cathedral Episcopal Church (1100 Califor...
+3106                               2230 Sacramento Street
+Name: Locations, dtype: object"
+Jack,"2020    NaN
+2662    NaN
+Name: Locations, dtype: object"
+American Yearbook,"2034    NaN
+2695    NaN
+Name: Locations, dtype: object"
+Days of Wine and Roses,"2038    NaN
+2701    NaN
+Name: Locations, dtype: object"
+To the Ends of the Earth,"2048    NaN
+2751    NaN
+Name: Locations, dtype: object"
+The Matrix,"2055    skyline/ exterior scenes
+2767    skyline/ exterior scenes
+Name: Locations, dtype: object"
+Dark Passage,"2063                                   Golden Gate Bridge
+2154                        Filbert Steps, Filbert Street
+2239    The Malloch Apartment Building (1360 Montgomer...
+2787                                   Golden Gate Bridge
+3064                        Filbert Steps, Filbert Street
+3340    The Malloch Apartment Building (1360 Montgomer...
+Name: Locations, dtype: object"
+A Smile Like Yours,"2092                                 75 California Street
+2370    Hills Brothers Plaza (Embarcadero at Harrison ...
+2654    Grace Cathedral Episcopal Church (1100 Califor...
+2887                                 75 California Street
+3234                  San Francisco International Airport
+Name: Locations, dtype: object"
+Good NeighborSam,"2135    Various locations in San Francisco during driv...
+3017    Various locations in San Francisco during driv...
+Name: Locations, dtype: object"
+Phenomenon,"2139    Treasure Island
+3022    Treasure Island
+Name: Locations, dtype: object"
+Escape From Alcatraz,"2146    Alcatraz Island
+3037    Alcatraz Island
+Name: Locations, dtype: object"
+Susan Slade,"2149    On Board the SS President Cleveland, docked at...
+3053    On Board the SS President Cleveland, docked at...
+Name: Locations, dtype: object"
+Dream for an Insomniac,"2155                        Baker Beach
+2170    Elbo Room (647 Valencia Street)
+3076                        Baker Beach
+3120    Elbo Room (647 Valencia Street)
+Name: Locations, dtype: object"
+Street Music,"2176    NaN
+3137    NaN
+Name: Locations, dtype: object"
+Big Trouble in Little China,"2193    NaN
+3197    NaN
+Name: Locations, dtype: object"
+They Call Me MISTER Tibbs,"2204    NaN
+3231    NaN
+Name: Locations, dtype: object"
+All About Eve,"2206    Curran Theater (445 Geary Street)
+2995    Curran Theater (445 Geary Street)
+Name: Locations, dtype: object"
+The Laughing Policeman,"2210    NaN
+3248    NaN
+Name: Locations, dtype: object"
+"Hello Frisco, Hello","2213    NaN
+3255    NaN
+Name: Locations, dtype: object"
+"Yours, Mine and Ours","2216    NaN
+3265    NaN
+Name: Locations, dtype: object"
+Tweek City,"2225    NaN
+3302    NaN
+Name: Locations, dtype: object"
+Serial,"2231    Ferry Building
+3321    Ferry Building
+Name: Locations, dtype: object"
+Kamikaze Hearts,"2237    Market Street Between Noe and Sanchez
+3334    Market Street Between Noe and Sanchez
+Name: Locations, dtype: object"
+The Master,"2238    Pier 7/ Embarcadero
+3339    Pier 7/ Embarcadero
+Name: Locations, dtype: object"
+50 First Dates,"2248    Rainforest Café (145 Jefferson Street)
+3367    Rainforest Café (145 Jefferson Street)
+Name: Locations, dtype: object"
+Can't Stop the Music,"2255    101 Henry Adams Place
+3385    101 Henry Adams Place
+Name: Locations, dtype: object"
+Quicksilver,"2264    Pacific Stock Exchange
+3409    Pacific Stock Exchange
+Name: Locations, dtype: object"

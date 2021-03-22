@@ -1,0 +1,33 @@
+
+Data = Signal + Bruit
+
+
+Overfitting
+------------
+
+Cas typique:
+on effectue l'apprentissage sur un ensemble de données et le métrique accuracy est 99%
+On utilise le modèle sur des données test et le métrique accuracy est faible, par exemple 58%
+Constat: le modèle ne généralise pas correctement, des données d'apprentissage vers les données réelles
+
+
+Problème majeur: le bruit est toujours présent mais  notre modèle doit être capable de séparer le signal du bruit.
+Constat: un modèle qui dispose d'un grand nombre de prédicteurs ou qui n'est pas basé sur une régularisation peut
+s'ajuster beaucoup plus sur le bruit que le signal Conséquence: OVERFITTING
+
+https://elitedatascience.com/overfitting-in-machine-learning
+
+Solutions to overfitting
+-------------------------------------
+    On peut utiliser plusieurs techniques
+    Cross-validation:
+    Utilisez les données d’entraînement initiales pour générer plusieurs tranches de mini-tests d'entrainement.
+    Utilisez ces divisions pour ajuster le modèle.
+
+
+    Sélection de prédicteurs:
+    Utiliser des techniques de sélection de prédicteurs tel que forward, backward sélection
+
+    Régularisationsemble
+
+

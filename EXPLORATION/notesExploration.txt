@@ -1,0 +1,93 @@
+ETAPES AED
+==========
+
+1) Collecte des informations et organisation de celles-ci dans une base de données
+2) Prétraitement : Préparation et nettoyage de la base de données qui consiste, entre autres, en
+la suppression des valeurs erronées et manquantes et la sélection des caractéristiques
+pertinentes
+3) Transformation des données qui va dépendre de la nature des données
+4) Analyse des données qui va dépendre de l’objectif de l’AED
+5) Visualisation des données et interprétation des résultats d’analyse
+6) Extraction des connaissances.
+
+
+Variable
+        Qualy           Quantytavie
+            Nominal     Discrete
+            Ordinal     Continue
+
+
+Variable qualita?ve
+• Une variable est dite qualitaSve (aussi appelée
+catégorielle) si ses valeurs ne sont pas mesurables.
+• Les variables qualitaSves mesurent des « états » des
+catégories.
+• Le sexe, la profession, l’état matrimonial sont quelques
+exemples de variables qualitaSves.
+• Les valeurs d’une variable qualitaSve sont appelées
+modalités.
+
+• Une variable qualitative est dite nominale si ses
+modalités ne sont pas ordonnées naturellement.
+• Par exemple, dans une population de personnes actives,
+la profession est une variable nominale.
+• Une variable qualitative est dite ordinale si ses modalités
+suivent une relation d’ordre. Par exemple, une
+pathologie peut prendre la valeur légère, modérée ou
+sévère. Ces valeurs peuvent être ordonnées :
+légère < modérée < sévère.
+
+
+Variable quantitative
+----------------------
+• Une variable quantitative est dite discrète si elle ne peut
+prendre que des valeurs qui peuvent être énumérées.
+• La variable quantitative est dite continue si ses valeurs
+potentielles ne peuvent pas être énumérées.
+• Les variables binaires sont des variables quantitatives
+
+Variable quan?ta?ve binaire
+--------------------------
+• Symétriques : une variable binaire est dite symétrique si
+ses deux modalités ont la même importance, c’est-à-dire si
+celles-ci peuvent être indifféremment codées par 0 ou 1.
+Par exemple, la variable sexe est une variable symétrique
+parce qu’elle peut être codée par 0 ou 1 pour masculin de
+même que pour féminin sans aucune différence.
+
+• Asymétriques : une variable binaire est dite asymétrique
+si les deux modalités n’ont pas la même importance.
+Par exemple, le résultat d’un examen médical ne peut pas
+être codé par 0 si l’examen est posiSf et 1 si l’examen est
+négaSf vu l’importance du résultat aPendu de l’examen
+
+
+COLLECTE DE DONNES
+
+La collecte de données est une phase de la recherche scientifique pour laquelle le chercheur
+doit définir la technique et/ou les outils qui seront utilisés principalement dans les recherches
+empiriques.
+
+NORMALISATION & STANDARISATION
+===============================
+
+xMinMax = (x - xmin)  / ( xmax - xmin )
+
+
+xsta = (x - miu) / sigma
+
+    miu: Moyene
+    sigma: ecart type
+
+Donnees manquantes
+===================
+
+Suppression des donnees manquantes
+Imputation des donnees manquantes
+    Imputation par une valeur statistique
+    Imputation par les k plus proche voisin
+    Imputation iterative
+Deteccion valeurs aberrantes
+    Quartiles < 25% ey >75%
+
+https://towardsdatascience.com/a-complete-guide-to-confidence-interval-and-examples-in-python-ff417c5cb593

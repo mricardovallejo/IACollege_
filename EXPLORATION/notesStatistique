@@ -1,0 +1,114 @@
+UNIVARIE
+
+On parle de statistique descriptive univariee (unidimensionnelle)
+lorsqu'on considere une variable statistique x, observee sur n individus.
+Dans ce cas, les outils les plus utilises sont :
+Indicateurs : mediane, quantile, moyenne, frequence, variance, ecart-type
+Representations graphiques : diagramme en b^aton, histogramme, graphiques
+cumulatifs, diagrammes en secteurs (tarte).
+
+QUALITATIVES
+L'effectif, aussi appele frequence absolue,
+Le diagramme en b^atons ou graphique en barres
+La frequence fj de la modalite ai est le rapport entre l'eectif et le nombre total d'individus.
+Le diagramme a tarte permet de presenter la frequence de donnees  qualitatives (categorielles
+
+QUANTITATIVES
+-------------------
+Caracteristiques de tendances centrales
+Caracteristiques de dispersion :
+Caracteristiques de formes : De nombreux phenomenes physiques se
+    distinguent par des variables quantitatives qui suivent une loi normale. Ces
+    principales caracteristiques de formes sont le coecient d'asymetrie et
+    l'aplatissement de Fisher.
+
+
+En statistique, le mode, ou valeur dominante, est la valeur la plus
+representee d'une variable quelconque dans une population donnee.
+
+Dans le cas d'une distribution normale, la mediane et la moyenne sont
+egales.
+
+Caracteristiques de dispersion
+-------------------------------
+L'etendue : Diagramme en boite permet de visualiser l'etendue.
+La variance
+L'ecart-type
+Le coecient d'asymetrie
+
+        sigma = 0 si la distribution de la variable est symetrique
+
+        sigma > 0 si la distribution de la variable est decalee vers la gauche et la moyenne est
+        superieure a la mediane
+        
+        sigma < 0 si la distribution de la variable est decalee vers la droite et la moyenne est
+        inferieure a la mediane
+Le coecient d'aplatissement
+
+    Si
+    mu = 0 alors la distribution est dite musokurtique.
+     Si
+    mu > 0, alors la distribution est plus concentree que la normale ; elle est
+    dite leptokurtique. Dans le domaine de la nance, ce coecient sert a
+    determiner des valeurs anormales plus frequentes.
+     Si
+    mu < 0, alors la distribution est plus aplatie que la normale. Elle est dite
+    platikurtique. Dans le domaine de la nance, ce coecient sert a
+    determiner des valeurs anormales plus frequentes.
+
+Statistique descriptive bivariee
+------------------------------------
+
+Correlation:
+
+Le coecient de correlation lineaire, aussi appele coecient de
+correlation de Pearson de x et y, mesure l'intensite de leur liaison.
+
+        Si po(x; y) = 􀀀1 ou (x; y) = 1, alors la correlation est dite parfaite. Dans
+        ce cas, les points (xi ; yi ) se trouvent tous sur la droite du diagramme de
+        dispersion
+         Si po(x; y) = 0, alors il n'y a pas de correlation lineaire entre x et y.
+         Si po(x; y) > 0, alors la correlation est dite positive, c'est-a-dire qu'une
+        augmentation de x entra^ne une augmentation de y
+         Si po(x; y) < 0, alors la correlation est dite negative (ou la relation est
+        inversement proportionnelle), c'est-a-dire qu'une augmentation de x
+        entra^ne une diminution de y.
+
+Le diagramme de dispersion est scatterplot
+
+La regression lineaire est de decrire ces relations gr^ace a un
+modele = une equation.
+
+Evaluation modele de regression:
+---------------------------------
+
+SCT = SCE + SCR
+    SCE Sumea de carres expliquees yi - miu
+    SCR Carre residus y-yi
+
+Coerficioente de determination R2 = SCE / SCT  R-squared en OLS Analysis, si est eleve forte correlation.
+
+
+Une variable quantitative et une qualitative  l'analyse de variance (ANOVA).
+--------------------------------------------
+
+Based on report de correlation
+Diagram de boites paralelles
+Coeficient de determination Rsquared define es fiable relation si Rs est petite. = R-squared
+
+Chi2 - Deux variables quantitatives
+----------------------------------------
+
+X2 est toujours positif ou nul
+X2 est eleve, plus les deux variables sont liees.
+
+
+
+
+
+
+
+
+
+
+
