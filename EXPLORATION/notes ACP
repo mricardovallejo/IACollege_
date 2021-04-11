@@ -1,0 +1,203 @@
+
+ACP
+===
+
+Un ensemble de m´ethodes permettant de proc´eder `a des transformations
+lin´eaires d’un grand nombre de variables inter corr´el´ees de mani`ere `a obtenir
+un nombre relativement limit´e de composantes non corr´el´ees. Cette approche
+facilite l’analyse en regroupant les donn´ees en des ensembles plus petits et en
+permettant d’´eliminer les probl`emes de multi colin´earit´e entre les variables
+
+-----
+
+Elle consiste `a rechercher les directions de l’espace qui repr´esentent le
+mieux les corr´elations dans un ensemble de donn´ees
+
+Donnes = obsrvations = points M = [Xij]
+
+Xij  = observation = valeur de l’individu
+
+xi = le vecteur des variables de l’individu i
+
+xj = le vecteur des individus de la variable j
+
+La matrice M est g´en´eralement centr´ee et r´eduite pour des fins de normalisations
+
+ -- Standarisation  + Normalisation Matrix X = [centres et reduits]
+
+x1−xpro / σ1
+
+Le centrage consiste `a enlever la moyenne `a chaque variable alors que la
+r´eduction consiste `a diviser les valeurs de chaque variable par l’´ecart-type.
+
+-----
+Nuege de points
+------------------
+
+Analyser la typologie des individus =⇒ former des groupes d’individus semblables  Terme cle : Ressemblance
+Analyser la typologie des variables =⇒ former des groupes de variables li´ees     Termes cle : Liaison - Correlation
+Analyser le/les groupes de variables qui expliquent le plus la variabilite inter-individus ? 
+
+Nuage des individus
+-------------------
+—> Un ensemble de 18 points dont les coordonnées
+ sur les 6 axes cor@espondent aux valeurs des variables
+Nuage de points des variables
+—> Un ensemble de 6 points dont les coordonnées
+sur les 18 axes cor@espondent aux valeurs des individus
+
+Projection de donnes
+---------------------
+Comme les espaces de repr´esentation des individus et des variables sont
+souvent de grandes dimensions, il est impossible de les visualiser selon des
+nuages de points d`es que la dimension d´epasse 3.
+On va d´eterminer un sous-espace de dimension k < K (k nouveaux axes
+dans le cas des individus) sur lequel on pourrait projeter les nuages de
+points tout en respectant, le plus possible, la configuration initiale des
+donn´ees =⇒ L’importance du choix de la projection
+
+Projection n’est pas t0ès représentative —>
+Induit beaucoup de perFe d’inforHations :
+perFe du voisinage ent0e les individus
+
+Quelle est le meilleur espace de projection des
+donn´ees ? Et comment le d´eterminer ?
+
+L’objectif est donc de trouver le
+vecteur u1 qui permet de d´eformer le
+moins possible le nuage =⇒ OHi
+le plus grand possible (pour s’approcher
+de OMi )
+
+En conlusion : on cherche une direction de variance maximum =⇒ de
+variabilit´e maximum = on dit aussi d’inertie maximale
+
+En conclusion : On cherche une
+suite d’axes orthogonaux d’inertie
+maximum.
+
+Valeurs propres et vecteurs propres
+-----------------------------------
+La matrice de corr´elation R est une matrice carr´e qui a la structure
+suivante :
+R = [pik]
+
+Cette matrice comprend des valeurs propres (eigenvalue) et des vecteurs
+propres (eigenvectors)
+
+On montre donc que la solution de ce probl`eme de maximisation est u1, le
+vecteur propre de R associ´e `a la plus grande valeur propre λ1.
+
+Ensuite, le vecteur u2 orthogonal `a u1 pour que l’inertie des points
+projet´es sur cette direction soit maximale (qui correspond `a la valeur
+propre λ2).
+
+Et ainsi de suite.
+
+Plus g´en´eralement, le sous-espace `a q dimensions recherch´e est engendr´e
+par les q premiers vecteurs propres de la matrice R associ´es aux plus
+grandes valeurs propres.
+
+Facteurs pricipaux
+-------------------
+
+Les vecteurs uj sont appel´es les facteurs principaux, alors que les
+composantes principales sont les variables d´efinies par les facteurs
+principaux :
+cj = Xuj (1)   u est verctor unitaire de la composant
+
+Les composantes principales contiennent les coordonn´ees des
+projections orthogonales des individus sur les axes d´efinis par les uj .
+
+ETAPES ACP
+----------
+1)  Structuration des donn´ees
+
+On centre et r´eduit cette matrice pour obtenir la matrice de donn´ees X
+
+N donn´ees d´ecrites
+
+M Matrix de donnes reduits et centres
+
+R Matriz correlation
+
+2)  Determintation des valeurs propres
+
+3) Projectipon de dopnnes PCA descomposition
+acp.explained variance ratio
+
+4) Determination numero de variables a retenir
+
+	Le crit`ere de Kaiser
+	La r`egle de Coude
+
+
+	Kaiser
+	Le crit`ere le plus utilis´e
+	dans la pratique.
+	Elle consiste `a retenir les composantes principales correspondant `a des
+	valeurs propres sup´erieures `a 1.
+
+	Dans une ACP norm´ee, la somme des valeurs propres ´etant ´egale au
+	nombre de variables, leur moyenne vaut 1. Nous consid´erons par
+	cons´equent qu’un axe est int´eressant si sa valeur propre est sup´erieure 1
+
+	Coude
+
+	L’id´ee de la r`egle de coude consiste `a d´etecter les coudes = cassures signalant
+	un changement de structure.
+	
+	The number of clusters to form as well as the number of centroids to generate.
+	
+5) Obtention de composants principaux - Fit - Variation de numero de composants depends de variable retenus
+
+	pca = PCA() #PCA(n_components=2)  Default numero de composant equal a numero de variables
+	principalComponents = pca.fit_transform(data_standarized[x_labels])
+	principalDf = pd.DataFrame(data = principalComponents)
+	principalDf
+	
+    pca.components_ = Axes factorielles - ATENTION!!  chaque ligne un vector unitaire 
+	
+6) Qualite Global de representation
+
+7) Evaluez la qualite de representation de chaque individu sur les deux premieres axes
+
+8) Circle de correlation de variables - Lambda de Ui
+
+Le cercle de corr´elation permet de d´etecter les ´eventuels groupes de
+variables qui se ressemblent ou, au contraire, qui s’opposent.
+Les variables les plus int´eressantes sont g´en´eralement celles qui sont assez
+proches de l’un des axes et qui sont assez loin de l’origine.
+
+
+Le calcul des coefficients de correlation lineaire r(c, xj) = sqrt(lambda)Ui
+
+Les composantes principales et les variables initiales permet d’interpr´eter
+l’importance de leur relation.
+
+On s’int´eresse aux coefficients les plus forts en valeur absolue et pr`es de 1.
+Dans le cas de donn´ees centr´ees r´eduites, le calcul de r(c, xj
+est particuli`erement simple. On montre que :
+r(c, xj) = √λui
+
+9) Qualite de representation de variables a une axe
+La contribution de la variable j `a l’inertie de l’axe k est ´egalement bas´ee
+sur le carr´e de la corr´elation, mais relativis´ee par l’importance de l’axe :
+
+	ctr = r^2/lambda(k)
+
+
+10) Projection d’individus suppl´ementaires
+La projection des individus suppl´ementaires est une analyse importante de
+l’analyse en composantes principales.
+L’objectif est de positionner de nouveau individus par rapport `a ceux (les
+individus actifs, l’´echantillon d’apprentissage, l’´echantillon de r´ef´erence)
+qui ont contribu´e `a la construction de l’espace factoriel.
+
+
+
+
+
+
+
+

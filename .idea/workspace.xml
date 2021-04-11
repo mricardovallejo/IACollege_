@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc9c5522-2d0c-4ffb-bfbf-3b660da5f0d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXPLORATION/.ipynb_checkpoints/PCA-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/EXPLORATION/.ipynb_checkpoints/PCA-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EXPLORATION/.ipynb_checkpoints/PCA_Excercise2-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/EXPLORATION/.ipynb_checkpoints/PCA_Excercise2-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUPERVISE_/.ipynb_checkpoints/TPFinal_Supervise1-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SUPERVISE_/.ipynb_checkpoints/TPFinal_Supervise1-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUPERVISE_/TP Final/covidInfo.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUPERVISE_/TPFinal_Supervise1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SUPERVISE_/TPFinal_Supervise1.ipynb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv5/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,11 +50,15 @@
     <session id="-1640909508">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.81" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -100,7 +110,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EXPLORATION/notesStatistique">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
+            <state relative-caret-position="810">
               <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="28" />
             </state>
           </provider>
@@ -109,7 +119,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SUPERVISE_/notesSupervisee Ensembles Methodes">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="310">
               <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
             </state>
           </provider>
@@ -152,7 +162,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="IACollege" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="IACollege" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="IACollege" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="IACollege" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="SUPERVISE_" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,22 +195,7 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="IACollege" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="IACollege" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="IACollege" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="IACollege" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="SUPERVISE_" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,7 +203,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1615522084153" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/wrkOrion3/app1129-orion-order-rs-v2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -267,6 +277,11 @@
       <workItem from="1614655851941" duration="3547000" />
       <workItem from="1614727902264" duration="1420000" />
       <workItem from="1615504637712" duration="3619000" />
+      <workItem from="1616630343075" duration="1231000" />
+      <workItem from="1616696339088" duration="625000" />
+      <workItem from="1616965209690" duration="1113000" />
+      <workItem from="1617110635644" duration="595000" />
+      <workItem from="1617127615983" duration="2051000" />
     </task>
     <task id="LOCAL-00001" summary="Statisticits Descriptive et Inferential">
       <created>1614288136877</created>
@@ -296,19 +311,19 @@
       <option name="project" value="LOCAL" />
       <updated>1615522069587</updated>
     </task>
-    <task id="LOCAL-00005" summary="TP Pandas">
-      <created>1603418627931</created>
+    <task id="LOCAL-00005" summary="2021-03-24 PCA Exploration">
+      <created>1616630373423</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1603418627931</updated>
+      <updated>1616630373423</updated>
     </task>
-    <task id="LOCAL-00006" summary="TP Pandas Titanic Practice">
-      <created>1604020646845</created>
+    <task id="LOCAL-00006" summary="2021-03-24 PCA Exploration">
+      <created>1616965734660</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1604020646845</updated>
+      <updated>1616965734660</updated>
     </task>
     <task id="LOCAL-00007" summary="Refactor files">
       <created>1604028778643</created>
@@ -576,11 +591,11 @@
       <option name="project" value="LOCAL" />
       <updated>1612214985676</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14383000" />
+    <option name="totallyTimeSpent" value="19998000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -594,7 +609,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22334754" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23560767" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -613,18 +628,18 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="SonarLint" order="10" weight="0.329718" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.78741866" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="12" visible="true" weight="0.5140998" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.329718" />
       <window_info anchor="bottom" id="SonarQube" order="14" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="3" sideWeight="0.3112245" side_tool="true" visible="true" weight="0.10127932" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="3" sideWeight="0.32142857" side_tool="true" visible="true" weight="0.10127932" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="SciView" order="7" sideWeight="0.68877554" visible="true" weight="0.10127932" />
+      <window_info anchor="right" id="SciView" order="7" sideWeight="0.6785714" visible="true" weight="0.10127932" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -646,7 +661,8 @@
     <MESSAGE value="SUPERVISE - PCA" />
     <MESSAGE value="Reorder supervisee" />
     <MESSAGE value="2021-03-11 Ensembles class" />
-    <option name="LAST_COMMIT_MESSAGE" value="2021-03-11 Ensembles class" />
+    <MESSAGE value="2021-03-24 PCA Exploration" />
+    <option name="LAST_COMMIT_MESSAGE" value="2021-03-24 PCA Exploration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -703,14 +719,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EXPLORATION/notesStatistique">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="810">
           <caret line="45" column="3" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SUPERVISE_/notesSupervisee Ensembles Methodes">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="310">
           <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
         </state>
       </provider>

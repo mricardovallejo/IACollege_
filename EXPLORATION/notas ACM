@@ -1,0 +1,57 @@
+notes ACM - Analyse des correspondances multiples (ACM)
+=========
+
+L’analyse des correspondances multiples (ACM) est une m´ethode
+d’analyse factorielle adapt´ee aux donn´ees qualitatives (aussi appel´ees
+cat´egorielles).
+
+Une m´ethode de description statistique multidimensionelle d’un ensemble
+de donn´ees qualitatives. (L’´equivalent de l’ACP pour les donn´ees
+quantitatives)
+
+ACP: Analyse en composante principale : permet de traiter simultanément un
+nombre quelconque de variables, toutes quantitatives.
+
+AFC: Analyse factorielle des correspondance : permet d’analyser la liaison
+existant entre deux variables qualitatives.
+
+ACM: Analyse de correspondance multiple : permet de traiter
+simultanément un nombre quelconque de variables, toutes
+qualitatives.
+
+AFDM: Analyse factorielle de données mixtes(AFDM) permet de traiter un
+ensemble d’individus décrit par un ensemble de variables quantitatives et
+qualitatives simultanément.
+
+Objectifs de l’ACM
+------------------
+est le pendant de l’analyse en composantes principales lorsque les variables actives sont catégorielles. 
+Les deux approches se rejoignent d’ailleurs lorsque les variables sont exclusivement binaires.
+
+L’ACM permet de faire des repr´esentations graphiques du contenu d’un
+ensemble de donn´ees pour extraire des connaissance :
+Sur des similitudes ou ressemblance entre les individus
+Sur des relations ou liaisons entre les modalit´es des diff´erentes variables
+qualitatives.
+
+Quels sont les individus qui se ressemblent ? (proximit´e entre les individus)
+Sur quelles variables sont fond´ees ces ressemblances ?
+Quelles sont les associations entre les modalit´es ?
+
+H: Matrice de donn´ees qualitatives 
+
+H => n X p 
+n: individus
+p: nombre de variables qualitatives
+
+Representation tablue disjunctive:
+
+K = n X p
+n 
+m = modalites
+
+Chaque colonne s est l’indicatrice de la modalit´e s (pandas.get dummies)
+kis = 1 si l’individu i poss`ede la modalit´e s
+kis = 0 sinon 
+
+
