@@ -1,0 +1,442 @@
+Approches pour ML | supervisé
+-----------------------------
+Algorithme qui consiste d'une variable cible/résultat appelée aussi variable dépendante, qui doit être prédite à partir d'un ensemble de prédicteurs ou variables indépendantes
+But: générer une fonction qui permet le mappage des entrées en une ou des sorties
+Le processus d'apprentissage continue jusqu'à ce que le modèle désiré atteint un certain niveau d'exactitude (accuracy) sur les données d'apprentissage.
+Ej: Rancom Logistic Regression Bayes KN 
+
+On distingue les deux cas suivants:
+Régression: cas de variable continue
+Classification: cas de variable discrète
+
+Parmi les algorithmes les plus utilisés, on citera:
+Linear Regression
+Logistic Regression
+Decision Tree
+Support vector machine ou SVM
+Naive Bayes
+K nearest neighbor ou KNN
+K-Means
+Random Forest
+
+Techniques de classification
+-----------------------------
+Classificateurs de base
+ Decision Tree based Methods
+Rule-based Methods
+Nearest-neighbor
+Neural Networks
+Naïve Bayes et Bayesian Belief Networks
+Support Vector Machines
+
+Classificateurs d'ensemble
+Boosting, Bagging, Random Forests
+
+
+Approches pour ML | non-supervisé
+---------------------------------
+Algorithme où il n'y a pas de variable cible/résultat qui doit être prédite et ne nécessite pas d'apprentissage.
+But: effectuer le clustering ou segmentation de données en différents groupes selon des critères spécifiques
+Ej: K-Mena, Clistering
+
+
+Approches pour ML | Reinforcement
+---------------------------------
+Algorithme où l'on expose la machine à un environnement lui permettant un apprentissage du type essai-erreur (trial-error)
+But: Permettre  à la machine de prendre des décisions spécifiques
+Ej: Markov desicion process
+
+Intelligence Aritificielle
+----------------------------
+Conception et development de agents intellgents(informatique, biologiques..) que sont capable de aprendre et iteragir avec le environtment( capteurs) et prendre de desicions.
+
+Machine Learning
+----------------
+Develoment de processus informatiques que a partir de donnes aprend de cest donnes et faire de prediction en basse a l'apprentisage, en basant sur algoritmens
+
+Data Science
+-----------
+Development de un workflow (processsus scientifique technique), que sur l basse de donnes es capable de arriver a une modele predictif.
+
+Role Analyste
+-------------
+Comprendre le process u workflow de data science
+Maitirse de algorithmes
+
+Specialiste ML
+----------------
+Maitirse de algorithmes
+Tunning algoritmes
+
+Processus de development de un model
+------------------------------------
+
+DATA
+1) Collecte de donnes:
+    Donnes adaptes / Lecture
+    
+2) EDA Exploration de donnes
+    Donnes adaptes / Lecture ecriture
+    
+3) Pretraitement
+
+4) Development de modele
+
+5) Test de model et evaluation --> to 3 if improve todo
+    Qualite en basse a metriques
+    
+6) Deploiement
+
+
+REGRESSION LINEAIRE
+==========================================================================================================
+
+Méthode d'investigation des relations fonctionnelles entre des variables
+On dispose de variables indépendantes
+On cherche à estimer la valeur de la variable dépendante sachant les variables indépendantes
+On cherche donc le modèle qui est dans notre cas l'équation qui régit la relation entre ces deux variables
+
+Régression: utilisée lorsque  les variables sont continues et ont une certaine corrélation
+Critère(s): Goodness of fit qui explique la qualité du modèle
+
+Objective: trouves les m et b de y=mx+b avec le minimun RSS
+Rss = e1^2 + e2^2 + .. + eN^2 
+
+Mesure R-squared: 
+mesure la qualité du modèle
+Donne l'écart entre les points et la ligne
+Varie entre 0 et 1: plus c'est proche de 1 et plus le modèle est bon
+
+Il faut trouver R-squared pour notre prédicteur: c'est le critère de choix
+La corrélation entre les variables indépendantes X et dépendante Y fait que R-squared s'approche de 1
+
+
+Avantages:
+Fonctionne bien pour des relations linéaires
+Adapté pour les variables continues
+Rapide en termes d'implémentation
+
+inconvenients:
+Ne fonctionne que pour des variables numériques / continues
+Ne prend pas en compte des relations non linéaires
+Sensible au bruit
+
+
+CLASSIFICATION KNN-nearest neighbor
+==========================================================================================================================
+
+Sachant une entrée X, on considère la sortie ou prédiction Y
+La sortie Y est une catégorie alors que X peut prendre n'importe quelle valeur: numérique ou catégorie
+
+Objectif: Définir un modèle qui fait le mapping de chaque 
+ensemble d'attributs X en un des labels de classe 
+
+
+Techniques de classification
+============================
+
+Classificateurs de base
+ Decision Tree based Methods
+Rule-based Methods
+Nearest-neighbor
+Naïve Bayes et Bayesian Belief Networks
+Support Vector Machines
+
+Classificateurs d'ensemble
+Boosting, Bagging, Random Forests
+
+
+Classificateur | k-Nearest neighbor
+------------------------------------
+
+Objectif: trouver les k instances d'apprentissage qui sont les plus proches de la donnée de test et classifier 
+l'instance de test comme étant de la même classe que la classe majoritaire des k instances
+
+Choix de k
+------------
+Le choix de k n'est pas évident par la nature même de l'algorithme
+Si k est très petit, on risque d'avoir le overfitting en raison du bruit dans les données d'apprentissage
+si k est plus grand, on risque d'avoir des erreurs de mauvaise classification car le voisinage de l'instance de test devient 
+plus grand et des points éloignés et non pertinents seront utilisés pour la classification 
+
+Évaluation des modèles -  mesures de similarité
+===============================================
+Dans cette présentation, on présente les points suivants
+Mesures de similarité
+Distance euclidienne
+Distance Manhattan
+Distance Minkowski
+Similarité Cosine
+Similarité Jaccard
+
+La définition de la similarité entre objets dépend de :
+type de données considérées
+type de similarité recherchée
+
+Similarité
+--------------
+
+La similarité dans le contexte de fouille de données est décrite comme une distance avec les dimensions représentant les features des objets
+
+Si la distance est petite, on aura une très grande similarité
+
+Si la distance est grande, on aura une très faible similarité
+
+Important: la similarité est une mesure subjective et elle est dépendante du domaine
+
+Les valeurs relatives de chaque feature devront être normalisées afin d’éviter d’avoir une des features dominer le reste dans le calcul de la distance
+
+La similarité est une mesure dans l’intervalle 0 à 1 inclusivement
+
+Distance euclidienne: 
+C’est la distance la plus commune
+La distance euclidienne entre deux points est la longueur du path reliant les deux points
+On utilise le théorème de pythagore
+
+Distance Manhattan
+C’est la distance entre deux points calculées comme étant la somme des differences absolues des coordonnées cartésiennes.
+Avec les points P1 (x1, y1) et P2 (x2,y2), on aura  distance Manhattan = |x1 – x2| + |y1 – y2|
+
+Distance Minkowski
+C’est la forme généralisée de la distance euclidienne et de la distance Manhattan
+
+Similarité Jaccard
+On considère dans ce cas des ensembles sur lesquels on desire effectuer une mesure de similarité
+Elle est définie comme étant la cardinalité de l’intersection des ensembles divisée par la cardinalité de l’union des ensembles.
+
+
+Exemple de calcul des mesures en classification
+===============================================
+
+Terminologie
+Ho : évènement ne s'est pas produit.
+Ex: Ho    patient n'a pas le diabète 
+True positives (TP): on prédit correctement que l'évènement s'est produit
+True negatives (TN): on prédit correctement que l'évènement ne s'est pas produit
+False positives (FP): on prédit incorrectement que l'évènement s'est produit (erreur type I)
+False negatives (FN): on prédit incorrectement que l'évènement ne s'est pas produit (erreur type 2)
+
+        prediction0 Prediction1
+Reel 0    TN           FP
+reel 1    FN           TP  
+
+
+Exemple (adapté de Azure ML)
+
+        prediction0 Prediction1
+Reel 0    991           3
+reel 1    1             5
+
+
+Total des events : 1000
+
+
+Accuracy
+-------------
+Donne la mesure des observations correctement prédites (combien de fois le classificateur est correct ?)
+5 + 991=996 / 1000 = 0.996
+
+Precision  # What proportion of positive identifications was actually correct?
+----------
+Donne la précision du classificateur lorsqu'il prédit des event positifs ou mesure des observations correctes true positive :
+True Positives / (True Positives + False Positives)
+5 / 8 = 0.625
+
+Recall ou taux de true positive ou sensitivity (sensibilité) # What proportion of actual positives was identified correctly?
+--------------------------------------------------------------
+Donne la mesure du taux de true positive ou event positif correctement prédit :
+True Positives / (True Positives + False Negatives)
+Recall =5/6 = 0.833
+
+Score F1
+---------
+Moyenne de precision et recall
+2*(Recall * Precision)/(Recall + Precision)
+Cas de l’exemple : 0.714
+
+
+#Interpreter Matrix Confussion
+==============================
+
+#  TP | FP
+#  --- ----
+#  FN | TN
+
+#Les elements diagonal sont les numero total de predictions corrects de chaque class: 
+TN = 55  #Bonnes predictions Risk = 0
+TP = 97 #Bonnes predictions Risk = 1
+
+#FN o False Negative : numero de predictions de Risk = 0 pas bien predis pour le model 
+FN =  4
+#FP o False Positive : numero de predictions de Risk = 1  pas bien predis pour le model 
+FP = 0
+
+Accuracy = (TP + TN) / (TP+TN+FP+FN)
+Accuracy
+
+Classification Workflow
+==============================
+Whenever you perform classification, 
+
+the first step is to understand the problem and identify potential features and label
+
+The classification has two phases, a learning phase, and the evaluation phase. 
+In the learning phase, classifier trains its model on a given dataset and in the evaluation phase, 
+it tests the classifier performance. Performance is evaluated on the basis of 
+various parameters such as accuracy, error, precision, and recall.
+
+
+Quel métrique choisir ?
+-----------------------
+Cela dépend des objectifs et du besoin d'affaires.
+Cas du filtre de spam: Ho  courriel n'est pas spam
+On cherche la précision ici. On accepte beaucoup plus les FN (courriel spam est labellisé comme non spam) que les FP (courriel correct est labellisé comme spam !)
+
+Classificateur de transaction de carte de crédit: H0 transaction est correcte et H1 indique une transaction frauduleuse
+On cherche ici la sensibilité car on veut maximiser la détection de fraude ici. On accepte donc les FP (transaction normale labellisée comme fraude) 
+mieux que les FN (fraude qui est labellisée comme transaction correcte). On est donc focalisé sur H1 ou event positif
+
+
+Évaluer les fonctions de scoring dans le cas de la régression.
+================================================================
+
+Mean absolute error ou MAE : C’est la moyenne L1 norme du vecteur différence entre les valeurs prédites et les vraies valeurs
+
+ 
+from sklearn.metrics import mean_absolute_error mean_absolute_error([1.0, 0.0, 0.0], [0.0, 0.0, -1.0]) 
+Out: 0.66666666666666663
+
+
+Mean squared error ou MSE : C’est la moyenne L2 norme du vecteur différence entre les valeurs prédites et les vraies valeurs
+
+from sklearn.metrics import mean_squared_error 
+mean_squared_error([-10.0, 0.0, 0.0], [0.0, 0.0, 0.0]) 
+Out: 33.333333333333
+
+
+Score R2 : coefficient de détermination. Elle prend des valeurs entre 0 et 1 avec les valeurs vers 1 indiquant un modèle parfait.
+
+From sklearn.metrics import r2_score 
+r2_score([3.0, 0.0, 2.0], [3.1, 0.3, 1.9])
+
+
+CLASIFFICATION DESCiCION TREES
+=================================================================================================================================================================
+
+Un arbre de décision est un arbre où il y’a:
+Nœud Racine ou Root  
+Nœuds internes : un noeud avec un edge entrant et 2 ou plusieurs edge sortants
+Nœuds Feuilles : nœud terminal donnant la  classe. Il n’a pas de edge sortant
+
+Mesures pour le choix de noeud
+   Index GINI
+   Entropie
+   Gain d’information
+
+Entropie
+=========
+Définition
+
+E= SUM(-Pi*Log2(Pi)) i=1..c
+
+The entropy here is approximately 0.88. This is considered a high entropy , a high level of disorder ( meaning low level of purity). Entropy is measured between 0 and 1.
+
+Elle nous permet de mesure le degré de variabilité ou d’homogénéité dans l’arbre
+Si les données sont complètement homogènes, l’entropie est égale à 0
+Si les données sont divisées (50%-50%) data est impur , l’entropie =1
+
+Gini - 
+=========
+Définition
+
+Gini = 1 - SUM (Pi)^2                 Pi: probability of an object being classified to a particular class.
+
+Le score de Gini donne une idée de la qualité d'un split par l’hétérogénéité des classes des deux groupes créés par le split
+permet de mesure le degré de variabilité ou d’homogénéité dans l’arbre
+Une séparation idéale donne un score 0
+
+Gini index or Gini impurity measures the degree or probability of a particular variable being wrongly classified when it is randomly chosen. But what is actually 
+meant by ‘impurity’? 
+
+If all the elements belong to a single class, then it can be called pure.
+
+The degree of Gini index varies between 0 and 1, where 0 denotes that all elements belong to a certain class or if there exists only one class, 
+
+and 1 denotes that the elements are randomly distributed across various classes. 
+
+A Gini Index of 0.5 denotes equally distributed elements into some classes.
+
+Lowest Gini Index  will be chosen as the root node iterativement, for how decision tree works.
+
+
+What are splitting measures?
+------------------------------
+With more than one attribute taking part in the decision-making process, it is necessary to decide the relevance and importance 
+of each of the attributes.
+
+Placing the most relevant at the root node and further traversing down by splitting the nodes. 
+
+As we move further down the tree, the level of impurity or uncertainty decreases, 
+thus leading to a better classification or best split at every node. To decide the same, splitting measures such as Information Gain,
+ Gini Index, etc. are used.
+ 
+What is Information Gain?
+Information Gain is used to determine which feature/attribute gives us the maximum information about a class. It is based on the concept of entropy, 
+which is the degree of uncertainty, impurity or disorder. It aims to reduce the level of entropy starting from the root node to the leave nodes.
+
+What is Gini Index?
+
+
+METHODE NAiVE BAYES
+=====================================================================================================================
+
+L’hypothèse d’indépendance : 
+  fait que le calcul est possible
+  trouve un modèle de classification optimal si hypothèse satisfaite
+  mais est rarement satisfaite en pratique. Étant donné que les attributs (variables) sont souvent corrélés
+
+Pour éliminer cette limitation :
+  Arbres de décision, qui traitent un attributs à la fois, en considérant les attributs les plus importants en premiers
+
+Avantages de Naïve Bayes
+  Simple et rapide à implémenter
+  Fonctionne bien en présence de bruit et dans le cas de données manquantes
+  Donne en plus les probabilités associées avec le résultat
+  Très bien adapté pour des données catégoriques (non numérique)
+
+Assumption majeure: les prédicteurs sont indépendants
+Précision limitée
+Binning peut être necessaire dans le cas de plage numérique assez large
+Cas de tranche d'age au lieu de la variable age
+
+(Ph|D) = P(D|h)P(H) / P(D)
+
+P(h): the probability of hypothesis h being true (regardless of the data). This is known as the prior probability of h. Probabilidad de h sin ninguna observación
+P(D): the probability of the data (regardless of the hypothesis). This is known as the prior probability.
+P(h|D): the probability of hypothesis h given the data D. This is known as posterior probability. Probabilidad de que h sea cierta después de observar D
+P(D|h): the probability of data d given that the hypothesis h was true.
+
+Exactitud: mide cómo de a menudo el clasificador realiza la predicción correcta. Es el ratio de número de predicciones correctas contra el número total de predicciones (el número de puntos de datos de prueba).
+Image for post
+Precisión: nos dice la proporción de mensajes que clasificamos como spam. Es el ratio entre positivos “verdaderos” (palabras clasificadas como spam que son realmente spam) y todos los positivos (palabras clasificadas como spam, lo sean realmente o no)
+Image for post
+Recall (sensibilidad): Nos dice la proporción de mensajes que realmente eran spam y que fueron clasificados por nosotros como spam. Es el ratio de positivos “verdaderos” (palabras clasificadas como spam, que son realmente spam) y todas las palabras que fueron realmente spam.
+Image for post
+
+
+Conclusión - https://medium.com/datos-y-ciencia/algoritmos-naive-bayes-fudamentos-e-implementaci%C3%B3n-4bcb24b307f
+Una de las mayores ventajas que Naive Bayes tiene sobre otros algoritmos de clasificación es la capacidad de manejo de un número extremadamente grande de características. En nuestro caso, cada palabra es tratada como una característica y hay miles de palabras diferentes.
+También, se comporta bien incluso ante la presencia de características irrelevantes y no es relativamente afectado por ellos.
+La otra ventaja principal es su relativa simplicidad. Naive Bayes funciona bien desde el principio y ajustar sus parámetros es raramente necesario.
+Raramente sobreajusta los datos.
+Otra ventaja importante es que su modelo de entrenamiento y procesos de predicción son muy rápidos teniendo en cuenta la cantidad de datos que puede manejar.
+
+
+
+
+
+
+
+
+
+
