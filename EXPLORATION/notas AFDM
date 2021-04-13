@@ -1,0 +1,129 @@
+notes AFDM
+---------------
+
+
+L’Analyse Factorielle des Donn´ees Mixtes (AFDM ou FAMD pour Factor
+Analysis of Mixed Data en anglais) est une m´ethode destin´ee `a analyser
+un jeu de donn´ees contenant `a la fois des variables quantitatives et
+qualitatives.
+
+Autrement dit, l’AFDM peut ˆetre consid´er´e comme une analyse mixte
+entre l’analyse en composantes principales (ACP) et l’analyse des
+correspondances multiples (ACM).
+
+Objectifs de l’AFDM
+---------------------
+
+l’AFDM permet de faire des repr´esentations graphiques du contenu d’un
+ensemble de donn´ees mixtes pour extraire des connaissance :
+Sur des similitudes ou ressemblance entre les individus en prenant en
+compte des variables mixtes.
+Sur des relations ou liaisons entre toutes les variables, tant quantitatives
+que qualitatives
+
+Quels sont les individus qui se ressemblent ? (proximit´e entre les individus)
+
+Sur quelles variables sont fond´ees ces ressemblances avec une difficult´e
+suppl´ementaire en relation avec le type des donn´ees ?
+
+Quelles sont les associations entre les variables ? Entre quantitatives,
+l’id´ee de la corr´elation s’impose ; entre les qualitatives, on utilise le TDC ;
+mais comment faire entre quantitatives et qualitatives
+
+Representation de donnes
+--------------------------
+
+Donn´ees
+Les donn´ees se pr´esentent sous la forme d’une matrice/tableau :
+n individus
+p1 variables quantitatives stock´ees dans la matrice X1
+p2 variables qualitatives stock´ees dans la matrice X2
+
+Les donn´ees quantitatives sont centr´ees et r´eduites : Z1 = X1 centr´ee r´eduite
+avec dim(Z1) = n × p1
+
+n est le nombre d’individus, p2 le nombre de variables qualitatives
+mj numero de modalites
+
+Nombre d’axes `a retenir
+------------------------------
+La transformation en TDC entraine une redondance des donn´ees
+=⇒ on garde au plus p − p2 axes factoriels
+=⇒ on garde p − p2 valeurs propres non nulles
+Le crit`ere de Kaiser utilis´e dans l’ACP, ne peut pas ˆetre appliqu´e ici parce
+que certaines varaibles ne sont pas nativement quantitatives
+On utilise souvent le diagramme de coude
+
+Analyse simultan´ee des variables quantitatives et qualitatives
+-------------------------------------------------------------------------
+La repr´esentation des variables quantitatives et qualitatives dans le mˆeme
+rep`ere est un vrai d´efi et pose une complexit´e de calcul.
+
+Par contre, la repr´esentation des corr´elations entre les diff´erentes variables
+et les axes factoriels peut ˆetre une solution : les carr´es des corr´elations
+(variables quantitatives) et des rapports de corr´elation (qualitatives) avec
+les facteurs.
+
+	Calcule de cos2(qualit´e de repr´esentation) et Ctr (contributions variables)
+	----------------------
+	Les deux indicateurs d’intensit´e de relation varient entre 0 et 1
+	
+	lambda1 = sum( r^2(Fx) ) + sum( n^2(Fx) )
+	
+		r^2 Coeficient de correlation variables quantitatives
+		
+		n^2 Carre du rapport de correlation - Dispersion relative de ses modalites
+			Il se d´efinit par le ratio entre la variance inter-modalit´es et la variance totale
+			
+		n^2 = Gkh^2      Gkh = es coordonn´ees de la modalit´e k sur l’axe factoriel h
+		
+	Contribucion variable quantitaitive:
+			Ctr = r^2(Fhx)/lambdah     Lambdah, variance associe a l'axe h
+		
+	Contribucion variable quanlitaitive:
+			Ctr = n^2(Fhx)/lambdah     Lambdah, variance associe a l'axe h
+	
+	
+	Qualit´e de repr´esentations quantitative:
+			Cos^2 = r^2 Fx
+
+	Qualit´e de repr´esentations qualitative:
+			Cos^2 = n^2 Fx / (mj - 1)            mj numoer de modalites.
+
+
+----------------------------
+
+ACP. Avec l’analyse en composantes principales lorsque les variables sont toutes quantitatives, 
+la variance restituée par le premier facteur s’écrit : 
+
+	𝜆1=Σ𝑟2(𝐹1,𝑋𝑗)𝑗
+
+	Où 𝑟2( ) est le carré du coefficient de corrélation linéaire entre la variable Xj et le facteur F1.
+
+ACM. Avec l’analyse des correspondances multiples, les variables sont toutes qualitatives, la variance restituée s’écrit : 
+
+	𝜆1=1𝑝 Σ𝜂2(𝑗𝐹1,𝑋𝑗)
+	Où 𝜂2() est le carré du rapport de corrélation entre la variable Xj et le facteur F1 c.-à-d. on souhaite que, globalement, 
+	les modalités des variables soient le plus dispersés possible.
+
+AFDM. La généralisation pour l’analyse factorielle des données mixtes consiste à définir un critère qui réunit ces spécifications pour 
+	appréhender simultanément les deux types de variables 
+
+	𝜆1=Σ𝑟2(𝐹1,𝑋𝑗)𝐶𝑗=1+Σ𝜂2(𝐹1,𝑋𝑗)𝐶+𝐷𝑗=𝐶+1
+
+	Puisque (0≤𝑟2≤1) et (0≤ 𝜂2≤1), les deux types de variables pèsent de manière équilibrée.
+	
+------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+

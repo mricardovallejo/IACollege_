@@ -34,9 +34,13 @@ Sur des similitudes ou ressemblance entre les individus
 Sur des relations ou liaisons entre les modalit´es des diff´erentes variables
 qualitatives.
 
+Analysisi factoriel, essaie de repondre:
+
 Quels sont les individus qui se ressemblent ? (proximit´e entre les individus)
 Sur quelles variables sont fond´ees ces ressemblances ?
 Quelles sont les associations entre les modalit´es ?
+Quelles sont les relations entre les variables ?
+
 
 H: Matrice de donn´ees qualitatives 
 
@@ -50,8 +54,28 @@ K = n X p
 n 
 m = modalites
 
-Chaque colonne s est l’indicatrice de la modalit´e s (pandas.get dummies)
+Chaque colonne s est l’indicatrice de la modalit´e s
 kis = 1 si l’individu i poss`ede la modalit´e s
 kis = 0 sinon 
+
+Principle general ACM
+-----------------------
+
+Le principe g´en´eral de la r´ealisation d’une ACM consiste `a :
+
+- consid´erer les profils-lignes si on s’int´eresse `a la variabilit´e des individus
+et de leurs profils.
+
+- consid´erer les profils-colonnes si on s’int´eresse aux liens entre les
+modalit´es
+
+En pratique, on r´ealise une ACP du nuage des profils-lignes, en utilisant la
+m´etrique du chi-deux.
+
+
+L’inertie d´epend donc du nombre moyen de modalit´es par variable
+
+
+
 
 
