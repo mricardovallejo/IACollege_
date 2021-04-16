@@ -1,6 +1,33 @@
+Regularisation:
+==============
+
+https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b
+
+Ridge and Lasso regression are some of the simple techniques to reduce model complexity and prevent over-fitting which may result from simple linear regression.
+
+Ridge Regression : In ridge regression, the cost function is altered by adding a penalty equivalent to square of the magnitude of the coefficients.
+		The penalty term (lambda) regularizes the coefficients such that if the coefficients take large values the optimization function is penalized.
+		 So, ridge regression shrinks the coefficients and it helps to reduce the model complexity and multi-collinearity
+		 
+		 For low value of α (0.01), when the coefficients are less restricted, the magnitudes of the coefficients are almost same as of linear regression. 
+		 For higher value of α (100), we see that for coefficient indices 3,4,5 the magnitudes are considerably less compared to linear regression case
+
+
+Lasso Regression :: Just like Ridge regression cost function, for lambda =0, the equation above reduces to equation 1.2. 
+		The only difference is instead of taking the square of the coefficients, magnitudes are taken into account. 
+		This type of regularization (L1) can lead to zero coefficients i.e. some of the features are completely neglected for the evaluation of output. 
+		So Lasso regression not only helps in reducing over-fitting but it can help us in feature selection. 
+		
+		The default value of regularization parameter in Lasso regression (given by α) is 1
+		
+		Further reduce α =0.0001, non-zero features = 22. Training and test scores are similar to basic linear regression case.
+		
+		
+		
+		
+
 
 Data = Signal + Bruit
-
 
 Overfitting
 ------------
@@ -28,6 +55,97 @@ Solutions to overfitting
     Sélection de prédicteurs:
     Utiliser des techniques de sélection de prédicteurs tel que forward, backward sélection
 
-    Régularisationsemble
+    Régularisation
+	
+	
+ARCHTECTURE
+---------------
 
+Integration continue:
+
+	Suivi des problèmes d’intégration
+	Publication automatique des artifacts (Maven)
+	Suivi du processus de build
+	Suivi et rapport sur la qualité du code
+
+Benfits:
+	Processus d’intégration souple
+	Test de régression automatique
+	Release du produit régulière
+	Test fonctionnel assez tôt dans le cycle
+	Résolution des bugs rapide
+	Visibilité du projet 
+
+Pour demarrer:
+	Processus de build automatique (Maven ou Ant Graddle)
+	Tests automatiques (Junit, Selenium)
+	Référentiel pour le code (Subversion, CVS, GIT)
+	Serveur d’intégration continue (Cruise control, Jenkins, continuum, TFS, Perforce)
+
+
+Cycle de développement-déploiement ML
+	Collecte-Acquisition
+	Exploration
+	Pré-traitement
+	Modele
+	Mise en production
+	Utilisation
+
+Les modèles qu’on doit déployer doivent être:
+	Reproductible
+	Testable
+	Peuvent passer un audit
+	Surtout: capable d’etre continuellement amélioré
+
+Sources de changement
+	Données
+	Modèle de données
+	Sources de données peuvent varier dans le temps
+	Volume/Vitesse
+	Modèle
+	État de l’art change très vite
+	Beaucoup de recherche dans le domaine
+	Performance bonne aujourd’hui n’est pas garantie pour demain
+	Nouvelle demande de clients usagers
+	Bugs
+	Dépendances qui peuvent changer dans le temps
+	
+
+Principe integration continue:
+	Définir et créer un processus répétable et fiable pour la mise en production du modèle
+	Permettre d’automatiser la presque totalité du processus
+	Permettre de faire un suivi de changement (change control)
+	Permettre de garder tous les artefacts dans un gestionnaire d’artefacts
+	Suivre et gérer le cycle du modèle de manière continue
+	
+Outils
+goCD: An Open Source Continuous Delivery server to model and visualise complex workflows
+mlFlow: An Open Source platform for managing end-to-end machine learning lifecycle
+kibana: Open Source web UI to explore and visualise data sur Elasticsearch
+
+Suivi du développement
+	Il ne suffit pas de déployer, il faut aussi un suivi du processus de développement
+	Quelles sont les hypotheses qui sont en train d’etre explorées?
+	Quelles techniques de pré-traitement a t-on essayées?
+	Combien de temps prend chaque processus pour s’executer?
+	Quels sont les parametres et hyperparametres utilisées?
+	Quels sont les métriques utilisés?
+	Etc.
+
+Amélioration continue
+	Une fois en production, on doit capturer des métriques de production afin d’améliorer nos modèles
+	Suivre comment le modèle est utilisé
+	Voir quel type de données on utilise sur le modèle
+	Évaluer la sortie du modèle pour voir son écart par rapport à la normale
+	Essayer de détecter s’il y’a un overfit
+	Essayer de voir si le modèle n’a pas de biais
+	Etc.
+
+
+
+
+
+	
+
+	
 

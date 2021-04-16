@@ -65,3 +65,9 @@ JEXPLORATION/.ipynb_checkpoints/TP_cours7_analyseFactoriel-checkpoint.ipynb,f\1
 ,EXPLORATION/TP_cours7_analyseFactoriel.ipynb,b\e\be92911fd74d0169a4f383d88394e374729f16a5
 J
 SUPERVISE_/notesSUPERVISEE,4\9\49db2f5150773085872c933c1291794fead60342
+F
+EXPLORATION/notas AFDM,0\b\0b15852a54611aec4fad8debe7ecd3472a5ae44f
+E
+EXPLORATION/PCA.ipynb,7\e\7ece937bbc55888df13045ac6ccc1569b414dba5
+[
++SUPERVISE_/RegressionLineal_Supervise.ipynb,1\3\13c3a24eeea7ebd9e605bb9b1d2013b96676ba00
