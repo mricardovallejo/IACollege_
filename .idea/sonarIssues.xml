@@ -8,6 +8,16 @@
             <set />
           </value>
         </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/SUPERVISE_/notesSupervisee Ensembles Methodes">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="C:/wrkOrion2/app1129-orion-order-rs/order-rs-spi/pom.xml">
           <value>
             <set />
@@ -314,6 +324,11 @@
           </value>
         </entry>
         <entry key="C:/wrkOrion3/app1129-orion-user-rs/user-rs/src/main/java/com/fbn/rs/user/configuration/ApplicationConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="C:/wrkOrion3/app1129-pcis/pcis/src/main/java/com/fbn/wak/web/app/pcis/logout/action/PcisLogoutAction.java">
           <value>
             <set />
           </value>

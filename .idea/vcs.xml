@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BASIC_PYTHON_/FLASK_/myflask" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ECOSYSTEM_IA/1_githuppractice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RVRWRK_TUTOS/JAVA_/AWS_Kubernetes" vcs="Git" />
   </component>
 </project>

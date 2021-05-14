@@ -1,0 +1,69 @@
+
+Mise en place Ecosystem IA
+----------------------------
+https://docs.google.com/document/d/1DRSQRxfarXCXgBY3JHio77eKVafQc13I/edit
+
+Session 1:
+https://drive.google.com/drive/folders/1pPSgsGBbD_1_WK_YaXHMSU_x7ZjXntvV
+
+
+RUN PYTHON IN GITHUB VIRTUAL MACHINE - Github: test2 repo.
+--------------------------------------
+
+1) Create repo github mricardovallejo/tests2
+2) Sur local directory avec application git bash
+3) Init repo:  git init
+3) Add files to repo :  
+	git add .
+	git remote add origin https://github.com/mricardovallejo/tests2.git
+4) git push -u origin master
+
+5) In order to trigger an GITHUB ACTION add a file on /.github/workflows/ecl.yaml
+
+				name: model-supervisé RL
+				on: [push]
+				jobs:
+				  run:
+					runs-on: [ubuntu-latest]
+					container: docker://dvcorg/cml-py3:latest
+					steps:
+					  - uses: actions/checkout@v2
+					  - name: cml_run
+						env:
+						  repo_token: ${{ secrets.GITHUB_TOKEN }}
+						run: |
+						  # Your ML workflow goes here
+						  pip install -r requirements.txt
+						  python 01_prod_regression_ci__tutorial.py
+						  # Write your CML report
+						  echo "## Metriques:" >> report.md
+						  cat metrics.txt >> report.md
+
+ecl.ym has the config to docker image with image who execute my file .py 
+    Function who trigger the Action (ex; push)
+
+6) When i do modifications on .py, the PR executes the python file to obtain metrics in the PR.
+All its functionality of Github. - See Actions on Github -
+
+
+CML
+========
+
+https://github.com/iterative/cml#using-cml-with-dvc
+
+https://www.youtube.com/watch?v=9BgIDqAzfuA&list=PL7WG7YrwYcnDBDuCkFbcyjnZQrdskFsBz&index=1
+
+
+Continuous Machine Learning [CML] addresses the above two concerns. As indicated in their website (https://cml.dev/), 
+“CML helps bring your favorite DevOps tools to machine learning”. 
+CML is built as a plugin to Git Actions (which is a CI/CD tool, similar to Jenkins or TravisCI). 
+The CI/CD pipeline is specified as a YAML file, and is committed along with the code to the version control system (GitHub). 
+Configuring a pipeline using CML is very simple. 
+
+
+ Continuous Machine Learning (CML) is an open-source library for implementing continuous integration & delivery (CI/CD) in machine learning projects. 
+ Use it to automate parts of your development workflow, including model training and evaluation, comparing ML experiments across your project history, and monitoring changing datasets.
+ 
+ On every pull request, CML helps you automatically train and evaluate models, then generates a visual report with results and metrics. 
+ 
+ 

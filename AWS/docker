@@ -1,0 +1,66 @@
+Docker Formation:  
+
+https://www.youtube.com/watch?v=pTFZFxd4hOI
+https://www.youtube.com/watch?v=wHGK6rfPN5c
+https://github.com/in28minutes/docker-crash-course
+
+=================
+1) Install docker desktop = Docker Engine + Service
+
+	docs.docker.com/install/
+
+	On Windows enable: Hyper-V and Containers(in serach bar of windows type: "Turn Windows features on / off")
+	On mac, put the icon of docker dektop in folder applications - Its important
+
+2) If error, update the linux kernel WSL2 Linux kernel update package for x64 MAchines
+
+3) Verify installation : docker version
+	Information server should be showed if server runs correcty
+
+4) Creation of docker file and identify all dependencies:
+	OS properties
+	Runtime environment (Node, Tomcat)
+	Appliation files
+	Third party libraries
+	environment varialbes
+
+	Typical instructions in docker file:
+	Start OS
+	Install environment
+	copy files
+	run app
+
+5) Linux distributions
+	Search image in hub.docker.com -- ubuntu
+
+
+	docker pul ubuntu
+	docker ps --> list of running containers
+	docker ps -a  --> All containers
+
+	Shorcut:
+
+	docker run ubuntu  --> If image its not installed locally that gonna pulled and run
+	docker run -it ubuntu  --> interactive go to shell prompts 
+
+	Linux practice: (I can do the same for Python)
+
+	user@machine_name>> echo hello
+	user@machine_name>> whoami
+	user@machine_name>> echo $0  --> snow location of shell program  /bin/bash
+	user@machine_name>> apt update  --> update database of appkliation dipo to install
+	user@machine_name>> apt install nano
+	user@machine_name>> apt update nano  --> Update application nano
+	user@machine_name>> apt remove nano
+
+
+Linux structure:
+----------------
+	dev: devices
+	boot:  boting files
+	etc:  Editable text configuration - Configuration files
+	home:  each user has a home there
+	lib:  libraires
+	proc: runnin processes.
+
+

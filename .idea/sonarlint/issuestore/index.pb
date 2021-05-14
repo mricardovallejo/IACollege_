@@ -71,3 +71,9 @@ E
 EXPLORATION/PCA.ipynb,7\e\7ece937bbc55888df13045ac6ccc1569b414dba5
 [
 +SUPERVISE_/RegressionLineal_Supervise.ipynb,1\3\13c3a24eeea7ebd9e605bb9b1d2013b96676ba00
+X
+(EXPLORATION/8_Regles d'associacion.ipynb,9\2\92bc7912628021714a3e91d7b8eccdac0f72a618
+]
+-EXPLORATION/Classification Hierarchique.ipynb,d\e\de4f387da84f6e726227bf6abf70ed08aa818ff1
+G
+EXPLORATION/fromage.txt,a\5\a5d5e0cd90610b5b934ac0eef678896923c0737b

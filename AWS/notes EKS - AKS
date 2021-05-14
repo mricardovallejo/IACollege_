@@ -1,0 +1,221 @@
+Kubernetes: Ressoource Manager
+===========
+Cloud ready for all providers (AKS AWS, GWS Google)
+Container Orcherstation
+Deployement
+Load balancing
+repilication des instances
+Zero Downtime Deploiemnts
+
+
+Kubernetes:
+AKS: Azure Kubeneters service.
+EKS: Amazon - Elastic Kubenetes Service.
+GKE: Google Kubenates Engine
+
+
+AMZ:  EC2
+Azure: vurtual MAchines
+Google cloud: compute Engines
+Kubernetes:  Nodes.
+
+To manage Nodes:  You have Master Nodes and Nodes.
+	Master are there to verify and garantee availibity.
+
+
+Cluster: Set of servers.   Virtual - servers.  Google Cloud -- https://console.cloud.google.com/
+		 Project - Cluster (Kuernetes Engine enable) - Create Cluster
+		 Clusters: zone, Location Type
+		 
+		 Google Cloud Shell:  
+		 
+			Use “gcloud config set project [PROJECT_ID]” to change to a different project.
+			ricardo_vallejo76@cloudshell:~ (firsttry-311915)$
+			
+			firsttry-311915) Its my project
+			
+			Getting to shell: gcloud container clusters get-credentials cluster-first-try --zone us-central1-c --project firsttry-311915
+
+			Connected to cluster i can execute:  kubectl in order to create deploiments, instances, load balancers .. 
+			
+		Create a deploiemenet from a docker image of API:
+			
+			We create deploiement de docker image of my API.
+			
+			Dans hub.docker.com I can have my dockers.
+			
+			https://hub.docker.com/r/in28min/aws-hello-world-rest-api
+			
+			kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
+			
+			
+		Expose deploeimet to outsie like a load balancer: (See in Kubernetes Sevvices)
+		
+			kubectl expose deployment hello-world-rest-api	--type=LoadBalancer --port=8080
+		
+			http://35.223.45.221:8080/hello-world
+			http://35.223.45.221:8080  ==> {{healthy true}}
+			
+		Facturation:
+		
+			In order to avoid create and delete cluster any time, reduce cluster size to zero
+			
+			gcloud container clusters resize --zone <name_of_zone> <name_of_your_cluster> --num-nodes=0
+			
+		In the backgroud:
+			
+			Register Nodes
+			Pull Image
+			Create Container
+			Start Container
+			Create PODs
+			Scaled up replicaSet
+			Service to ensure load balancer
+		
+		kubectl get pods
+		kubectl get replicaset
+		
+		Single responsabilite principle is used by k8s
+		
+		Master list of comands:	https://github.com/in28minutes/kubernetes-crash-course#commands-executed-during-the-course
+		
+			
+		PODS:  Smallest diploiement unit in Kunbernetes.	
+		
+		kubectl get pods -o wide
+		
+		One NODE can have multiples PODS
+		Each POD has unique IP address
+		POD is collection of CONTAINERS (NUmber of containers of each pod.)
+	    Pod share ressources
+		Containers in the same pod can talk to each other like localhost
+		
+		kubectl explain pods
+		
+		kubectl describe pod hello-world-rest-api
+		
+				Name:         hello-world-rest-api-6d5479ddb6-tzf9z
+				Namespace:    default == > Usefull to create environments DEV / QA / PROD
+				Priority:     0
+				Node:         gke-cluster-first-try-default-pool-49e551b7-kkj1/10.128.0.2
+				Start Time:   Mon, 26 Apr 2021 18:12:44 +0000
+				Labels:       app=hello-world-rest-api
+							  pod-template-hash=6d5479ddb6
+				Annotations:  <none>
+				Status:       Running
+				IP:           10.4.0.5
+				IPs:
+				  IP:           10.4.0.5
+				Controlled By:  ReplicaSet/hello-world-rest-api-6d5479ddb6
+				Containers:
+				  hello-world-rest-api:
+					Container ID:   docker://d1697c1d13fc6392a6bb365b68506c07256f2528ccc90eab65ba70097ee288e4
+					Image:          in28min/hello-world-rest-api:0.0.1.RELEASE
+					Image ID:       docker-pullable://in28min/hello-world-rest-api@sha256:00469c343814aabe56ad1034427f546d43bafaaa11208a1eb0720993743f72be
+					Port:           <none>
+					Host Port:      <none>
+					State:          Running
+					  Started:      Mon, 26 Apr 2021 18:12:49 +0000
+					Ready:          True
+					Restart Count:  0
+					Environment:    <none>
+					Mounts:
+					  /var/run/secrets/kubernetes.io/serviceaccount from default-token-cslbx (ro)
+				Conditions:
+				  Type              Status
+				  Initialized       True
+				  Ready             True
+				  ContainersReady   True
+				  PodScheduled      True
+				Volumes:
+				  default-token-cslbx:
+					Type:        Secret (a volume populated by a Secret)
+					SecretName:  default-token-cslbx
+					Optional:    false
+				QoS Class:       BestEffort
+				Node-Selectors:  <none>
+				Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+								 node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+				Events:          <none>
+		
+		Selector and LAbels are used to link are the rresources.
+		
+		Anntotations:  Metadata abaout a pod like author
+		
+
+	- Delete pod instances and replicas-set
+		
+		kubectl get pods -o wide
+				
+		kubectl delete pods hello-world-rest-api-6d5479ddb6
+		
+		After pod its deleted, the replicaset take in charde launch the instance because i set instance mininmin 3.
+				
+			kubectl scale deployment hello-world-rest-api --replica=3
+		
+	- Create image from instance
+	
+		kubectl get replicaset
+		
+			NAME                              DESIRED   CURRENT   READY   AGE
+			hello-world-rest-api-6d5479ddb6   1         1         1       97m
+		
+		kubectl get events --sort-by=.metadata.creationTimestamp
+		
+		kubectl set image deployment hello-world-rest-api hello-world-rest-api=DUMMY_IMAGE:TEST
+		
+		kubectl get rs -o wide
+			
+		Hyerachy:   DEPLOYMENT - contains REPLICA SET - contains PODS instances
+			
+		I can use the image with:
+		
+		kubectl set image deployment hello-world-rest-api hello-world-rest-api=DUMMY_IMAGE:TEST
+		or
+		kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/aws-hello-world-rest-api:0.0.2.RELEASE
+		
+	- Services:
+
+		Service is created whe expose deployments
+		
+		Provide external interface to applications wich runnin inside pods.  receiving traffic related to IP Address.
+		
+		En Google cloud Network Services:
+		  See Load balancing service created by service
+		  
+		kubectl get services
+		
+		
+	- Master Nodes and Nodes:
+
+		NODE 
+			Node Agent (Kubelet)
+			Networking (Kube-proxy): Expositions 
+			Container Runtime (docker - CRI )
+			PODS (Pods running Containers)
+			
+			Nodes run whiile master nodes goes down.
+			Nodes run applications
+			
+		kubectl get componentstatuses
+			
+			ricardo_vallejo76@cloudshell:~ (firsttry-311915)$ kubectl get componentstatuses
+				NAME                 STATUS    MESSAGE             ERROR
+				etcd-1               Healthy   {"health":"true"}
+				scheduler            Healthy   ok
+				controller-manager   Healthy   ok
+				etcd-0               Healthy   {"health":"true"}
+					
+
+
+
+
+
+
+
+=======================
+
+
+https://myapplications.microsoft.com/
+/RICARDO.VALLEJO@BNC.CA
+

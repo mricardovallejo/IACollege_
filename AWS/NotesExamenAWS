@@ -1,0 +1,19 @@
+AWS Notes
+
+EBS
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-attaching-volume.html
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes-multi.html
+
+Commands SSH EBS
+lsblk -- >  All volumnes in instances
+sudo file -s /dev/xvdb  -> Consultar si ilya file system
+sudo mkfs -t ext4 /dev/xvdb --> Create file suystem .dev.xvbd es el device de volumen
+sudo mkdir /data  --> Creation de repertiore pour acceder a notre EBS
+sudo mount /dev/xvdb /data  --> To mount if doesn mount yet.
+
+TEST
+cd /data
+pwd
+sudo touch test.txt
+
+
