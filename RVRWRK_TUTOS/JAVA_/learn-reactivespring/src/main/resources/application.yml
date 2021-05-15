@@ -1,0 +1,94 @@
+spring:
+  profiles:
+    active: nonprod
+---
+spring:
+  profiles: dev
+  data.mongodb:
+    host: localhost
+    port: 27017
+    database: local
+---
+spring:
+  profiles: nonprod
+  data.mongodb:
+    host: localhost
+    port: 27017
+    database: local
+---
+spring:
+  profiles: prod
+  data.mongodb:
+    host: localhost
+    port: 27017
+    database: local
+---
+spring:
+  profiles: test
+
+---
+server:
+  servlet:
+    context-path:
+
+---
+
+spring:
+  h2:
+    console:
+      enabled: true
+
+management:
+  enabled-by-default: true
+  server:
+    port: 8080
+  endpoints:
+    enabled-by-default: true
+    web:
+      base-path: /myactuator
+      cors:
+        allow-credentials: true
+      exposure:
+        include: metrics,health,info,prometheus #, "*"
+  endpoint:
+    auditevents:
+      enabled: true
+    env:
+      enabled: true
+    metrics:
+      enabled: true
+    beans:
+      enabled: true
+    configprops:
+      enabled: true
+    health:
+      enabled: true
+      show-details: ALWAYS
+      show-components: "*"
+    loggers:
+      enabled: true
+    info:
+      enabled: true
+
+global:
+  scrape_interval: 5s
+
+external_labels:
+    monitor: 'My Monitor'
+
+scrape_configs:
+    - job_name: 'prometheus'
+      metrics_path: '/manage/prometheus'
+      scrape_interval: 3s
+      static_configs:
+        targets: ["localhost:9091"]
+
+    - job_name: 'spring-actuator'
+      metrics_path: '/manage/prometheus'
+      scrape_interval: 3s
+      stats_configs:
+        targets: ["localhost:8080"]
+
+
+
+

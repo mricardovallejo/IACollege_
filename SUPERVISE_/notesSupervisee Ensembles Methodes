@@ -21,11 +21,6 @@ Lasso Regression :: Just like Ridge regression cost function, for lambda =0, the
 		The default value of regularization parameter in Lasso regression (given by α) is 1
 		
 		Further reduce α =0.0001, non-zero features = 22. Training and test scores are similar to basic linear regression case.
-		
-		
-		
-		
-
 
 Data = Signal + Bruit
 
@@ -50,7 +45,6 @@ Solutions to overfitting
     Cross-validation:
     Utilisez les données d’entraînement initiales pour générer plusieurs tranches de mini-tests d'entrainement.
     Utilisez ces divisions pour ajuster le modèle.
-
 
     Sélection de prédicteurs:
     Utiliser des techniques de sélection de prédicteurs tel que forward, backward sélection

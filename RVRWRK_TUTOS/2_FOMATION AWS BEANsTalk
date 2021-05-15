@@ -1,0 +1,168 @@
+AWSservices Formation
+
+Account Id:171828970845 - SUSPENDED 104U$
+Seller:AWS Inc. 
+Account Name:ricardov 
+ricardo.vallejo76@gmail.com
+Password:Rolito1810*
+
+CURRENT AWS ACCESS
+theothersecretmail2020@gmail.com : ADMIN
+AWS account name  :rolito2020
+Psw:rolito1976*
+
+Users:
+Root Users
+IAM Users (All other differente to admin users)
+
+1) Create users witn IAM (Manage Users Acess Encryption keys)
+1a. Create a goup
+1b. Assign permissions
+1c. Add user to group
+
+2) Services - Elastic Beanstalk
+You can deploy, monitor, and scale an application quickly and easily
+
+2a.  Create new application link click
+	 Create environment (DEV/TEST/PROD) - Firstapp-env
+	 Base Configuration (Platform)
+	 Other options (Deploiements, monitor, database, ...) - 
+	 
+	 available at http://mybackendtest1-env.eba-8mk7xf4y.us-east-2.elasticbeanstalk.com/hello-world/path-variable/RICARDO
+	 MybackendTest1-env  Environment ID: e-rxep58r3wq, , URL: Firstapp-env.jsiexkps6j.us-east-2.elasticbeanstalk.com
+	 
+2b. Configuring EC2 - Vitutal Servers in cloud
+	See Running instances their URL, volume, 
+	SecurityGroup permissions and 
+	IP Elastic (static IP of instance of application)
+	Configure Billing Alerts and stop services unused - not bills
+	
+2c.	Configure Alerts Biiling
+	Services - CloudWatch
+	Create alarm - In alarm - Crate new topic
+	
+	Another opions Services - Budget
+	
+
+3) Create artifacts to deployer.
+
+JAR
+-----
+Connect like a root
+Services Elastic Beanstalk
+Select the correct zone (Ohio) to find your environments - firsApp-env
+Select the environment
+Overview page is loaded
+Upload and deploy button
+Select JAR
+Deploy
+Test --> 
+http://firstapp-env.jsiexkps6j.us-east-2.elasticbeanstalk.com/hello-world
+http://firstapp-env.jsiexkps6j.us-east-2.elasticbeanstalk.com/hello-world-bean
+
+API JPA - Spring 
+-----------------
+Kill process in local port 5000/8080
+netstat -ano | findstr :5000
+taskkill /PID typeyourPIDhere /F
+
+Test --> http://localhost:5000//jpa/users/in28minutes/todos
+
+See README file to see endpoints use
+
+
+To show database associated:
+http://firstapp-env.jsiexkps6j.us-east-2.elasticbeanstalk.com/h2-console
+
+ACTIONS IMPORTANT
+Terminate Environment its better than Erase Applications (not undo IF Erase Apps) !!!!
+Restore Environmet to restart the environment
+
+ENVIRONMENT LOGS
+nginx --> Applications and REST requests logs
+web01 --> Logs catalina
+
+DEPLOYING WARS
+---------------
+
+1) Prepare war.
+Verify packaging in pom.xml - war - jpa - hibernate - jsp - PCIs legacy structure - h2database
+Starter Tomcat dependency - provided. The embeded tomcat is excluded from file.
+La class should to implemente the interface appropie depends of Servlet. (javax.servlet,jstl)
+Security configuration class adapter ON
+apllication.properties
+browser: localhost:8080/login
+login: in28minutes/dummy
+Todos application
+
+2) Beanstalk - Create application
+
+3) Beanstalk - create environmnet not JAVA -- use TOMCAT
+
+4) Test -> 
+
+
+CREATING REAL DATABASE with my Apps
+--------------------------------------
+1) Prepare War hibernate
+User AWS Service callled RDS (Relatinal dataase service)
+See readme file
+Application.properties a la config database mysql
+pom mysql connector-java
+h2 database scope tests only
+
+2) We need to define environemt variables application.properties
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.url=jdbc:mysql://${RDS_HOSTNAME:localhost}:${RDS_PORT:3306}/${RDS_DB_NAME:todos}
+spring.datasource.username=${RDS_USERNAME:todos-user}
+spring.datasource.password=${RDS_PASSWORD:dummytodos}
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL57Dialect
+
+3) Columns in my TODO Object should be the same name in DB mysql
+si non, je dois ajouter confi de type:
+    @Size(min=10, message="Enter at least 10 Characters...")
+    @Column(name="description")
+    private String desc;
+
+4) Running mySql en local - Lecture 30 + docker
+
+5) Deploiement war + sql
+Create environment Tomcat + Other Options where i setup Databases
+mysql
+db.t2.micro
+Retention create snapshot
+Availabity Low
+user todos
+password Rolito1810*
+
+Verify createion RDS Database INFO	Created RDS database named: aa1ssq8xted75ts
+
+6) Test deploiement
+login in28minutes
+password dummy
+http://thirdapp-warsql.ha4qpy5kj4.us-east-2.elasticbeanstalk.com/login
+add todos works
+http://thirdapp-warsql.ha4qpy5kj4.us-east-2.elasticbeanstalk.com/h2-console --> Lance exception
+
+Start Video 32.
+
+
+
+
+
+
+
+
+
+
+	
+
+	 
+
+	 
+	 
+
+
+
+
+

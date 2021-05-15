@@ -1,0 +1,182 @@
+REGLES D'ASSOCIACION
+--------------------
+
+Le but est de d´ecouvrir les associations et les corr´elations entre les articles
+achet´es par les clients en analysant les achats effectu´es (panier) ⇒ de
+d´ecouvrir des relations significatives entre les donn´ees de vente.
+
+Etant donn´ee une base de donn´ees de transactions de clients, o`u chaque ´
+transaction est repr´esent´ee par un ensemble d’articles (set of items -
+ensemble de produits), Il s’agit de trouver des groupes d’articles
+(itemsets) achet´es fr´equemment (ensemble)
+
+Transaction Liste des items achet´es
+	1 		{ pain, beurre, lait }
+	2 		{ pain, viande }
+	. 		.....
+	. 		.....
+	n 		{ Jus de fruit, pain, beurre, fraise }
+	
+Les r`egles d’associations sont des relations d’implications conditionnelles
+entre les variables d’un ensemble de donn´ees de la forme :
+Si X (Condition) existe, Alors il est possible que Y (R´esultat) existe aussi
+X est aussi appel´e ant´ec´edent et Y cons´equent.
+
+
+Pr´eparation des donn´ees
+-------------------------
+
+Ces op´erations sont n´ecessaires pour pouvoir appliquer des r`egles
+d’association sur divers types de donn´ees (transactionnelles, spatiales,
+multimedias)
+
+- Suppression des redondances: Enlever transactions dupliques avec le/les memes articles.
+- Pr´eparation des itemsets
+- Transformation en ensemble binaire:  contenant (transactions × items) dans lequel sont indiqu´es la pr´esence/absence (cod´e par 1 et 0 respectivement) des items de chaque transaction
+
+		Tid I1 I2 ... Im
+		t1  1  1  0   1
+		t2  0  1 ...  0
+		... ... ... ... ...
+		tn  1  1 ...  0
+
+Soit T une base de donn´ees transactionnelles D de n transactions :
+T = {t1,t2, ....,tn}
+Soit un ensemble de m items dans la base de donn´ees D :
+I = {I1, I2, ..., Ik , ..., Im} k entre [1, m]
+
+L’ensemble S = {I1, I2, Ik } ∈ I
+est appel´e itemset (ensemble d’articles), ou k-itemset s’il contient k ´el´ements. 
+
+Le nombre d’´el´ement d’un intemset est le cardinal. |S| = 3
+
+Support d’un itemset X
+-----------------------
+On d´efinit le support d’un ensemble d’items comme la fr´equence
+d’apparition simultan´ee des items figurant dans l’ensemble des donn´ees.
+
+Pour le tableau de donn´ees pr´ec´edent :
+Tid A B C D
+t1 1 1 0 0
+t2 1 0 1 0
+t3 0 1 0 0
+t4 1 0 1 1
+t5 0 1 0 0
+Sup(A) = |{t1,t2,t4}| = 3/5
+Sup({A, B}) = |{t1}| = 1/5
+
+Support d’une r`egle d’association
+-----------------------------------
+
+Une r`egle d’association est une implication entre deux itemsets :
+
+Confiance d’une r`egle d’association:
+------------------------------------
+
+est d´efini comme le rapport entre le support de l’itemset X ∪ Y et de celui de X
+
+Une r`egle d’association qui a une confiance ´egale `a 100% est appel´ee une
+r`egle d’association exacte
+
+Ensemble d’items fr´equents (1)
+-------------------------------
+
+On dit qu’un ensemble d’items est un ensemble d’items fr´equents (IF)
+si le Support de cet ensemble d’items est sup´erieur `a un certain seuil
+d´efinit par l’utilisateur (> 1% par exemple).
+
+L’extraction des items fr´equents permet donc d’isoler depuis la base de
+donn´ees D, des ensembles des attributs qui satisfont un seuil de fr´equence
+minimale minSup d´efini par l’utilisateur
+
+Construction des ensembles d’IF (1) : Algorithme A-priori
+---------------------------------------------------------
+
+
+G´en´eration de r`egles d’associations
+----------------------------------------
+La g´en´eration des r`egles d’associations se fait en deux phases :
+
+1 Recherche les ensembles d’items fr´equents ce qui consiste principalement
+`a identifier les groupes d’items dont le support est sup´erieur `a minSup
+
+2 Extraction de r`egles d’associations (association rules) dont la
+confiance est sup´erieure au minConf
+
+
+Formats de repr´esentation des r`egles d’association :
+
+R1 : 2 et 3 → 5 [0.5%, 100%]
+
+Exemple : ach`ete :beurre ⇒ ach`ete :pain [0.5%, 60%]
+
+SI ach`ete beurre ALORS ach`ete pain dans 60% de cas. Le beurre et le
+pain sont tous deux achet´es dans 0.5% des transactions de la base de
+donn´ees 
+
+
+Apriori - Avantages et inconv´enients
+--------------------------------------
+
+1 Avantages :
+L’algorithme A-priori permet d’avoir des r´esultats clairs `a travers des r`egles faciles `a
+interpr´eter.
+
+L’algorithme est simple et ne n´ecessite aucune hypoth`ese pr´ealable =⇒ Tr`es
+appropri´e pour une analyse exploratoire des donn´ees.
+
+De plus la m´ethode est facile `a adapter aux s´eries temporelles. Ex : Un client ayant
+achet´e le produit A est susceptible d’acheter le produit B dans deux ans.
+
+2 Inconv´enients :
+
+La m´ethode est coˆuteuse en temps de production. Elle produit dans certains cas un
+nombre important de r`egles triviales ou inutiles.
+
+Apparition de variante am´elior´ee de A-priori : DHP (Dynamic Hashing and
+Pruning), DIC (Dynamic Itemset Counting), etc.
+
+
+Evaluations des r`egles d’associations ´
+----------------------------------------
+
+Plusieurs indicateurs de pertinence peuvent ˆetre utilis´ees pour ´evaluer les
+r`egles d’associations.
+Ces indicateurs sont mesur´es apr`es la g´en´eration des r`egles d’association.
+Parmis lesquelles on peut citer :
+- Le lift
+- Le levrage
+- L’importance
+- La conviction
+
+
+Le lift est une bonne mesure de performance de la r`egle d’association qui
+mesure l’int´erˆet de la r`egle, sa force.
+Le lift est la confiance de la r`egle divis´ee par la valeur esp´er´ee de la
+confiance. Il est donn´ee par :
+lift (R) = Sup (X ∪ Y ) / Sup (X) Sup (Y )
+
+Un lift sup´erieur `a 1 indique qu’il existe bien un lien entre les 2 ´el´ements
+X et Y
+
+Evaluations des r`egles d’associations : La conviction 
+-------------------------------------------------------
+
+La conviction est une mesure d’implication entre les itemsets d’une r`egle
+d’association tout en tenant compte des probabilit´es d’occurence des deux
+´ev`enements X et Y
+Conviction (R) = 1 − Sup (X) / 1 − Conf (R)
+
+Si les deux ´el´ements sont sans relation alors Conviction =1
+Si les deux ´el´ements sont en relation alors Conviction > 1
+
+
+
+
+
+
+
+
+
+
+

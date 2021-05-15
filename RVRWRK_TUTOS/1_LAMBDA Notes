@@ -1,0 +1,296 @@
+
+LAMBDA
+------
+
+Interface Runnable
+------------------
+/**
+* Prior Java 8
+*/
+
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("Inside Runnable 1");
+            }
+        };
+
+        new Thread(runnable).start();
+		
+Avec Lambda ( 3 ways ):
+        Runnable runnableLambda = () -> {System.out.println("Inside Runnable 2");};
+
+        Runnable runnableLambdaMultiStatements = () -> {
+                                        System.out.println("Inside Runnable 3");
+                                        System.out.println("Inside Runnable 3");
+										};
+
+        Runnable runnableLambdaSimple = () -> System.out.println("Inside Runnable 3");
+
+
+        new Thread(runnableLambda).start();
+        new Thread(runnableLambdaMultiStatements).start();
+        new Thread(runnableLambdaSimple).start();
+
+Interface Comparator
+-------------------
+Example 1:
+Comparator<Integer> comparatorLambda = (Integer a, Integer b) -> {return a.comparteTo(b);};
+comparatorLambda.compare(3,2);
+
+Example 2
+Comparator<Integer> comparatorLambda2 = (a, b) -> a.comparteTo(b); Same!!!
+comparatorLambda2.compare(3,2);
+
+
+Interface Consumer
+------------------
+ Consumer cest funtional interface (un seul methode a implementer) avec methode accepter et une autre andThen.
+ Consumer lo que va dentro del forEach
+ 
+ Example 0:
+ Consumer<String> c1 = (s) -> System.out.println(s.toUpperCase());
+ c1.accept("java8");
+ 
+ Example 1: 
+ List<Student> personList = StudentDataBase.getAllStudents();
+ static Consumer<Student>  c2= p -> System.out.print(p.getName().toUpperCase());  --> Implementtion methode accept avec la functionalite ->
+ personList.forEach(c2);  -> L'argument de forEach est une consummer
+ 
+ Example 2:
+ List<Student> personList = StudentDataBase.getAllStudents();
+        personList.forEach((student) -> {
+            if( student.getGradeLevel()>=3 && student.getGpa()>3.9){
+                c2.andThen(c3).accept(student);
+            }
+        });
+		
+
+Interface biConsumer
+--------------------
+
+Example 1:
+
+		BiConsumer<String, String> biConsumer = (a,b) -> {
+            System.out.println(" a : "  +  a + " b : " + b );
+        };
+        biConsumer.accept("java7" , "java8");
+
+        BiConsumer<Integer, Integer> multiply = (a,b) -> {
+            System.out.println("Multiplication : " + (a * b));
+        };
+
+Example 2:
+        BiConsumer<Integer, Integer> addition = (a,b) -> {
+            System.out.println("Addition : " + (a + b));
+        };
+
+        BiConsumer<Integer, Integer> division = (a,b) -> {
+            System.out.println("Division : "  + (a / b));
+        };
+
+Example 3:
+        multiply.andThen(addition).andThen(division).accept(10,5);
+
+
+Example 4:
+		
+	public static void nameAndActivities(){
+
+        BiConsumer<String, List<String>> studentBiConsumer = (name, activities) -> System.out.println(name + " : " + activities);
+
+        Consumer<String> stringConsumer = (name) -> System.out.println("name is  :" + name);
+
+        List<Student> students = StudentDataBase.getAllStudents();
+
+        students.forEach((s) -> studentBiConsumer.accept(s.getName(),s.getActivities()));
+    }
+
+Interface Predicate:
+---------------------
+Example 1:
+    static Predicate<Integer> p = (i) -> {return  i%2 ==0;};
+	  System.out.println("Result is p : " + p.test(2));
+
+Example 2:
+    static Predicate<Integer> p1 = (i) -> i%2 ==0;
+
+    static Predicate<Integer> p2 = (i) -> i%5 ==0;
+
+
+    public static void predicateAnd(){
+
+        System.out.println("Result in predicateAnd : " + p1.and(p2).test(10)); --> True
+    }
+
+    public static void predicateOr(){
+
+        System.out.println("Result in predicateOr : " + p1.or(p2).test(4)); --> True
+    }
+
+    public static void predicateNegate(){
+
+        System.out.println("Result in predicateNegate : " + p1.and(p2).negate().test(4)); //equivalent to reversing the result
+    }
+
+Example 3:  
+
+System.out.println("Result in predicateNegate : " + p1.and(p2).negate().test(4)); //equivalent to reversing the result
+
+Example 4:
+
+public class PredicateStudentExample {
+
+	static Predicate<Student> p1 = (s) -> s.getGradeLevel()>=3;
+	static Predicate<Student> p2 = (s) -> s.getGpa()>=3.9;
+
+	List<Student> studentList = StudentDataBase.getAllStudents();
+
+			studentList.stream()
+					.filter(PredicateStudentExample.p1)
+					.collect(Collectors.toList());
+
+			studentList.forEach((student -> {
+				if(p1.test(student)){
+					System.out.println(student);
+				}
+			}));
+
+}
+
+Predicate and Consumer Example:
+-------------------------------
+
+public class PredicateAndConsumerExample {
+
+	static Predicate<Student> p2 = (s) -> s.getGpa()>=3.9;
+	static Predicate<Student> p1 = (s) -> s.getGradeLevel()>=3;
+
+    BiConsumer<String, List<String>> studentBiConsumer = (name, activities) -> System.out.println(name + " : " + activities);
+
+    Consumer<Student> studentConsumer = (student) -> {
+
+        if(p1.and(p2).test(student)){
+            studentBiConsumer.accept(student.getName(),student.getActivities());
+        }
+    };
+
+    Consumer<Student> studentConsumer1 = ((student) -> {
+
+        if(p1.and(p2).test(student)){
+            studentBiConsumer.accept(student.getName(),student.getActivities());
+        }
+    });
+
+    public void printNameandActivities(List<Student> studentList){
+
+        studentList.forEach(studentConsumer);
+
+    }
+	
+	public static void main(String[] args) {
+
+        List<Student> studentList = StudentDataBase.getAllStudents();
+
+        new PredicateAndConsumerExample().printNameandActivities(studentList);
+
+    }
+
+
+BiFunction  // 2input 1 output
+--------------
+
+public class BiFunctionExample {
+
+    static BiFunction<List<Student>,Predicate<Student>,Map<String, Double>> biFunction = (students,studentPredicate)->{
+
+        Map<String,Double> studentGradeMap = new HashMap<>();
+        students.forEach((student -> {
+
+            if(studentPredicate.test(student)){
+                studentGradeMap.put(student.getName(),student.getGpa());
+            }
+        }));
+
+        return studentGradeMap;
+
+    };
+
+    public static void main(String[] args) {
+
+        System.out.println(biFunction.apply(StudentDataBase.getAllStudents(),PredicateStudentExample.p2));
+
+    }
+
+
+Supplier
+--------
+
+
+    public static  Supplier<Student> studentSupplier = () -> {
+      return  new Student("Adam",2,4.0,"male", Arrays.asList("swimming", "basketball","volleyball"));
+    };
+
+    public static  Supplier<List<Student>> studentsSupplier = () -> StudentDataBase.getAllStudents();
+
+    public static void main(String[] args) {
+
+        Student student = studentSupplier.get();
+
+        System.out.println("Student is : " + student);
+
+        System.out.println("Students are : " + studentsSupplier.get());
+		
+		
+METHODE REFERENCE - Escribir mas facil interfaces funcionales -  codigo as legible
+===================
+
+Class_name::instance_Methode
+
+Function<String, String> = toUpperCaseLambda = {s} -> { s.toUpperCase }
+En methode reference is: 
+Function<String, String> = toUpperCaseLambda =String::toUpperCase());
+
+We can use intelliJ para cambiar el uso de las interfaces de lambda a methode reference
+
+Example 2:
+    static Consumer<Student> c1= System.out::println;
+
+    static Consumer<Student> c2= Student::printListOfActivities;
+
+
+    public static void main(String[] args) {
+
+        StudentDataBase.getAllStudents().forEach(c1);
+        StudentDataBase.getAllStudents().forEach(c2);
+    }
+
+Example 3:
+
+public class RefactorMethodReferenceExample {
+
+    static Predicate<Student> p1 = RefactorMethodReferenceExample::greaterThanGradeLevel;
+
+
+    public static boolean greaterThanGradeLevel(Student s){
+        return s.getGradeLevel()>=3;
+    }
+
+
+    public static void main(String[] args) {
+
+        System.out.println(p1.test(StudentDataBase.studentSupplier.get()));
+
+    }
+}
+
+CONSTRUCTOR REFERENCE
+======================
+
+  Supplier<Student> studentsSupplier = Student::new --> OK
+  Student student = Student::new --> ERROR
+
+
+
+
+

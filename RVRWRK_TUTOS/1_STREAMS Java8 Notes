@@ -1,0 +1,884 @@
+
+STREAMS
+-------
+
+ public static void main(String[] args) {
+
+        Predicate<Student> gradePredicate = student -> student.getGradeLevel()>=3;
+        Predicate<Student> gpaPredicate = student -> student.getGradeLevel()>=3.9;
+
+/*
+        List<String> names = Arrays.asList("adam","dan","jenny");
+        names.stream();
+        names.parallelStream();
+        StudentDataBase.getAllStudents().stream();
+        StudentDataBase.getAllStudents().parallelStream();
+*/
+
+// FILTER COLLECT DISTINCT PEEK 
+   Map<String,List<String>> studentMap2 = StudentDataBase.getAllStudents().stream(). //.parallelStream dont forger.
+                filter(gpaPredicate) // Stream<Student>
+                .collect(Collectors.toMap(Student::getName ,Student::getActivities ));
+
+        Map<String,List<String>> studentMap = StudentDataBase.getAllStudents().stream(). //.parallelStream dont forger.
+                filter(student -> student.getGradeLevel()>=3) // Stream<Student>
+				.filter(student -> student.getGradeLevel()>=3.9) //Puedo usar varios filtros
+                .collect(Collectors.toMap(Student::getName ,Student::getActivities ));
+
+        System.out.println("studentMap  : " + studentMap);
+
+        List<String> studentActivities = StudentDataBase.getAllStudents().
+                stream() // Stream<Student>
+                .map(Student::getActivities) //<Stream<List<Activites>>
+                .flatMap(List::stream) //<Stream<String>
+                .distinct() // removes duplicates
+                .collect(Collectors.toList()); //collects it to a list.
+
+        List<String> namesList = StudentDataBase.getAllStudents().
+                stream() // Stream<Student>
+                .peek((student -> {
+                    System.out.println(student);
+                }))
+                .map(Student::getName) //<Stream<List<Activites>>
+                .peek(System.out::println)
+                .distinct() // removes duplicates
+                .collect(Collectors.toList()); //collects it to a list.
+
+        System.out.println("namesList  : " + namesList);
+
+
+    }
+	
+
+// COLLECTORS TO MAP SET LIST
+
+    private static List<String> namesUpperCase(List<Student> names){
+        List<String> namesUpperCase = names.stream() //Stream<Student>
+                .map(Student::getName) //Stream<String>
+                .map(String::toUpperCase) // Stream<String> -> UpperCase
+                .collect(toList()); // returns List // terminal operation
+        return namesUpperCase;
+    }
+
+    private static Set<String> namesSetUpperCase(List<Student> students){
+        Set<String> namesUpperCase = students.stream() //Stream<Student>
+                .map(Student::getName) //Stream<String>
+                .map(String::toUpperCase) // Stream<String> -> UpperCase
+                .collect(toSet()); // returns List // terminal operation
+        return namesUpperCase;
+    }
+
+    private static Map<String, Integer>  namesLengthMap(ArrayList<String> names){
+
+        Map<String, Integer> namesLengthMap = names.stream()//Stream<String>
+                .collect(toMap(String::toString,String::length)); // returns Map
+
+        return namesLengthMap;
+  
+  
+ // FLATMAP - MAP INDEXED ELEMENTS
+ 
+	List<Strin> studentActivities = StudentDataBase.getAllStudents.stream //Stream Students
+										.map(Student::getActivities) //Stream List<string> Map es un conversor de dato de salida
+										.flatMap(List::stream) // Necesario cuando indexo elementos array o list
+										.collect(toList());
+
+	List<Strin> studentActivities = StudentDataBase.getAllStudents.stream //Stream Students
+										.map(Student::getActivities) //Stream List<string> Map es un conversor de dato de salida
+										.flatMap(List::stream) // Necesario cuando indexo elementos array o list
+										.distinct() // elimina los repetidos
+										.sorted
+										.collect(toList());
+
+
+	long studentActivitiescount = StudentDataBase.getAllStudents.stream //Stream Students
+										.map(Student::getActivities) //Stream List<string> Map es un conversor de dato de salida
+										.flatMap(List::stream) // Necesario cuando indexo elementos array o list
+										.distinct() // elimina los repetidos
+										.count;
+										
+	// SORTED CUSTOM
+	
+	    public static List<Student> sortStudentsByGpaReversed(){
+
+        return  StudentDataBase.getAllStudents().stream()
+                .sorted(Comparator.comparing(Student::getGpa).reversed())
+                .collect(toList());
+    }
+	
+	
+	//OPTIONAL AND REDUCE -- reduce convierte el stream en un valor particular q se esta buscando
+	
+	public static Optional<Student> getHighestGradeStudent(){
+
+        Optional<Student> studentOptional =  StudentDataBase.getAllStudents().stream()
+                .reduce((s1,s2)->(s1.getGpa()>s2.getGpa()) ? s1 : s2);
+        return studentOptional;
+    }
+	
+	public static Optional<Integer> performMultiplicationWithNoInitialValue(List<Integer> integerList){
+
+        return integerList.stream()
+                .reduce( (a,b) -> a*b); // performs multiplication for each element in the stream and returns a new result fo.
+    }
+
+
+	 List<Integer> integerList = Arrays.asList(1,3,5,7);
+        //List<Integer> integerList = Arrays.asList();
+
+        System.out.println("Result is : " + performMultiplication(integerList));
+        Optional<Integer> result = performMultiplicationWithNoInitialValue(integerList);
+
+        if(result.isPresent()){
+            System.out.println("Result is : " +result.get());
+        }else{
+            System.out.println("Result is : " +0);
+        }
+
+        System.out.println(combineStudentNames());
+        System.out.println(getHighestGradeStudent().get());
+		
+		
+	// HIGUEST GRADE - REDUCE
+	
+	    public static Optional<Student> getHighestGradeStudent(){
+
+        Optional<Student> studentOptional =  StudentDataBase.getAllStudents().stream()
+                .reduce((s1,s2)->(s1.getGpa()>s2.getGpa()) ? s1 : s2);  //BINARY OPEATION TOW INPUTS PRODUCE ONE OUTPUT SAME TYPE.
+        return studentOptional;
+    }
+
+ // PATTERN FILTER - MAP - REDUCE
+ private static int noOfNoteBooks(){
+
+       int noOfNoteBooks=  StudentDataBase.getAllStudents().stream() //Stream<Student>
+                .filter((student -> student.getGradeLevel()>=3))
+                .filter(student -> student.getGender().equals("female"))
+                .map(Student::getNoteBooks) //Stream<Integer>
+                //.reduce(0,(a,b)-> a+b);
+				.reduce(0,Integer::sum);
+
+       return noOfNoteBooks;
+
+    }
+	
+	//OPTIONAL REDUCE PATTERN
+public class StreamsLimitSkipExample {
+
+    public static Optional<Integer> limit(List<Integer> integers){
+        return  integers.stream()
+                .limit(2)  // Number of elements taken from array
+                .reduce((a,b)-> a+b);
+
+    }
+
+    public static Optional<Integer> skip(List<Integer> integers){
+        return  integers.stream()
+                .skip(3)
+                .reduce(0, Integer::sum);
+    }
+	
+	public static Optional<Integer> skip(List<Integer> integers){
+        return  integers.stream()
+                .skip(3)
+                .reduce((a,b)-> a+b);
+    }
+    
+
+    public static void main(String[] args) {
+
+        List<Integer> integers = Arrays.asList(6,7,8,9,10);
+
+        Optional<Integer> limitResult = limit(integers);
+        int result = limitResult.isPresent() ? limitResult.get() : 0;
+        System.out.println("The limit result is : " + result);
+
+        Optional<Integer> skipResult = skip(integers);
+        int result1 = skipResult.isPresent() ? skipResult.get() : 0;
+        System.out.println("The skip result is : " + result1);
+
+// MATCH - RETURN BOOLEANS
+
+ public static boolean allMatch(){
+
+        boolean result = StudentDataBase.getAllStudents().stream()
+                .allMatch(student -> student.getGpa()>=3.9);
+
+        return result;
+    }
+
+    public static boolean anyMatch(){
+
+        boolean result = StudentDataBase.getAllStudents().stream()
+                .anyMatch(student -> student.getGpa()>=3.9);
+
+        return result;
+    }
+
+    public static boolean noneMatch(){
+
+        boolean result = StudentDataBase.getAllStudents().stream()
+                .noneMatch(student -> student.getGpa()>=3.9);
+
+        return result;
+    }
+	
+//FINDANY FINDALL - RETURN OBJECTS FROM STREAM
+
+public class StreamsFindAnyFirstExample {
+
+    public static Optional<Student> findAny(){
+
+        return StudentDataBase.getAllStudents().stream()
+                .filter(student -> student.getGpa()>=3.8)
+                .findAny();
+    }
+
+    public static Optional<Student> findFirst(){
+
+        return StudentDataBase.getAllStudents().stream()
+                .filter(student -> student.getGpa()>=3.8)
+                .findFirst();
+    }
+
+    public static void main(String[] args) {
+
+        Optional<Student> findAnyStudent = findAny();
+        if(findAnyStudent.isPresent()){
+            System.out.println("Student is :" + findAnyStudent.get());
+        }else{
+            System.out.println("No Student Found");
+        }
+
+        Optional<Student> findFirst = findFirst();
+        if(findFirst.isPresent()){
+            System.out.println("Student is :" + findFirst.get());
+        }else{
+            System.out.println("No Student Found");
+        }
+        //it will make a lot of different during parallel stream
+
+    }
+}
+
+
+// STREAM OF GENERATE
+public class StreamOfGenerateIterateExample {
+
+    public static void main(String[] args) {
+		// CREANDO STREAMS CON OF create stream of certaines values pased to the mehtode/  
+        Stream<String> stringStream = Stream.of("adam","dan","julie");  //Defino tip de array creado en este caso string
+        stringStream.forEach(System.out::println);
+
+        Stream.iterate(1,x->x*2)  // Procesa estrems iterativamente
+                .limit(10)
+                .forEach(System.out::println);
+		
+		// CREANDO STREAMS CON GENERATE SUPPLIER
+        Supplier<Integer> integerSupplier = new Random()::nextInt;
+        Stream.generate(integerSupplier)
+                .limit(5)
+            .forEach(System.out::println);
+
+
+    }
+}
+
+
+
+
+  public static int sumOfNumbersIntStream(){
+
+        return IntStream.rangeClosed(1,6)
+                .sum(); //saves the unboxing effort.
+
+   }
+
+
+// NUMERIC STREAMS
+https://www.udemy.com/course/modern-java-learn-java-8-features-by-coding-it/learn/lecture/10950532#overview
+
+public class NumericStreamsExample {
+
+
+    public static int sumOfNumbers(List<Integer> integerList){
+
+       return  integerList.stream() // Stream<Integer>
+                .reduce(0,(x,y)->x+y); // unboxing to convert Integer to an int.
+
+    }
+
+    public static int sumOfNumbersIntStream(){
+
+
+		//IntStream.range(1,6) -- 1 to 5
+		//IntStream.range(1,6) -- 1 to 5
+		// Exists LongStream but not DoubleStream
+        
+		
+		return IntStream.rangeClosed(1,6)
+                .sum(); //saves the unboxing effort.
+
+    }
+
+    public static void main(String[] args) {
+
+        List<Integer> integerList = Arrays.asList(1,2,3,4,5,6);
+
+        System.out.println("Sum of numbers are : " + sumOfNumbers(integerList));
+
+        System.out.println("Sum of numbers using IntStream are : " + sumOfNumbersIntStream());
+    }
+}
+
+// BOXIN AND UNBOXING for numerics streams 
+Primitive type to warpper Class type comversion
+
+
+
+    public static List<Integer> boxing(){
+
+       return IntStream.rangeClosed(1,10) // intstream of 10 elements
+                //int
+                .boxed()
+                //Integer
+                .collect(Collectors.toList());
+    }
+
+    public static int unBoxing(List<Integer> integerList){
+            //wrapper to primitive
+        return integerList.stream()
+                //Wrapper Integer Values
+                .mapToInt(Integer::intValue) // intstream(intValue of the Wrapper class)
+                .sum();
+
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Boxing : " + boxing());
+
+        List<Integer> integerList = boxing();
+        System.out.println("Unboxing : " + unBoxing(integerList));
+    }
+
+
+//MAPTOOBJ MAPTOLONG MAPTOINT
+
+public class NumericStreamMapExample {
+
+
+    public static List<Integer> mapToObj(){
+
+        List<Integer> integerList = IntStream.rangeClosed(1,5)
+                .mapToObj((i)-> {
+                    return new Integer(i);  //Could be any type oof objects...
+                })
+                .collect(toList());
+
+        return integerList;
+
+    }
+
+    public static double mapToDouble(){
+
+      return   IntStream.rangeClosed(1,5)
+                .mapToDouble((i) ->  i)
+                .sum();
+
+    }
+
+    public static long mapToLong(){
+
+        return   IntStream.rangeClosed(1,5)
+                .mapToLong((i) ->  i)
+                .sum();
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("mapToObj : " + mapToObj());
+
+        System.out.println("mapToDouble() : " + mapToDouble());
+
+        System.out.println("mapToLong() : " + mapToLong());
+
+    }
+}
+
+TERMINAL OPERATIONS COLLECT - STRAMS API - Terminal Operations - 
+Collect: Collects data for me 
+Mapping:  Applys transformation fucntion and the collects data in any type of collection 
+
+Joining: String concatenation
+
+public class StreamsJoiningExample {
+
+    public static String joining(){
+
+        return StudentDataBase.getAllStudents().stream()
+                .map(Student::getName)
+                .collect(Collectors.joining()); // appends all the strings to produce the output,
+    }
+
+    public static String joiningWithDelimiter(){
+
+        return StudentDataBase.getAllStudents().stream()
+                .map(Student::getName)
+                .collect(Collectors.joining("-")); /// Using deliiter entre names
+    }
+
+    public static String joiningWithDelimiterWithPrefix(){
+
+        return StudentDataBase.getAllStudents().stream()
+                .map(Student::getName)
+                .collect(Collectors.joining("-","[","]"));  // (delimiter entre elementos),(prefix and sufix al principio y fin de strem)
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Names : "+ joining());
+        System.out.println("Names With Delimiter : "+ joiningWithDelimiter());
+        System.out.println("Names With Delimiter Prefix and Suffix : "+ joiningWithDelimiterWithPrefix());
+    }
+}
+
+
+ public static long count(){
+       return  StudentDataBase.getAllStudents()
+                .stream()
+                .filter(student -> student.getGpa()>=3.9)
+                .collect(Collectors.counting());
+}
+
+MAPPING
+------- To convert to any type of collection
+
+public class StreamsMappingExample {
+
+    public static void main(String[] args) {
+
+       Set<String> namesSet = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(mapping(Student::getName,toSet())); // this avoids the additional map intermediate operation.
+
+        System.out.println("namesSet : " + namesSet);
+
+        List<String> namesList = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(mapping(Student::getName,toList())); // this avoids the additional map intermediate operation.
+				//.map(Student::getName)
+				//.collect(toList())  // To list es importada staticamente
+
+        System.out.println("namesList : " + namesList);
+
+    }
+
+}
+
+Ecnontrar el minimo nota de la lista MINBY / MAXBY
+-----------------
+
+public class StreamsMappingExample {
+
+    public static void main(String[] args) {
+
+       Set<String> namesSet = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(mapping(Student::getName,toSet())); // this avoids the additional map intermediate operation.
+
+        System.out.println("namesSet : " + namesSet);
+
+        List<String> namesList = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(mapping(Student::getName,toList())); // this avoids the additional map intermediate operation.
+
+        System.out.println("namesList : " + namesList);
+
+    }
+
+}
+
+
+public class StreamsMinByMaxyByExample {
+
+    public static Optional<Student> minBy_example(){
+
+       return StudentDataBase.getAllStudents()
+                .stream()
+                .collect(minBy(Comparator.comparing(Student::getGpa)));
+    }
+
+    public static Optional<Student> maxBy_example(){
+
+        return StudentDataBase.getAllStudents()
+                .stream()
+                .collect(maxBy(Comparator.comparing(Student::getGpa)));
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(minBy_example());  //imprime el estudiante
+        System.out.println(maxBy_example());
+    }
+}
+
+public static double average(){
+
+        double totalNoOfNotebooks = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(Collectors.averagingInt(Student::getNoteBooks));
+
+        return totalNoOfNotebooks;
+}
+
+PROMEDIO DE LIBROS LEIDOS POR ESTDUANTE Y TOTAL LIBROS ESTUDANTES
+public class StreamsSumAvgExample {
+
+    public static int sum(){
+
+        int totalNoOfNotebooks = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(Collectors.summingInt(Student::getNoteBooks));
+
+        return totalNoOfNotebooks;
+    }
+
+    public static double average(){
+
+        double totalNoOfNotebooks = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(Collectors.averagingInt(Student::getNoteBooks));
+
+        return totalNoOfNotebooks;
+    }
+
+
+    public static void main(String[] args) {
+
+
+        System.out.println("Total no of Notebooks : " + sum());
+
+        System.out.println("Average no of Notebooks : " + average());
+    }
+}
+
+GROUPPING BY
+-------------
+The output its a mav vasie on key Map(k,V)
+
+
+public class StreamGroupingByExample {
+
+    public static void groupStudentsByGender(){
+
+       Map<String, List<Student>> studentMap = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(groupingBy(Student::getGender));
+
+        System.out.println(studentMap);
+    }
+
+    public static void customizedGroupingBy(){
+
+        Map<String, List<Student>> studentMap = StudentDataBase.getAllStudents()
+                .stream() //Stream<Students>
+                .collect(groupingBy(student -> student.getGpa()>=3.8 ? "OUTSTANDING" : "AVERAGE"));  // Son las keys del mapa ques estoy creando
+
+        System.out.println(studentMap);
+    }
+
+    public static void main(String[] args) {
+
+       // groupStudentsByGender();
+        customizedGroupingBy();
+
+    }
+}
+
+TWO / THREE LEVEL GROPIUING
+-----------------------------
+
+    public static void twoLevelGrouping_1(){
+
+        Map<Integer,Map<String,List<Student>>> studentMap = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(groupingBy(Student::getGradeLevel,
+                        groupingBy(student -> student.getGpa()>=3.8 ? "OUTSTANDING" : "AVERAGE")));  // Son las keys del mapa ques estoy creando y un segundo nivel de agrupacion
+						
+
+        System.out.println(studentMap);
+    }
+
+    public static void twoLevelGrouping_2(){
+
+        Map<String,Integer> studentMap = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(groupingBy(Student::getName,
+                        summingInt(Student::getNoteBooks)));  /// CANTIDAID DE LIBROS POIR ESTUDIANTE
+
+        System.out.println(studentMap);
+    }
+	
+	
+    public static void threeArgumentGroupBy(){
+
+       LinkedHashMap<String,Set<Student>> studentLinkedHashmap = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(groupingBy(Student::getName,LinkedHashMap::new,toSet()));
+
+        System.out.println(studentLinkedHashmap);
+    }
+
+
+GROUPONG AND MAXBY - eL MAXIMO DE GADA GRADO - COLLECTING AND THEN (MAXBY, MINBY..)
+-------------------------------------
+
+
+    public static void calculateTopGpa(){
+
+        Map<Integer,Optional<Student>> studentMapOptional = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(groupingBy(Student::getGradeLevel,
+                        maxBy(Comparator.comparing(Student::getGpa))));
+
+       // System.out.println(studentMapOptional);
+
+        Map<Integer,Student> studentMapOptional1 = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(groupingBy(Student::getGradeLevel,
+                        collectingAndThen(maxBy(Comparator.comparing(Student::getGpa))
+                        ,Optional::get)));  // 
+
+        System.out.println(studentMapOptional1);
+    }
+
+    public static void calculateleastGpa(){
+
+        Map<Integer,Optional<Student>> studentMapOptional = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(groupingBy(Student::getGradeLevel,
+                        minBy(Comparator.comparing(Student::getGpa))));
+
+        // System.out.println(studentMapOptional);
+
+        Map<Integer,Student> studentMapOptional1 = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(groupingBy(Student::getGradeLevel,
+                        collectingAndThen(minBy(Comparator.comparing(Student::getGpa))
+                                ,Optional::get)));
+
+        System.out.println(studentMapOptional1);
+    }
+
+PARTITIION: partition strams bsde on criteria, carando un MAP con el key booleano, los que cumplen, los que no
+--------------------------------------------
+public class StreamsParitioninigByExample {
+
+    public static void partitioningBy_1(){
+
+        Predicate<Student> gpaPredicate = student -> student.getGpa()>=3.8;
+        Map<Boolean,List<Student>> partitioningMap = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(partitioningBy(gpaPredicate));
+
+        System.out.println("partitioningMap : " + partitioningMap);
+    }
+
+    public static void partitioningBy_2(){
+
+        Predicate<Student> gpaPredicate = student -> student.getGpa()>=3.8;
+
+        Map<Boolean,Set<Student>> partitioningMap = StudentDataBase.getAllStudents()
+                .stream()
+                .collect(partitioningBy(gpaPredicate,
+                        toSet()));
+
+        System.out.println("partitioningMap_2 : " + partitioningMap);
+    }
+
+    public static void main(String[] args) {
+        //partitioningBy_1();
+        partitioningBy_2();
+
+    }
+}
+
+PARALELL STREAMS
+----------------
+blic class ParallelStreamExample1 {
+
+    public static List<String> sequentialPrintStudentActivities(){
+
+        long startTime = System.currentTimeMillis();
+        List<String> studentActivities = StudentDataBase.getAllStudents()
+                .stream() //Stream<Student>
+                .map(Student::getActivities) //Stream<List<String> - stateless
+                .flatMap(List::stream) //Stream<String> - stateless
+                .distinct() // stateful
+                .sorted() //stateful
+                .collect(toList());
+        long endTime = System.currentTimeMillis();
+        System.out.println("Duration to execute the pipeline in sequential : "+ (endTime-startTime));
+        return studentActivities;
+    }
+
+    public static List<String> parallelPrintStudentActivities(){
+
+        long startTime = System.currentTimeMillis();
+        List<String> studentActivities = StudentDataBase.getAllStudents()
+                .stream() //Stream<Student>
+                .parallel()
+                .map(Student::getActivities) //Stream<List<String> - stateless
+                .flatMap(List::stream) //Stream<String> - stateless
+                .distinct() // stateful
+                .sorted() //stateful
+                .collect(toList());
+        long endTime = System.currentTimeMillis();
+        System.out.println("Duration to execute the pipeline in parallel : "+ (endTime-startTime));
+        return studentActivities;
+    }
+
+    public static void main(String[] args) {
+
+        sequentialPrintStudentActivities();
+        parallelPrintStudentActivities();
+    }
+}
+
+OPTIONAL
+-------------	
+	
+public class OptionalExample {
+
+    public static String getStudentName(){
+
+        //Student student = StudentDataBase.studentSupplier.get();
+        Student student = null;
+        if(student!=null){
+            return student.getName();
+        }
+
+        return null;
+    }
+
+    public static Optional<String> getStudentNameOptional(){
+
+        //Optional<Student> studentOptional = Optional.ofNullable(StudentDataBase.studentSupplier.get());
+        Optional<Student> studentOptional = Optional.ofNullable(null); // Optional.empty()
+        if(studentOptional.isPresent()){
+            studentOptional.get(); //Student
+            return studentOptional.map(Student::getName); //Optional<String>
+        }
+
+        return Optional.empty(); // Represents an optional object with no value
+    }
+
+    public static void main(String[] args) {
+
+        /*String name = getStudentName();
+        if(name!=null)
+            System.out.println("Length of the student Name : " + name.length());
+        else
+            System.out.println("Name not found");*/
+
+        Optional<String> stringOptional = getStudentNameOptional();
+
+        if(stringOptional.isPresent()){
+            System.out.println("Length of the student Name : " +
+                    stringOptional.get().length()); //String which is Student Name
+        }else{
+            System.out.println("Name not found");
+        }
+
+    }
+}
+
+----------------
+
+public class OptionalOrElseExample {
+
+    //orElse
+
+    public static String optionalOrElse(){
+
+       /* Optional<Student> studentOptional =
+                Optional.ofNullable(StudentDataBase.studentSupplier.get());*/
+        Optional<Student> studentOptional = Optional.ofNullable(null); // Option.empty
+        String name = studentOptional.map(Student::getName).orElse("Default");
+        return name;
+    }
+    //orElseGet
+    public static String optionalOrElseGet(){
+        Optional<Student> studentOptional =
+                Optional.ofNullable(null);
+        String name = studentOptional.map(Student::getName).orElseGet(()->"Default"); // get un supplier
+        return name;
+
+    }
+
+    //orElseThrow
+    public static String optionalOrElseThrow(){
+
+        Optional<Student> studentOptional =
+                Optional.ofNullable(null);
+
+        String name = studentOptional.map(Student::getName)
+                .orElseThrow(()->new RuntimeException("No Data Available"));
+
+        return name;
+    }
+    public static void main(String[] args) {
+
+        System.out.println("orElse : " + optionalOrElse());
+        System.out.println("orElseGet :  " + optionalOrElseGet());
+        System.out.println("orElseThrow :  " + optionalOrElseThrow());
+    }
+}
+
+
+-------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,226 @@
+Curso:
+https://github.com/dilipsundarraj1/Teach-ReactiveSpring
+
+Reactive specification con teoria
+https://github.com/reactive-streams/reactive-streams-jvm
+
+https://projectreactor.io/docs/core/release/reference/index.html#which-operator
+
+
+
+Setup
+IntelliJ Lombok plugin
+C:\workspacesRVR\learn-reactivespring
+
+
+    @Test
+    public void fluxUsingIterable(){
+
+        Flux<String> namesFlux = Flux.fromIterable(names)
+                .log();
+
+        StepVerifier.create(namesFlux)
+                .expectNext("adam","anna","jack","jenny")
+                .verifyComplete();
+    }
+
+    @Test
+    public void fluxUsingArray(){
+
+        String[] names = new String[]{"adam","anna","jack","jenny"};
+
+        Flux<String> namesFlux = Flux.fromArray(names);
+        StepVerifier.create(namesFlux)
+                .expectNext("adam","anna","jack","jenny")
+                .verifyComplete();
+
+    }
+
+    @Test
+    public void fluxTest() {
+
+        Flux<String> stringFlux = Flux.just("Spring", "Spring Boot", "Reactive Spring")
+                //.concatWith(Flux.error(new RuntimeException("Exception Occurred")))
+                .concatWith(Flux.just("After Error"))
+                .log();
+
+        stringFlux
+                .subscribe(System.out::println,
+                        (e) -> System.err.println("Exception is " + e)  //when error
+                        , () -> System.out.println("Completed"));       // when success
+    }
+	
+	
+	
+	
+    @Test
+    public void monoUsingSupplier(){
+
+        Supplier<String> stringSupplier = () -> "adam";
+
+        Mono<String> stringMono = Mono.fromSupplier(stringSupplier);
+
+        System.out.println(stringSupplier.get());
+
+        StepVerifier.create(stringMono.log())
+                .expectNext("adam")
+                .verifyComplete();
+    }
+
+    @Test
+    public void fluxUsingRange(){
+
+       Flux<Integer> integerFlux = Flux.range(1,5).log();
+
+       StepVerifier.create(integerFlux)
+               .expectNext(1,2,3,4,5)
+               .verifyComplete();
+    }
+	
+	<---------Video 17--------- FILTERING AND TRANSFORMATION ---------->
+	
+	
+	
+	    @Test
+    public void filterTest(){
+
+        Flux<String> namesFlux = Flux.fromIterable(names) // adam, anna, jack,jenny
+                .filter(s->s.startsWith("a"))
+                .log(); //adam,anna
+
+        StepVerifier.create(namesFlux)
+                .expectNext("adam","anna")
+                .verifyComplete();
+
+    }
+	
+	    @Test
+    public void transformUsingMap_Filter() {
+
+        Flux<String> namesFlux = Flux.fromIterable(names)
+                .filter(s -> s.length()>4)
+                .map(s -> s.toUpperCase()) // JENNY
+                .log();
+
+        StepVerifier.create(namesFlux)
+                .expectNext("JENNY")
+                .verifyComplete();
+
+    }
+	
+	
+	-------------COMBINE----------
+	
+	MERGE: dond respect order
+	concat  restct order
+	
+	
+	    @Test
+    public void combineUsingMerge_withDelay(){
+
+        Flux<String> flux1 = Flux.just("A","B","C").delayElements(Duration.ofSeconds(1));
+        Flux<String> flux2 = Flux.just("D","E","F").delayElements(Duration.ofSeconds(1));;
+
+        Flux<String> mergedFlux = Flux.merge(flux1,flux2);
+
+        StepVerifier.create(mergedFlux.log())
+                .expectSubscription()
+                .expectNextCount(6)
+                //.expectNext("A","B","C","D","E","F")
+                .verifyComplete();
+
+    }
+
+    @Test
+    public void combineUsingConcat(){
+
+        Flux<String> flux1 = Flux.just("A","B","C");
+        Flux<String> flux2 = Flux.just("D","E","F");
+
+        Flux<String> mergedFlux = Flux.concat(flux1,flux2);
+
+        StepVerifier.create(mergedFlux.log())
+                .expectSubscription()
+                .expectNext("A","B","C","D","E","F")
+                .verifyComplete();
+
+    }
+	
+	
+    @Test
+    public void combineUsingZip(){
+
+        Flux<String> flux1 = Flux.just("A","B","C");
+        Flux<String> flux2 = Flux.just("D","E","F");
+
+        Flux<String> mergedFlux = Flux.zip(flux1,flux2, (t1,t2) -> {
+            return t1.concat(t2); // AD, BE, CF
+        }); //A,D : B,E : C:F
+
+        StepVerifier.create(mergedFlux.log())
+                .expectSubscription()
+                .expectNext("AD", "BE", "CF")
+                .verifyComplete();
+
+    }
+	
+	--------------------------------------- ERROR HANDLING -----------------
+	
+	
+	    @Test
+    public void fluxErrorHandling() {
+
+        Flux<String> stringFlux = Flux.just("A", "B", "C")
+                .concatWith(Flux.error(new RuntimeException("Exception Occurred")))
+                .concatWith(Flux.just("D"))
+                .onErrorResume((e) -> {    // this block gets executed
+                    System.out.println("Exception is : " + e);
+                    return Flux.just("default", "default1");
+                });
+
+        StepVerifier.create(stringFlux.log())
+                .expectSubscription()
+                .expectNext("A", "B", "C")
+                //.expectError(RuntimeException.class)
+                //.verify();
+                .expectNext("default", "default1")
+                .verifyComplete();
+
+    }
+
+
+    @Test
+    public void fluxErrorHandling_OnErrorReturn() {
+
+        Flux<String> stringFlux = Flux.just("A", "B", "C")
+                .concatWith(Flux.error(new RuntimeException("Exception Occurred")))
+                .concatWith(Flux.just("D"))
+                .onErrorReturn("default");
+
+        StepVerifier.create(stringFlux.log())
+                .expectSubscription()
+                .expectNext("A", "B", "C")
+                .expectNext("default")
+                .verifyComplete();
+
+    }
+	
+	    @Test
+    public void fluxErrorHandling_OnErrorMap() {
+
+        Flux<String> stringFlux = Flux.just("A", "B", "C")
+                .concatWith(Flux.error(new RuntimeException("Exception Occurred")))
+                .concatWith(Flux.just("D"))
+                .onErrorMap((e) -> new CustomException(e));
+
+        StepVerifier.create(stringFlux.log())
+                .expectSubscription()
+                .expectNext("A", "B", "C")
+                .expectError(CustomException.class)
+                .verify();
+
+    }
+	
+	---------------- FLUX AND MONPO WITH TIME --------------
+	
+	
