@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SecondApp</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!-- Views tittles -->
+
+    <string name="welcome_view">DASHBOARD VIEW</string>
+    <string name="register_view">REGISTER VIEW</string>
+
+    <!-- Layouts Objects -->
+
+    <string name="txt_click_me">Click me</string>
+    <string name="txt_Please_give_your_name">Please give your name</string>
+    <string name="txt_thanks">Thanks Mr. </string>
+    <string name="welcome_to_dashboard">WELCOME TO DASHBOARD</string>
+
+    <!-- Status -->
+    <string name="register_user_correct">User created correctly.</string>
+    <string name="register_user_incorrect">User created correctly.</string>
+    <string name="register_user_undefinedt">User undefined.</string>
+
+</resources>
