@@ -1,0 +1,10 @@
+
+squid:S1488/"aImmediately return this expression instead of assigning it to the temporary variable "namesFlux".(çıË»8 ØÖğË.
+asquid:UnusedPrivateMethodT"0Remove this unused private "processData" method.(ÎØ‡†üÿÿÿÿ8ùÔõ®Ì.
+squid:S1488J"aImmediately return this expression instead of assigning it to the temporary variable "namesFlux".(çıË»8áçø®Ì.
+jsquid:S00112a"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ùÔõ®Ì.
+dsquid:S2142`"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ùÔõ®Ì.
+osquid:CommentedOutCodeLine¸"<This block of commented-out lines of code should be removed.(›ÃçÅÿÿÿÿÿ8ùÔõ®Ì.
+osquid:CommentedOutCodeLine¨"<This block of commented-out lines of code should be removed.(•ñÚÈşÿÿÿÿ8ùÔõ®Ì.
+squid:S1488<"aImmediately return this expression instead of assigning it to the temporary variable "namesFlux".(çıË»8í™Ö¬Ì.
+€squid:S1488ˆ"aImmediately return this expression instead of assigning it to the temporary variable "namesFlux".(çıË»8ëıĞÆË.
