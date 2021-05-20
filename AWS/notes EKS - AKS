@@ -22,6 +22,13 @@ Kubernetes:  Nodes.
 To manage Nodes:  You have Master Nodes and Nodes.
 	Master are there to verify and garantee availibity.
 
+In Google Cloud Engine:
+-----------------------
+Clusters:  Machines or servers`
+Workloads:  Applications to deploy
+Services: Ouverture / Fermeture de workloads vers l'exterior
+Applications: 
+
 
 Cluster: Set of servers.   Virtual - servers.  Google Cloud -- https://console.cloud.google.com/
 		 Project - Cluster (Kuernetes Engine enable) - Create Cluster
@@ -34,7 +41,8 @@ Cluster: Set of servers.   Virtual - servers.  Google Cloud -- https://console.c
 			
 			firsttry-311915) Its my project
 			
-			Getting to shell: gcloud container clusters get-credentials cluster-first-try --zone us-central1-c --project firsttry-311915
+			Getting to shell: 
+			>>> gcloud container clusters get-credentials cluster-first-try --zone us-central1-c --project firsttry-311915
 
 			Connected to cluster i can execute:  kubectl in order to create deploiments, instances, load balancers .. 
 			
@@ -46,12 +54,12 @@ Cluster: Set of servers.   Virtual - servers.  Google Cloud -- https://console.c
 			
 			https://hub.docker.com/r/in28min/aws-hello-world-rest-api
 			
-			kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
+			>>> kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
 			
 			
 		Expose deploeimet to outsie like a load balancer: (See in Kubernetes Sevvices)
 		
-			kubectl expose deployment hello-world-rest-api	--type=LoadBalancer --port=8080
+			>>>> kubectl expose deployment hello-world-rest-api	--type=LoadBalancer --port=8080
 		
 			http://35.223.45.221:8080/hello-world
 			http://35.223.45.221:8080  ==> {{healthy true}}
@@ -60,7 +68,7 @@ Cluster: Set of servers.   Virtual - servers.  Google Cloud -- https://console.c
 		
 			In order to avoid create and delete cluster any time, reduce cluster size to zero
 			
-			gcloud container clusters resize --zone <name_of_zone> <name_of_your_cluster> --num-nodes=0
+			>>>>>>> gcloud container clusters resize --zone <name_of_zone> <name_of_your_cluster> --num-nodes=0
 			
 		In the backgroud:
 			

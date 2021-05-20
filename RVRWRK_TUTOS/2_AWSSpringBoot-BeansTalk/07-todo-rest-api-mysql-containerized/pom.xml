@@ -108,7 +108,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>in28min/${project.artifactId}</repository>
+					<repository>ricardov1976/${project.artifactId}</repository>
 					<tag>${project.version}</tag>
 					<skipDockerInfo>true</skipDockerInfo>
 				</configuration>

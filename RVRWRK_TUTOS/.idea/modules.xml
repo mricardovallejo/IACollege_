@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JAVA_/AWS_Kubernetes/02-todo-web-application-h2/02-todo-web-application-h2.iml" filepath="$PROJECT_DIR$/JAVA_/AWS_Kubernetes/02-todo-web-application-h2/02-todo-web-application-h2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/RVRWRK_TUTOS.iml" filepath="$PROJECT_DIR$/.idea/RVRWRK_TUTOS.iml" />
     </modules>
   </component>
