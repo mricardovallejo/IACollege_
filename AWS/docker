@@ -62,5 +62,41 @@ Linux structure:
 	home:  each user has a home there
 	lib:  libraires
 	proc: runnin processes.
+	
+	
+DOCKER A JAR
+-------------
+			<!-- Docker -->
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>dockerfile-maven-plugin</artifactId>
+				<version>1.4.6</version>
+				<executions>
+					<execution>
+						<id>default</id>
+						<goals>
+							<goal>build</goal>
+							<!-- <goal>push</goal> -->
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<repository>ricardov1976\${project.name}</repository>
+					<tag>${project.version}</tag>
+			<!--		<skipDockerInfo>true</skipDockerInfo>-->
+				</configuration>
+			</plugin>
 
 
+
+
+		FROM openjdk:8-jdk-alpine
+		VOLUME /tmp
+		EXPOSE 8083
+		ADD target/*.jar app.jar
+		ENTRYPOINT [ "sh", "-c", "java -jar /app.jar" ]
+
+
+
+DOCKER WAR
+==========

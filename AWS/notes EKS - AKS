@@ -80,8 +80,8 @@ Cluster: Set of servers.   Virtual - servers.  Google Cloud -- https://console.c
 			Scaled up replicaSet
 			Service to ensure load balancer
 		
-		kubectl get pods
-		kubectl get replicaset
+		>>> kubectl get pods   
+		>>> kubectl get replicaset
 		
 		Single responsabilite principle is used by k8s
 		
@@ -90,7 +90,7 @@ Cluster: Set of servers.   Virtual - servers.  Google Cloud -- https://console.c
 			
 		PODS:  Smallest diploiement unit in Kunbernetes.	
 		
-		kubectl get pods -o wide
+		>>> kubectl get pods -o wide
 		
 		One NODE can have multiples PODS
 		Each POD has unique IP address
@@ -98,9 +98,9 @@ Cluster: Set of servers.   Virtual - servers.  Google Cloud -- https://console.c
 	    Pod share ressources
 		Containers in the same pod can talk to each other like localhost
 		
-		kubectl explain pods
+		>>> kubectl explain pods
 		
-		kubectl describe pod hello-world-rest-api
+		>>> kubectl describe pod hello-world-rest-api
 		
 				Name:         hello-world-rest-api-6d5479ddb6-tzf9z
 				Namespace:    default == > Usefull to create environments DEV / QA / PROD
@@ -153,13 +153,13 @@ Cluster: Set of servers.   Virtual - servers.  Google Cloud -- https://console.c
 
 	- Delete pod instances and replicas-set
 		
-		kubectl get pods -o wide
+		>>>> kubectl get pods -o wide
 				
-		kubectl delete pods hello-world-rest-api-6d5479ddb6
+		>>>>  kubectl delete pods hello-world-rest-api-6d5479ddb6
 		
 		After pod its deleted, the replicaset take in charde launch the instance because i set instance mininmin 3.
 				
-			kubectl scale deployment hello-world-rest-api --replica=3
+		>>>>	kubectl scale deployment hello-world-rest-api --replica=3
 		
 	- Create image from instance
 	
@@ -191,7 +191,9 @@ Cluster: Set of servers.   Virtual - servers.  Google Cloud -- https://console.c
 		En Google cloud Network Services:
 		  See Load balancing service created by service
 		  
-		kubectl get services
+		>>> kubectl get services
+		
+		LoadBalancer et ClusterIP are services for running cluster
 		
 		
 	- Master Nodes and Nodes:
