@@ -1,0 +1,33 @@
+https://github.com/mricardovallejo/tests2
+
+Notes CML
+----------
+https://cml.dev/
+Continuous Machine Learning (CML) is CI/CD for Machine Learning Projects
+
+1) Create repo github avec code
+2) Create file cml.yaml sur ./github/workflows
+
+	name: model-supervisé RL
+	on: [push]
+	jobs:
+	  run:
+		runs-on: [ubuntu-latest]
+		container: docker://dvcorg/cml-py3:latest
+		steps:
+		  - uses: actions/checkout@v2
+		  - name: cml_run
+			env:
+			  repo_token: ${{ secrets.GITHUB_TOKEN }}
+			run: |
+			  # Your ML workflow goes here
+			  pip install -r requirements.txt
+			  python 01_prod_regression_ci__tutorial.py
+			  # Write your CML report
+			  echo "## Metriques:" >> report.md
+			  cat metrics.txt >> report.md
+
+
+3) Commit and push file
+4) In github Actions of repository tests2 im gonna find the requete details.  I can add reporting and Jupyter.
+   Work creating a new branch.

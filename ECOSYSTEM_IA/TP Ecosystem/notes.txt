@@ -1,0 +1,44 @@
+Services in CI/CD in AI
+========================
+
+https://github.com/EthicalML/awesome-production-machine-learning
+
+Explaining Black Box Models and Datasets
+-------------------------------------------
+SHAP  - SHapley Additive exPlanations is a unified approach to explain the output of any machine learning model.
+tensorflow's lucid  - Lucid is a collection of infrastructure and tools for research in neural network interpretability.
+DeepVis Toolbox  - This is the code required to run the Deep Visualization Toolbox, as well as to generate the neuron-by-neuron visualizations using regularized optimization. 
+ELI5  - "Explain Like I'm 5" is a Python package which helps to debug machine learning classifiers and explain their predictions.
+
+Model and Data Versioning
+--------------------------
+
+Data Version Control (DVC)  - A git fork that allows for version management of models.
+Sacred  - Tool to help you configure, organize, log and reproduce machine learning experiments.
+TRAINS  - Auto-Magical Experiment Manager & Version Control for AI.
+
+Model Training Orchestration
+----------------------------
+Kubeflow  - A cloud native platform for machine learning based on Google’s internal machine learning pipelines.
+Skaffold  - Skaffold is a command line tool that facilitates continuous development for Kubernetes applications. You can iterate on your application source code locally then deploy to local or remote Kubernetes clusters.
+CML  - Continuous Machine Learning (CML) is an open-source library for implementing continuous integration & delivery (CI/CD) in machine learning projects.
+NVIDIA TensorRT  - TensorRT is a C++ library for high performance inference on NVIDIA GPUs and deep learning accelerators.
+
+Model Serving and Monitoring
+-----------------------------
+Tensorflow Serving  - High-performant framework to serve Tensorflow models via grpc protocol able to handle 100k requests per second per core
+Jina  - Cloud native search framework that supports to use deep learning/state of the art AI models for search.
+Seldon Core  - Open source platform for deploying and monitoring machine learning models in kubernetes - (Video)
+
+Feature Engineering Automation
+---------------------------------
+
+TPOT  - Automation of sklearn pipeline creation (including feature selection, pre-processor, etc)
+tsfresh  - Automatic extraction of relevant features from time series
+auto-sklearn  - Framework to automate algorithm and hyperparameter tuning for sklearn
+AutoGluon  - Automated feature, model, and hyperparameter selection for tabular, image, and text data on top of popular machine learning libraries (Scikit-Learn, LightGBM, CatBoost, PyTorch, MXNet)
+AutoML-GS  - Automatic feature and model search with code generation in Python, on top of common data science libraries (tensorflow, sklearn, etc)
+
+Commercial Platforms
+------------------
+Amazon SageMaker - End-to-end machine learning development and deployment interface where you are able to build notebooks that use EC2 instances as backend, and then can host models exposed on an API

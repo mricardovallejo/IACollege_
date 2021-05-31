@@ -1,0 +1,178 @@
+Services in CI/CD in AI
+========================
+
+https://github.com/EthicalML/awesome-production-machine-learning
+https://www.taniarascia.com/continuous-integration-pipeline-docker/
+https://stacktoheap.com/blog/2018/11/19/mlflow-model-repository-ci-cd/
+http://blog.innodatalabs.com/automating-ml-training-with-jenkins-pipelines/
+https://cdn.oreillystatic.com/en/assets/1/event/292/Continuous%20intelligence_%20Moving%20machine%20learning%20into%20production%20reliably%20Presentation.pdf
+
+
+Explaining Black Box Models and Datasets
+-------------------------------------------
+SHAP  - SHapley Additive exPlanations is a unified approach to explain the output of any machine learning model.
+tensorflow's lucid  - Lucid is a collection of infrastructure and tools for research in neural network interpretability.
+DeepVis Toolbox  - This is the code required to run the Deep Visualization Toolbox, as well as to generate the neuron-by-neuron visualizations using regularized optimization. 
+ELI5  - "Explain Like I'm 5" is a Python package which helps to debug machine learning classifiers and explain their predictions.
+
+Model and Data Versioning
+--------------------------
+
+Data Version Control (DVC)  - A git fork that allows for version management of models.
+Sacred  - Tool to help you configure, organize, log and reproduce machine learning experiments.
+TRAINS  - Auto-Magical Experiment Manager & Version Control for AI.
+
+Model Training Orchestration
+----------------------------
+Kubeflow  - A cloud native platform for machine learning based on Google’s internal machine learning pipelines.
+Skaffold  - Skaffold is a command line tool that facilitates continuous development for Kubernetes applications. You can iterate on your application source code locally then deploy to local or remote Kubernetes clusters.
+CML  - Continuous Machine Learning (CML) is an open-source library for implementing continuous integration & delivery (CI/CD) in machine learning projects.
+NVIDIA TensorRT  - TensorRT is a C++ library for high performance inference on NVIDIA GPUs and deep learning accelerators.
+
+Model Serving and Monitoring
+-----------------------------
+Tensorflow Serving  - High-performant framework to serve Tensorflow models via grpc protocol able to handle 100k requests per second per core
+Jina  - Cloud native search framework that supports to use deep learning/state of the art AI models for search.
+Seldon Core  - Open source platform for deploying and monitoring machine learning models in kubernetes - (Video)
+
+Feature Engineering Automation
+---------------------------------
+
+TPOT  - Automation of sklearn pipeline creation (including feature selection, pre-processor, etc)
+tsfresh  - Automatic extraction of relevant features from time series
+auto-sklearn  - Framework to automate algorithm and hyperparameter tuning for sklearn
+AutoGluon  - Automated feature, model, and hyperparameter selection for tabular, image, and text data on top of popular machine learning libraries (Scikit-Learn, LightGBM, CatBoost, PyTorch, MXNet)
+AutoML-GS  - Automatic feature and model search with code generation in Python, on top of common data science libraries (tensorflow, sklearn, etc)
+
+Commercial Platforms
+------------------
+Amazon SageMaker - End-to-end machine learning development and deployment interface where you are able to build notebooks that use EC2 instances as backend, and then can host models exposed on an API
+
+
+Kubeflow - https://www.bmc.com/blogs/machine-learning-containers/
+---------
+Kubeflow is a tool launched in 2018 by Google to help orchestrate the ML modelling process. Where Architects have Revit, ML engineers have Kubeflow. 
+Kubeflow allows ML engineers to see just where their models are at in their training process, in terms of sequence, 
+and also exposes the TensorFlow Tensorboard tool to show how well the model is performing. So Kubeflow abides by the Redhat High Observability Principle (HOP).
+
+Kubeflow is a great tool, so I’ll summarize the key benefits:
+
+Great documentation
+Multi-cloud framework
+Monitoring tools
+Workflow management
+Model deployment
+
+Kubeflow supports Jupyter Notebook integration. It will use the kf-fairing library for both training directly from the notebook or deploying a model from the notebook. 
+Kubeflow includes services to spawn and manage Jupyter notebooks, 
+and even custom resources to containerize a Jupyter notebook so it is prepped to run on the Kubernetes infrastructure.
+
+GitHub Actions
+---------------
+Then, to make this seamlessly integrate with your CI/CD infrastructure and GitHub, GitHub launched GitHub Actions in 2019 to help automate the CI/CD process.
+
+NOTES CI/CD Class
+-----------------
+
+Pour la phase de monitoring, on devra identifier:
+	Les métriques à utiliser pour le suivi de monitoring
+	Combien de features sont présentes dans le modèle en production. Combien sont en train d’etre suivies?
+	Comment est-on en train de suivre les features numériques et catégorielles?
+	Comment a-t-on sélectionné les seuils de suivi de ces features?
+	Si un seuil est dépassé, quelles sont les étapes suivantes à faire sur la feature?
+	Est-ce que le suivi est ponctuel ou permanent?
+	Définir les circonstances qui vont faire en sorte que le modèle doit faire l’objet d’un nouvel apprentissage
+
+
+Aspect a tenir en compte pour la structure de project
+------------------------------------------------------
+
+Il est important de trouver un moyen de gérer les différents artefacts.
+Structure du repertoire doit etre:
+	Claire
+	Facile à organiser
+	Exprime l’organisation du projet
+	Permettre de réduire les bugs
+	Permettre de protéger la propriété intellectuelle (modele) 
+	Faciliter la reproduction et la repetabilité du processus 
+	Permettre l’extraction des résultats précédents
+	Logs
+	Metriques
+	Etc. 
+
+Good PRoject Structure and theorie for Python:  https://drivendata.github.io/cookiecutter-data-science/#directory-structure
+
+Versioning de ddonnes
+-----------------------
+
+Data is immutable (no overwrite)
+Sauvegarder les artefacts intermediaires
+Reproducible & Repetable (inputs & outputs doivent etre suivis)
+Probleme: Data files sont en générales assez larges et les GCS ont de la difficulté à les gérer 
+
+	DVC - https://stacktoheap.com/blog/2018/11/19/mlflow-model-repository-ci-cd/
+		But: DVC is built to make ML models shareable and reproducible. It is designed to handle large files, data sets, machine learning models, and metrics as well as code.
+		Site: dvc.org
+		Bénéfices
+		Version control pour modeles et data
+		Définir workflow pour deploiement & collaboration
+		
+		
+ 
+Cycle de développement-déploiement ML
+------------------------------------------
+
+Collecte-Acquisition
+Exploration
+Pré-traitement
+Modele
+Mise en production
+Utilisation
+
+Les modèles qu’on doit déployer doivent être:
+	Reproductible
+	Testable
+	Peuvent passer un audit
+	Surtout: capable d’etre continuellement amélioré
+
+Sources de changement de modele
+-------------------------------
+
+Données
+	Modèle de données
+	Sources de données peuvent varier dans le temos
+	Volume/Vitesse
+	etc
+
+Modèle
+	État de l’art change très vite
+	Beaucoup de recherche dans le domaine
+
+Code et application pour consommer le modele
+		Nouvelle demande de clients usagers
+		Dépendances qui peuvent changer dans le temps
+
+Mise en production continue
+---------------------------
+	Définir et créer un processus répétable et fiable pour la mise en production du modèle
+	Permettre d’automatiser la presque totalité du processus
+	Permettre de faire un suivi de changement (change control)
+	Permettre de garder tous les artefacts dans un gestionnaire d’artefacts
+	Suivre et gérer le cycle du modèle de manière coninue
+
+Mise en production | Après !
+----------------------------
+
+Comment procéder à un nouveau apprentissage le plus fréquemment possible?
+Comment éviter des problèmes de clash de version de déploiement?
+Comment redéployer le modèle mis à jour?
+Comment être sur que le processus de développement est toujours d’acualité?
+Comment mesure la performance de notre modèle?
+
+Quelles sont les hypotheses qui sont en train d’etre explorées?
+Quelles techniques de pré-traitement a t-on essayées?
+Combien de temps prend chaque processus pour s’executer?
+Quels sont les parametres et hyperparametres utilisées?
+Quels sont les métriques utilizes?
+
+

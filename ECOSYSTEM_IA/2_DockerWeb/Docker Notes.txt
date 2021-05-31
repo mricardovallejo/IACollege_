@@ -1,0 +1,124 @@
+Docker class
+-----------
+Containerizing your ML workflow requires putting your ML models in a container (Docker is sufficient), 
+then deploying it on a machine. Kubernetes is the most modern container orchestration tool, and all the major cloud providers offer it.
+
+
+https://www.taniarascia.com/continuous-integration-pipeline-docker/
+
+Docker is a tool that allows you to easily share, deploy, and run applications 
+consistently in many environments through containers.
+
+Requis:
+	Install Docker Desktop -> In win10: i need wsl2 - Windows Features:   and machine virtual linux installed, plus virtualisation enabled via BIOS. (f3)
+							  To see if virtualisation its enabled go Task Manager (Ctr-Alt-Del)
+							  https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package
+	Create a Docker Hub account
+
+docker -v
+docker login
+docker images # list all images
+
+Images
+-------
+An image is a blueprint that contains the instructions to build a container. It's an immutable snapshot of the file system and configuration of an application. 
+
+docker images # list all images
+
+Containers
+----------
+A container is a executable package that contains everything needed to run an application. It will always run the same, regardless of infrastructure, 
+in a sandboxed environment.  It is a running instance of an image.
+
+docker ps -a # list all containers
+
+Tags
+----
+A tag is a reference to a specific image version.
+
+Command	Context	Action
+--------------------------
+docker build	Image	Builds an image from a Dockerfile
+docker tag		Image	Tags an image
+docker images	Image	Lists images
+docker run		Container	Runs a container based on an image
+docker push		Image	Pushes an image to a registry
+docker pull		Image	Pulls an image from a repository
+docker ps		Container	Lists containers
+docker system prune	Image/Container	Remove unused containers and images
+
+Dockerfile
+------------
+o use a container, you'll need to give instructions to Docker via a file called Dockerfile in the root of your project. 
+
+FROM - Start the Dockerfile and pull from a base image
+COPY - Copy files from local source to container target
+WORKDIR - Set working directory for subsequent commands
+RUN - Run commands
+EXPOSE - Set a port
+ENTRYPOINT - Set executable command
+
+	# Pull from a base image
+	FROM node:12-alpine
+
+	# Copy the files from the current directory to app/
+	COPY . app/
+
+	# Use app/ as the working directory
+	WORKDIR app/
+
+	# Install dependencies (npm ci is similar to npm i, but for automated builds)
+	RUN npm ci --only-production
+
+	# Build production client side React application
+	RUN npm run build
+
+	# Listen on the specified port
+	EXPOSE 5000
+
+	# Set Node server
+	ENTRYPOINT npm run start
+
+Building, tagging, and running a container
+-------------------------------------------
+# Build an image - docker images
+docker build -t <image>:<tag> .
+
+# Run on local port 5000 and container port 5000 - docker ps -a
+docker run -p 5000:5000 <image>:<tag>
+
+# Practique:
+	je dois lancer le git bash comme admin
+	avoir docker desktop redemarre correctement
+	docker login a chaque fois que restart le git bash
+
+# Create image docker and start 
+
+	docker create --name nginx-base -p 80:80 nginx:alpine
+	docker start nginx-base
+
+# Replace index,html in server nginx local
+docker cp index.html nginx-base:/usr/share/nginx/html/index.html
+
+# Commiter changes to image docker
+docker commit nginx-base
+
+docker images >> without Tags
+
+# Add tag
+docker tag abcdefg my-nginx    abcdefg: IMAGE_ID from in docker images
+
+# Stop
+docker stop nginx-base
+
+# Remove
+docker rm nginx-base
+
+# Deploie a nouveau containe avec la nouvelle image
+
+docker run --name bdeb -d -p 80:80 my-nginx
+	L'option -p indique à Docker de mapper le port exposé dans le conteneur par l'image NGINX - port 80 - au port spécifié sur l'hôte Docker. 
+	Le premier paramètre spécifie le port dans l'hôte Docker(votre machine windows par exemple), 
+	tandis que le second paramètre est mappé au port exposé dans le conteneur.
+
+docker ps
