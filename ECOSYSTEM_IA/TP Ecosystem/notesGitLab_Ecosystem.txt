@@ -1,0 +1,177 @@
+GitLab Project Notes
+--------------------
+
+Playground:  
+- Setting Gitlab CI_CD for Python application _ Medium.pdf (Practique)
+
+1) Create github repository:
+	https://github.com/mricardovallejo?tab=repositories
+	mricardovallejo/myModelApp  
+	Python model ignore file
+
+
+2) Create gitLab repository:
+
+	https://gitlab.com/ricardo.vallejo76/mygitlabproject
+
+	name:  myGitLabProject 
+
+	slug:  https://gitlab.com/ricardo.vallejo76/mmygitlabproject
+	
+3) Define Project Structure
+	
+	https://drivendata.github.io/cookiecutter-data-science/
+	
+	Directory structure advantages in link but with data out of project. The data directory continue for basic data test. (Little number of individues)
+
+	The python applications i have to structure them.  Too!!:
+	
+	https://timothybramlett.com/How_to_create_a_Python_Package_with___init__py.html
+	https://towardsdatascience.com/how-to-fix-modulenotfounderror-and-importerror-248ce5b69b1c
+	And define packages in folder with modules inserting __init__.py files
+	
+	This is important for test stage too.  I need pytest find all tests of my project
+	
+	Test and secrets out of project.  Recommended
+	
+	https://jpetazzo.github.io/2013/12/01/docker-python-pip-requirements/ >> Efficient management Python projects dependencies with Docker
+	
+	
+	OPTIONS:
+	
+		1) Using gitHub repo in Gitlab:  
+			https://jhall.io/posts/github-with-gitlab-ci/
+	
+			Genere un token:  https://github.com/settings/tokens
+			
+			Define Personal; Access Token:  Paste le token generated
+			
+			Click Authenticate
+			
+			Now i can see the list of my repos GitHub.
+			
+			Select (Connect):  ricardo.vallejo76/myModelApp
+			
+		2)     	How to:  https://www.youtube.com/watch?v=mhRmdI0I4Bc
+		Using docker registry given by gitLab -> Replacing dockerhub.com
+		Gestion different branches in the yml file  --> MASTER / RELEASE 4m35s
+		Using docker template
+		
+		3)  https://docs.gitlab.com/ee/ci/environments/
+			
+	
+4) The project has Dockerfile in order to build a image docker of model ready to run or push to registry docker.
+
+  Create the application model - Python application structure - Dockerfile
+	- Tests not into image	when copy files.
+	- How to Docker file a python non Flask Applicattion - See screenshots logs word
+		https://betterprogramming.pub/how-to-create-a-dockerfile-for-a-python-application-8d078b16bc9a
+		
+		FROM python:3.8
+		RUN useradd -ms /bin/bash user
+		USER user
+		WORKDIR /home/user
+		COPY requirements.txt .
+		RUN pip install -r requirements.txt && rm requirements.txt
+		COPY src .
+		EXPOSE 10000
+		ENTRYPOINT [ "python", "mymodel1.py"]
+		
+	TO READ:  
+	https://docker-curriculum.com/#docker-images  FLASK
+	https://www.docker.com/blog/containerized-python-development-part-1/  FLASK
+	https://www.digitalocean.com/community/tutorials/how-to-build-docker-images-and-host-a-docker-image-repository-with-gitlab
+	https://matthewfeickert.github.io/intro-to-docker/09-build-with-ci/index.html
+	https://www.patricksoftwareblog.com/setting-up-gitlab-ci-for-a-python-application/
+	
+
+5)  Creation de CI-CD avec Gitlab >> .gitlab-ci.yml
+	- https://medium.com/@ryzmen/gitlab-fast-pipelines-stages-jobs-c51c829b9aa1
+   
+		default:
+		  image: ubuntu:latest
+		  #image: docker:latest
+
+		stages:
+		  - code_quality
+		  - test
+		  - build
+
+		qualityCodeFlake:
+			stage: code_quality
+			script:
+			- echo "We are currently evaluating the quaality gate and coverage of your code"
+			- apt-get update
+			- apt-get install -qy apt-transport-https ca-certificates curl software-properties-common
+			- apt-get install -qy python3-pip
+			- pip install --upgrade pip
+			- pip install flake8
+			- flake8 --version
+			- flake8 -v --select E123 --exclude='.git,venv'
+
+		pytest:
+		  stage: test
+		  script:
+			- echo "We are currently running automated Python Unit tests"
+			- apt-get update
+			- apt-get install -qy apt-transport-https ca-certificates curl software-properties-common
+			- apt-get install -qy python3-pip
+			- pip install --upgrade pip
+			- pip install  pytest pytest-cov
+			- pytest --version
+			- pytest -v tests/*.py
+
+		build:
+		  stage: build
+		  script:
+		  - echo "We are currently Dockering the Application"
+		  - apt-get update
+		  - apt-get install -qy apt-transport-https ca-certificates curl software-properties-common
+		  - apt-get install -qy docker.io
+		  - apt-get install -qy python3-pip
+		  - pip install --upgrade pip
+		  - pip install flake8 pytest pytest-cov
+		  - pip install -r requirements.txt
+		  - pytest --version
+		  #- apt-get install docker-ce docker-ce-cli containerd.io
+		  - docker --version
+		  
+		Notes:
+		1) apt-get its tool to install libraries, i have to update in order to pull lastest versions
+		2) -qy its to avoid questions in installations
+		3) Avoid use apt, use apt-get.  For linux distributions installations
+		4) flake8 its the tool for linting code
+			https://flake8.pycqa.org/en/latest/
+			https://flake8.pycqa.org/en/latest/user/invocation.html
+		5) pytest its tool to run python unit tests
+			https://timothybramlett.com/How_to_create_a_Python_Package_with___init__py.html
+			https://docs.pytest.org/en/6.2.x/usage.html
+			See word notes for project structure screenshot.
+		6) scripts are linux commands
+		7) We can validate format of .gitla-ci.yml with tool >> Validate yml:  https://docs.gitlab.com/ee/ci/lint.html
+			
+
+
+TODO Entender docker en gitlab.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
