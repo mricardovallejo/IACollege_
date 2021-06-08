@@ -107,7 +107,8 @@ Playground:
 			- pip install --upgrade pip
 			- pip install flake8
 			- flake8 --version
-			- flake8 -v --select E123 --exclude='.git,venv'
+			# - flake8 -v --select E123 --exclude='.git,venv'
+			- flake8  --statistics --exit-zero
 
 		pytest:
 		  stage: test
@@ -159,9 +160,20 @@ TODO Entender docker en gitlab.
 
 
 
+https://u.group/thinking/how-to-put-jupyter-notebooks-in-a-dockerfile/
 
+https://towardsdatascience.com/how-to-use-git-github-with-jupyter-notebook-7144d6577b44
 
+Jupyter
 
+https://docs.gitlab.com/ee/user/clusters/applications.html#jupyterhub
+
+https://docs.gitlab.com/ee/user/clusters/applications.html#install-jupyterhub-using-gitlab-cicd
+
+https://about.gitlab.com/blog/2018/04/24/getting-started-gitlab-ci-gcp/
+
+docker gitlab
+https://www.youtube.com/watch?v=mhRmdI0I4Bc
 
 
 

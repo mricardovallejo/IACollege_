@@ -1,4 +1,6 @@
 [core]
     remote = mondataremoter
 ['remote "mondataremoter"']
-    url = https://drive.google.com/drive/u/0/folders/11gqBw3AzyjUZeGSpTJCCLf8l_xwrHdZg
+    url = gdrive://11gqBw3AzyjUZeGSpTJCCLf8l_xwrHdZg
+['remote "myremote"']
+    url = gdrive://11gqBw3AzyjUZeGSpTJCCLf8l_xwrHdZg
