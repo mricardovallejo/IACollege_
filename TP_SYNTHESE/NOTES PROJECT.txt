@@ -1,0 +1,78 @@
+vallejomricardov@gmail.com
+Root:  Rolito1976*
+
+Key: mykeyRVR
+
+userIAM:  userIA
+
+keyUserIA cle AWS UsersIA
+Administrator user
+Administrator7606 passw role administrator AWS
+
+userIA userIA
+passw userIA7606
+
+iauser1
+IAuser1234
+
+You successfully created the users shown below. You can view and download user security credentials. 
+You can also email users instructions for signing in to the AWS Management Console. 
+This is the last time these credentials will be available to download. However, you can create new credentials at any time.
+
+Users with AWS Management Console access can sign-in at: https://768446292252.signin.aws.amazon.com/console
+
+
+Users with AWS Management Console access can sign-in at: https://768446292252.signin.aws.amazon.com/console
+
+====================================
+
+JUPYTER ON AWS EC2
+https://dataschool.com/data-modeling-101/running-jupyter-notebook-on-an-ec2-server/
+
+
+
+In [1]: from IPython.lib import passwd
+
+In [2]: passwd()
+Enter password: myjupyuter
+Verify password:
+Out[2]: 'sha1:13e290b67a30:b196a961d22e727c91993e8d26a2501858363958'
+
+http://ec2-100-25-216-21.compute-1.amazonaws.com:8888/
+
+ ec2-100-25-216-21.compute-1.amazonaws.com	
+ 
+ http://ec2-18-222-233-183.us-east-2.compute.amazonaws.com:8888/
+ 
+ 
+ 
+=====================================
+
+DEPLOIEMENT
+ 
+ https://blog.miguelgrinberg.com/post/handling-file-uploads-with-flask
+ 
+ https://docs.gitlab.com/ee/ci/cloud_deployment/
+ 
+ https://stackoverflow.com/questions/38671818/how-to-deploy-with-gitlab-ci-to-ec2-using-aws-codedeploy-codepipeline-s3/38672045#38672045
+ 
+ THE REPOS
+ 
+ *	Build & Use Custom Docker images in your GitLab CI/CD pipeline
+	https://www.youtube.com/watch?v=7I6tHw68DMQ
+ 
+ THE REPOS
+ https://gitlab.com/atoz_mentor/employee-portal-project/-/blob/main/requirements.txt
+ 
+ GitLab CI - A Complete Hands-On for CI/CD Pipelines & DevOps
+ https://www.udemy.com/course/gitlab-cicd-course/learn/lecture/28323422#notes   
+
+ 
+==========================================
+ 
+IAM Roles vs. Policies
+IAM Roles manage who has access to your AWS resources, whereas IAM policies control their permissions.
+
+A Role with no Policy attached to it won’t have to access any AWS resources.
+
+=========================================

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="777f00a7-de35-4f02-9946-e9047d8c9103" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/1-A60-IntroductionAppMachine-VF.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/A60-Aut2021-Seance0-PlanDuCours.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/Aut21-A60-IntroductionAppMachine-VF.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/Aut21-A60-ScriptCours1_SVM_et_ArbreDeDecision.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/Aut21-Cours2-Regression_Lineaire_et_Polynomiale_VF.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/Aut21_-_Cours4_LesRxNeurones.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/Aut21_-_Cours5-PMC_avec_Keras.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/Aut21_-_Cours_3-RegressionLogistique.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/Aut21_-_Excercices_Cours_4.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/Aut21_-_Excercices_Cours_5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DEEP_LEARNING/notes/Aut21_Excercices_Cours_2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA_RENFORCEMENT/Notes RVR - Renforcement learning.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA_RENFORCEMENT/Notes RVR - Renforcement learning.docx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="26o6wfNPpWuLEFI6DxhlgAvkWkh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="777f00a7-de35-4f02-9946-e9047d8c9103" name="Default Changelist" comment="" />
+      <created>1648077831739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648077831739</updated>
+    </task>
+    <servers />
+  </component>
+</project>
