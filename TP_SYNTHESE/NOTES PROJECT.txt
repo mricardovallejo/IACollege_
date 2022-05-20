@@ -1,34 +1,12 @@
-vallejomricardov@gmail.com
-Root:  Rolito1976*
+https://github.com/mricardovallejo/IACollege_/tree/master/TP_SYNTHESE
 
-Key: mykeyRVR
+https://gitlab.com/
 
-userIAM:  userIA
-
-keyUserIA cle AWS UsersIA
-Administrator user
-Administrator7606 passw role administrator AWS
-
-userIA userIA
-passw userIA7606
-
-iauser1
-IAuser1234
-
-You successfully created the users shown below. You can view and download user security credentials. 
-You can also email users instructions for signing in to the AWS Management Console. 
-This is the last time these credentials will be available to download. However, you can create new credentials at any time.
-
-Users with AWS Management Console access can sign-in at: https://768446292252.signin.aws.amazon.com/console
-
-
-Users with AWS Management Console access can sign-in at: https://768446292252.signin.aws.amazon.com/console
 
 ====================================
 
 JUPYTER ON AWS EC2
 https://dataschool.com/data-modeling-101/running-jupyter-notebook-on-an-ec2-server/
-
 
 
 In [1]: from IPython.lib import passwd
@@ -61,11 +39,11 @@ DEPLOIEMENT
  *	Build & Use Custom Docker images in your GitLab CI/CD pipeline
 	https://www.youtube.com/watch?v=7I6tHw68DMQ
  
- THE REPOS
- https://gitlab.com/atoz_mentor/employee-portal-project/-/blob/main/requirements.txt
+ Example gitlab-python-bd-docker-depliement-erocku
+ *  https://gitlab.com/atoz_mentor/employee-portal-project/-/blob/main/requirements.txt
  
  GitLab CI - A Complete Hands-On for CI/CD Pipelines & DevOps
- https://www.udemy.com/course/gitlab-cicd-course/learn/lecture/28323422#notes   
+ * hhttps://www.udemy.com/course/gitlab-cicd-course/learn/lecture/28323422#notes   
 
  
 ==========================================
