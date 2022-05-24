@@ -1,0 +1,15 @@
+flask_job:
+  image: python:3.10
+  script:
+    - python --version
+    - pip --version
+
+build_image:
+  image: docker
+  services: docker:dind
+  script:
+    - echo $CI_REGISTRY_PASSWORD | docker login -u $CI_REGISTRY_USER $CI_REGISTRY --password-stdin # login registry.gitlab.com
+    - docker build -t $CI_REGISTRY_IMAGE . # docker build -t registry.gitlab.com/ricardo.vallejo76/mygitlabproject .
+    - echo $CI_REGISTRY_IMAGE
+    - echo "Do the build of image"
+    - docker push $CI_REGISTRY_IMAGE
